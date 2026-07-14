@@ -1,11 +1,8 @@
 from preprocessing import preprocess
 from feedback import feedback
-from score import score_vocab
 
-answers = input("Enter the answer: ").lower()
+raw_text = input("Enter the answer: ")
 
-sent_tok, tokens, vocabulary = preprocess(answers)
+sent_tok, tokens, vocabulary, filler_ratio, stop_ratio, vocab_ratio, clean_list = preprocess(raw_text)
 
-score_vocabs = score_vocab(tokens, vocabulary)
-
-feedback(sent_tok, tokens, vocabulary, score_vocabs)
+feedback(sent_tok, tokens, vocab_ratio, filler_ratio, stop_ratio)
