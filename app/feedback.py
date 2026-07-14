@@ -1,7 +1,9 @@
 # Tokenize
-def feedback(sent_tok, tokens, vocab_ratio, filler_ratio, stop_ratio):
+def feedback(sent_tok, tokens, vocab_ratio, filler_ratio, stop_ratio, lemma, cleanes_list):
     print(f"\n\nWord Tokenize: {tokens} \n")
     print(f"Sentence Tokenize: {sent_tok} \n")
+    print(f"Lemmitized: {lemma}\n")
+    print(f"Clean list: {cleanes_list}\n")
 
     # print(f"Unique words: {vocabulary} \n")
     # print(f"Total unique words: {len(vocabulary)} \n")
