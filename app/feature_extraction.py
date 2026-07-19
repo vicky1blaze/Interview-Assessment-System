@@ -11,7 +11,7 @@ def extract_features_statistics(raw_text):
     word_count = len(word_tokens)
     sentence_count = len(sent_tokens)
 
-    average_sentence_length = (word_count / sentence_count)
+    average_sentence_length = (word_count / sentence_count if sentence_count else 0)
 
     #Vocubalry
 
@@ -21,7 +21,7 @@ def extract_features_statistics(raw_text):
     vocabulary = set(no_punctuation_tokens)
     vocabulary_count = len(vocabulary)
 
-    vocabulary_ratio = (vocabulary_count / no_punctuation_tokens_count)
+    vocabulary_ratio = (vocabulary_count / no_punctuation_tokens_count if no_punctuation_tokens_count else 0)
 
     #Filler and stop words count
 
@@ -35,8 +35,8 @@ def extract_features_statistics(raw_text):
         if token in stop_words:
             stop_words_count += 1
 
-    filler_ratio = (filler_words_count / word_count)
-    stopword_ratio = (stop_words_count / word_count)
+    filler_ratio = (filler_words_count / word_count if word_count else 0) 
+    stopword_ratio = (stop_words_count / word_count if word_count else 0)
 
     return {
         "word_count": word_count,
