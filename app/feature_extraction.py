@@ -1,6 +1,10 @@
 from nltk import word_tokenize, sent_tokenize
 from preprocessing import remove_punctuation, stop_words
 from filler_words import filler_words
+from nltk.sentiment import SentimentIntensityAnalyzer
+from collections import Counter
+
+sia = SentimentIntensityAnalyzer()
 
 def extract_features_statistics(raw_text):
     text = raw_text.lower()
@@ -50,11 +54,15 @@ def extract_features_statistics(raw_text):
         "vocabulary_count": vocabulary_count,
         "vocabulary_ratio": vocabulary_ratio,
         "no_punctuation_tokens": no_punctuation_tokens,
-        "no_punctuation_tokens_count": no_punctuation_tokens_count,
-        
+        "no_punctuation_tokens_count": no_punctuation_tokens_count
     }
 
+def extract_features_sentiment(raw_text):
+        sentiment_score = sia.polarity_scores(raw_text)
 
-    
+        return sentiment_score
 
+def extract_features_bow(lemma):
+     bow = Counter(lemma)
 
+     return dict(bow)
