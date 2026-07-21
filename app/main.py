@@ -1,15 +1,58 @@
 from preprocessing import preprocess
 from feedback import feedback
 from feature_extraction import extract_features_statistics, extract_features_sentiment, extract_features_bow
+from answers import candidates_data
+from questions import questions
+from dataset import load_data, save_data
 
-raw_text = input("Enter the answer: ")
+def main():
+    global candidate_id, candidate_answer
 
-lemma = preprocess(raw_text)
+    doc_counter = 0
 
-features = extract_features_statistics(raw_text)
+    candidates_data, corpus = load_data()
 
-sentiment_score = extract_features_sentiment(raw_text)
+    while True:
+        candidate_id = input("\nEnter the ID (Enter -1 to exit):").strip()
+    
+        if candidate_id == "-1":
+            break
 
-bow = extract_features_bow(lemma)
+        if candidate_id not in candidates_data:
+            candidates_data[candidate_id] = {
+                "answers": {}
+            }
 
-feedback(lemma, features, sentiment_score, bow)
+        if candidate_id not in corpus:
+                corpus[candidate_id] = {
+                    "lemmas": {}
+                }
+
+        for question_id, question in questions.items():
+            print(f"\n{question}")
+            candidate_answer = input("Answer: ")
+
+            doc_counter += 1
+            doc_key = f"doc_{doc_counter}"
+
+            lemma = preprocess(candidate_answer)
+            corpus[candidate_id]["lemmas"][doc_key] = lemma
+            
+            candidates_data[candidate_id]["answers"][question_id] = candidate_answer
+
+    save_data(candidates_data, corpus)
+
+if __name__ == "__main__":
+    main()
+
+# lemma = preprocess()
+
+# candidates_data(raw_text)
+
+# features = extract_features_statistics(raw_text)
+
+# sentiment_score = extract_features_sentiment(raw_text)
+
+# bow = extract_features_bow(lemma)
+
+# feedback(lemma, features, sentiment_score, bow)

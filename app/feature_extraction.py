@@ -5,6 +5,7 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 from collections import Counter
 
 sia = SentimentIntensityAnalyzer()
+corpus = {}
 
 def extract_features_statistics(raw_text):
     text = raw_text.lower()
@@ -66,3 +67,7 @@ def extract_features_bow(lemma):
      bow = Counter(lemma)
 
      return dict(bow)
+
+# def extract_features_tfidf(candidates_data):
+    
+     
