@@ -1,37 +1,9 @@
 {
-    "128": {
+    "100": {
         "answers": {
-            "qid_1": "shrya kamle",
-            "qid_2": "viara",
-            "qid_3": "nothing"
-        }
-    },
-    "129": {
-        "answers": {
-            "qid_1": "Shreya Kamble",
-            "qid_2": "Virar",
-            "qid_3": "Bf ko perishan"
-        }
-    },
-    "130": {
-        "answers": {
-            "qid_1": "Vicky Prate",
-            "qid_2": "Mumbai",
-            "qid_3": "Coding"
-        }
-    },
-    "131": {
-        "answers": {
-            "qid_1": "Making sure it does not exist and everything works are requested, my running has got counldn't do",
-            "qid_2": "lemo and nothing else",
-            "qid_3": "leo"
-        }
-    },
-    "145": {
-        "answers": {
-            "qid_1": "My name is Vicky Parate",
-            "qid_2": "I reside in Virar",
-            "qid_3": "I like to do coding, exploring more into the world of automation."
+            "qid_1": "vicky Parate not in gooding mood?",
+            "qid_2": "It was application determining the good! of parate",
+            "qid_3": "making sure python python feels like it, since we know"
         }
     }
 }

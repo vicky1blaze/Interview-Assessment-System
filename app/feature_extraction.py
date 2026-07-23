@@ -3,9 +3,9 @@ from preprocessing import remove_punctuation, stop_words
 from filler_words import filler_words
 from nltk.sentiment import SentimentIntensityAnalyzer
 from collections import Counter
+import math
 
 sia = SentimentIntensityAnalyzer()
-corpus = {}
 
 def extract_features_statistics(raw_text):
     text = raw_text.lower()
@@ -59,15 +59,45 @@ def extract_features_statistics(raw_text):
     }
 
 def extract_features_sentiment(raw_text):
-        sentiment_score = sia.polarity_scores(raw_text)
+    sentiment_score = sia.polarity_scores(raw_text)
 
-        return sentiment_score
+    return sentiment_score
 
 def extract_features_bow(lemma):
-     bow = Counter(lemma)
+    bow = Counter(lemma)
 
-     return dict(bow)
+    return dict(bow)
 
-# def extract_features_tfidf(candidates_data):
-    
-     
+def extract_features_tfidf(candidate_id, corpus):
+    doc_count = len(corpus[candidate_id]["bow"].keys())
+    tf = {}
+    terms_counts = {}
+    idf = {}
+
+    for doc in corpus[candidate_id]["bow"].keys():
+        total_terms = sum(corpus[candidate_id]["bow"][doc].values())
+
+        if doc not in tf:
+            tf[doc] =  {}
+
+        for term, term_frequency in corpus[candidate_id]["bow"][doc].items():
+            tf_of_term = term_frequency / total_terms
+            tf[doc][term] = tf_of_term
+
+            terms_counts[term] = terms_counts.get(term, 0) + 1
+
+    for term, term_frequency in terms_counts.items():
+        idf_score = math.log10(doc_count / term_frequency)
+
+        idf[term] = idf_score
+
+    for doc in tf.keys():
+        for term, term_tf in tf[doc].items():
+            tfidf = round(term_tf * idf[term], 4)
+
+            if doc not in corpus[candidate_id]["tfidf"]:
+                corpus[candidate_id]["tfidf"][doc] = {}
+                
+            corpus[candidate_id]["tfidf"][doc][term] = tfidf
+
+    return corpus

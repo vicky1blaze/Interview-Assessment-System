@@ -1,6 +1,6 @@
 from preprocessing import preprocess
 from feedback import feedback
-from feature_extraction import extract_features_statistics, extract_features_sentiment, extract_features_bow
+from feature_extraction import extract_features_statistics, extract_features_sentiment, extract_features_bow, extract_features_tfidf
 from answers import candidates_data
 from questions import questions
 from dataset import load_data, save_data
@@ -25,7 +25,9 @@ def main():
 
         if candidate_id not in corpus:
                 corpus[candidate_id] = {
-                    "lemmas": {}
+                    "lemmas": {},
+                    "bow": {},
+                    "tfidf":{}
                 }
 
         for question_id, question in questions.items():
@@ -37,6 +39,11 @@ def main():
 
             lemma = preprocess(candidate_answer)
             corpus[candidate_id]["lemmas"][doc_key] = lemma
+
+            bow = extract_features_bow(lemma)
+            corpus[candidate_id]["bow"][doc_key] = bow
+
+            corpus = extract_features_tfidf(candidate_id, corpus)
             
             candidates_data[candidate_id]["answers"][question_id] = candidate_answer
 

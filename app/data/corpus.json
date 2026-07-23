@@ -1,21 +1,71 @@
 {
-    "145": {
+    "100": {
         "lemmas": {
             "doc_1": [
-                "name",
                 "vicky",
-                "parate"
+                "parate",
+                "gooding",
+                "mood"
             ],
             "doc_2": [
-                "reside",
-                "virar"
+                "application",
+                "determine",
+                "good",
+                "parate"
             ],
             "doc_3": [
-                "cod",
-                "explore",
-                "world",
-                "automation"
+                "make",
+                "sure",
+                "python",
+                "python",
+                "feel",
+                "since",
+                "know"
             ]
+        },
+        "bow": {
+            "doc_1": {
+                "vicky": 1,
+                "parate": 1,
+                "gooding": 1,
+                "mood": 1
+            },
+            "doc_2": {
+                "application": 1,
+                "determine": 1,
+                "good": 1,
+                "parate": 1
+            },
+            "doc_3": {
+                "make": 1,
+                "sure": 1,
+                "python": 2,
+                "feel": 1,
+                "since": 1,
+                "know": 1
+            }
+        },
+        "tfidf": {
+            "doc_1": {
+                "vicky": 0.1193,
+                "parate": 0.044,
+                "gooding": 0.1193,
+                "mood": 0.1193
+            },
+            "doc_2": {
+                "application": 0.1193,
+                "determine": 0.1193,
+                "good": 0.1193,
+                "parate": 0.044
+            },
+            "doc_3": {
+                "make": 0.0682,
+                "sure": 0.0682,
+                "python": 0.1363,
+                "feel": 0.0682,
+                "since": 0.0682,
+                "know": 0.0682
+            }
         }
     }
 }
