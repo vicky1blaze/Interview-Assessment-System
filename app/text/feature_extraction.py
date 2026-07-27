@@ -1,5 +1,5 @@
 from nltk import word_tokenize, sent_tokenize
-from preprocessing import remove_punctuation, stop_words
+from text.preprocessing import remove_punctuation, stop_words
 from filler_words import filler_words
 from nltk.sentiment import SentimentIntensityAnalyzer
 from collections import Counter
@@ -7,8 +7,8 @@ import math
 
 sia = SentimentIntensityAnalyzer()
 
-def extract_features_statistics(raw_text):
-    text = raw_text.lower()
+def extract_features_statistics(candidates_data, candidate_id):
+    text = candidates_data[candidate_id]["combined_answer"].lower()
 
     sent_tokens = sent_tokenize(text)
     word_tokens = word_tokenize(text)
@@ -51,7 +51,7 @@ def extract_features_statistics(raw_text):
         "filler_words_count": filler_words_count,
         "stopword_ratio": stopword_ratio,
         "filler_ratio": filler_ratio,
-        "vocabulary": vocabulary,
+        # "vocabulary": vocabulary,
         "vocabulary_count": vocabulary_count,
         "vocabulary_ratio": vocabulary_ratio,
         "no_punctuation_tokens": no_punctuation_tokens,

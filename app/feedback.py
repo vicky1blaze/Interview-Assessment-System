@@ -1,5 +1,5 @@
 # Tokenize
-def feedback(lemma, features, sentiment_score, bow):
+def feedback(candidate_id, corpus):
     # print(f"\n\nWord Tokenize: {tokens} \n")
     # print(f"Sentence Tokenize: {sent_tok} \n")
     # print(f"Clean list: {cleanes_list}\n")
@@ -10,15 +10,19 @@ def feedback(lemma, features, sentiment_score, bow):
     # print(f"Filler word weightage: {filler_percent}% \n\n")
 
     # print("============= Statistics ==============\n")
-    # print(f"Vocabulary Ratio: {int(features["vocabulary_ratio"] * 100)}%")
-    # print(f"Filler words ratio: {int(features["filler_ratio"] * 100)}%")
-    # print(f"Stop words ratio: {int(features["stopword_ratio"] * 100)}%")
+    for feature, doc in corpus[candidate_id].items():
+        doc_counter += 1
+        doc_key = f"doc_{doc_counter}"
+
+        print(f"Vocabulary Ratio: {int(doc["statistics"]["vocabulary_ratio"] * 100)}%")
+        print(f"Filler words ratio: {int(corpus[candidate_id]["statistics"]["filler_ratio"] * 100)}%")
+        print(f"Stop words ratio: {int(corpus[candidate_id]["statistics"]["stopword_ratio"] * 100)}%")
     
     print("============= Sentiment Score ==============\n")
-    print(f"Positive: {sentiment_score["pos"]}")
+    print(f"Positive: {corpus[candidate_id]["sentiment"]["pos"]}")
     print(f"Negative: {sentiment_score["neg"]}")
     print(f"Neutral: {sentiment_score["neu"]}")
     print(f"Compound: {sentiment_score["compound"]}")
 
     print(f"BoW: {bow}")
-    # print(f"\nLemmitized: {lemma}\n")
+    print(f"\nLemmitized: {lemma}\n")

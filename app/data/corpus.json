@@ -67,5 +67,673 @@
                 "know": 0.0682
             }
         }
+    },
+    "215": {
+        "lemmas": {
+            "doc_1": [
+                "vicky",
+                "parate",
+                "parate"
+            ],
+            "doc_2": [
+                "vicky",
+                "kishor"
+            ],
+            "doc_3": [
+                "nothing"
+            ]
+        },
+        "bow": {
+            "doc_1": {
+                "vicky": 1,
+                "parate": 2
+            },
+            "doc_2": {
+                "vicky": 1,
+                "kishor": 1
+            },
+            "doc_3": {
+                "nothing": 1
+            }
+        },
+        "tfidf": {
+            "doc_1": {
+                "vicky": 0.0587,
+                "parate": 0.3181
+            },
+            "doc_2": {
+                "vicky": 0.088,
+                "kishor": 0.2386
+            },
+            "doc_3": {
+                "nothing": 0.4771
+            }
+        },
+        "statistics": {
+            "doc_1": {
+                "word_count": 3,
+                "sentence_count": 1,
+                "average_sentence_length": 3.0,
+                "stop_words_count": 0,
+                "filler_words_count": 0,
+                "stopword_ratio": 0.0,
+                "filler_ratio": 0.0,
+                "vocabulary_count": 2,
+                "vocabulary_ratio": 0.6666666666666666,
+                "no_punctuation_tokens": [
+                    "vicky",
+                    "parate",
+                    "parate"
+                ],
+                "no_punctuation_tokens_count": 3
+            },
+            "doc_2": {
+                "word_count": 2,
+                "sentence_count": 1,
+                "average_sentence_length": 2.0,
+                "stop_words_count": 0,
+                "filler_words_count": 0,
+                "stopword_ratio": 0.0,
+                "filler_ratio": 0.0,
+                "vocabulary_count": 2,
+                "vocabulary_ratio": 1.0,
+                "no_punctuation_tokens": [
+                    "vicky",
+                    "kishor"
+                ],
+                "no_punctuation_tokens_count": 2
+            },
+            "doc_3": {
+                "word_count": 1,
+                "sentence_count": 1,
+                "average_sentence_length": 1.0,
+                "stop_words_count": 0,
+                "filler_words_count": 0,
+                "stopword_ratio": 0.0,
+                "filler_ratio": 0.0,
+                "vocabulary_count": 1,
+                "vocabulary_ratio": 1.0,
+                "no_punctuation_tokens": [
+                    "nothing"
+                ],
+                "no_punctuation_tokens_count": 1
+            }
+        },
+        "sentiment": {
+            "doc_1": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "doc_2": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "doc_3": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        }
+    },
+    "315": {
+        "lemmas": {
+            "doc_1": [
+                "vicky",
+                "parate"
+            ],
+            "doc_2": [
+                "nowhere",
+                "find"
+            ],
+            "doc_3": [
+                "also",
+                "n't",
+                "knosw"
+            ]
+        },
+        "bow": {
+            "doc_1": {
+                "vicky": 1,
+                "parate": 1
+            },
+            "doc_2": {
+                "nowhere": 1,
+                "find": 1
+            },
+            "doc_3": {
+                "also": 1,
+                "n't": 1,
+                "knosw": 1
+            }
+        },
+        "tfidf": {
+            "doc_1": {
+                "vicky": 0.2386,
+                "parate": 0.2386
+            },
+            "doc_2": {
+                "nowhere": 0.2386,
+                "find": 0.2386
+            },
+            "doc_3": {
+                "also": 0.159,
+                "n't": 0.159,
+                "knosw": 0.159
+            }
+        },
+        "statistics": {
+            "doc_1": {
+                "word_count": 4,
+                "sentence_count": 1,
+                "average_sentence_length": 4.0,
+                "stop_words_count": 0,
+                "filler_words_count": 1,
+                "stopword_ratio": 0.0,
+                "filler_ratio": 0.25,
+                "vocabulary_count": 3,
+                "vocabulary_ratio": 1.0,
+                "no_punctuation_tokens": [
+                    "vicky",
+                    "parate",
+                    "ok"
+                ],
+                "no_punctuation_tokens_count": 3
+            },
+            "doc_2": {
+                "word_count": 4,
+                "sentence_count": 1,
+                "average_sentence_length": 4.0,
+                "stop_words_count": 2,
+                "filler_words_count": 0,
+                "stopword_ratio": 0.5,
+                "filler_ratio": 0.0,
+                "vocabulary_count": 4,
+                "vocabulary_ratio": 1.0,
+                "no_punctuation_tokens": [
+                    "nowhere",
+                    "to",
+                    "be",
+                    "found"
+                ],
+                "no_punctuation_tokens_count": 4
+            },
+            "doc_3": {
+                "word_count": 5,
+                "sentence_count": 1,
+                "average_sentence_length": 5.0,
+                "stop_words_count": 2,
+                "filler_words_count": 0,
+                "stopword_ratio": 0.4,
+                "filler_ratio": 0.0,
+                "vocabulary_count": 5,
+                "vocabulary_ratio": 1.0,
+                "no_punctuation_tokens": [
+                    "i",
+                    "also",
+                    "do",
+                    "n't",
+                    "knosw"
+                ],
+                "no_punctuation_tokens_count": 5
+            }
+        },
+        "sentiment": {
+            "doc_1": {
+                "neg": 0.0,
+                "neu": 0.476,
+                "pos": 0.524,
+                "compound": 0.296
+            },
+            "doc_2": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "doc_3": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        }
+    },
+    "415": {
+        "lemmas": {
+            "doc_1": [
+                "vicky",
+                "parate"
+            ],
+            "doc_2": [
+                "nowhere",
+                "find"
+            ],
+            "doc_3": [
+                "also",
+                "n't",
+                "knosw"
+            ]
+        },
+        "bow": {
+            "doc_1": {
+                "vicky": 1,
+                "parate": 1
+            },
+            "doc_2": {
+                "nowhere": 1,
+                "find": 1
+            },
+            "doc_3": {
+                "also": 1,
+                "n't": 1,
+                "knosw": 1
+            }
+        },
+        "tfidf": {
+            "doc_1": {
+                "vicky": 0.2386,
+                "parate": 0.2386
+            },
+            "doc_2": {
+                "nowhere": 0.2386,
+                "find": 0.2386
+            },
+            "doc_3": {
+                "also": 0.159,
+                "n't": 0.159,
+                "knosw": 0.159
+            }
+        },
+        "statistics": {},
+        "sentiment": {
+            "doc_1": {
+                "neg": 0.0,
+                "neu": 0.476,
+                "pos": 0.524,
+                "compound": 0.296
+            },
+            "doc_2": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "doc_3": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        }
+    },
+    "515": {
+        "lemmas": {
+            "doc_1": [
+                "vicky",
+                "parate"
+            ],
+            "doc_2": [
+                "nowhere",
+                "find"
+            ],
+            "doc_3": [
+                "also",
+                "n't",
+                "knosw"
+            ]
+        },
+        "bow": {
+            "doc_1": {
+                "vicky": 1,
+                "parate": 1
+            },
+            "doc_2": {
+                "nowhere": 1,
+                "find": 1
+            },
+            "doc_3": {
+                "also": 1,
+                "n't": 1,
+                "knosw": 1
+            }
+        },
+        "tfidf": {
+            "doc_1": {
+                "vicky": 0.2386,
+                "parate": 0.2386
+            },
+            "doc_2": {
+                "nowhere": 0.2386,
+                "find": 0.2386
+            },
+            "doc_3": {
+                "also": 0.159,
+                "n't": 0.159,
+                "knosw": 0.159
+            }
+        },
+        "statistics": {},
+        "sentiment": {
+            "doc_1": {
+                "neg": 0.0,
+                "neu": 0.476,
+                "pos": 0.524,
+                "compound": 0.296
+            },
+            "doc_2": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "doc_3": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        }
+    },
+    "615": {
+        "lemmas": {
+            "doc_1": [
+                "vicky",
+                "parate"
+            ],
+            "doc_2": [
+                "nowhere",
+                "find"
+            ],
+            "doc_3": [
+                "also",
+                "n't",
+                "knosw"
+            ]
+        },
+        "bow": {
+            "doc_1": {
+                "vicky": 1,
+                "parate": 1
+            },
+            "doc_2": {
+                "nowhere": 1,
+                "find": 1
+            },
+            "doc_3": {
+                "also": 1,
+                "n't": 1,
+                "knosw": 1
+            }
+        },
+        "tfidf": {
+            "doc_1": {
+                "vicky": 0.2386,
+                "parate": 0.2386
+            },
+            "doc_2": {
+                "nowhere": 0.2386,
+                "find": 0.2386
+            },
+            "doc_3": {
+                "also": 0.159,
+                "n't": 0.159,
+                "knosw": 0.159
+            }
+        },
+        "statistics": {},
+        "sentiment": {
+            "doc_1": {
+                "neg": 0.0,
+                "neu": 0.476,
+                "pos": 0.524,
+                "compound": 0.296
+            },
+            "doc_2": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "doc_3": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        }
+    },
+    "715": {
+        "lemmas": {
+            "doc_1": [
+                "vicky",
+                "parate"
+            ],
+            "doc_2": [
+                "nowhere",
+                "find"
+            ],
+            "doc_3": [
+                "also",
+                "n't",
+                "knosw"
+            ]
+        },
+        "bow": {
+            "doc_1": {
+                "vicky": 1,
+                "parate": 1
+            },
+            "doc_2": {
+                "nowhere": 1,
+                "find": 1
+            },
+            "doc_3": {
+                "also": 1,
+                "n't": 1,
+                "knosw": 1
+            }
+        },
+        "tfidf": {
+            "doc_1": {
+                "vicky": 0.2386,
+                "parate": 0.2386
+            },
+            "doc_2": {
+                "nowhere": 0.2386,
+                "find": 0.2386
+            },
+            "doc_3": {
+                "also": 0.159,
+                "n't": 0.159,
+                "knosw": 0.159
+            }
+        },
+        "statistics": {},
+        "sentiment": {
+            "doc_1": {
+                "neg": 0.0,
+                "neu": 0.476,
+                "pos": 0.524,
+                "compound": 0.296
+            },
+            "doc_2": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "doc_3": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        }
+    },
+    "815": {
+        "lemmas": {
+            "doc_1": [
+                "vicky",
+                "parate"
+            ],
+            "doc_2": [
+                "nowhere",
+                "find"
+            ],
+            "doc_3": [
+                "also",
+                "n't",
+                "knosw"
+            ]
+        },
+        "bow": {
+            "doc_1": {
+                "vicky": 1,
+                "parate": 1
+            },
+            "doc_2": {
+                "nowhere": 1,
+                "find": 1
+            },
+            "doc_3": {
+                "also": 1,
+                "n't": 1,
+                "knosw": 1
+            }
+        },
+        "tfidf": {
+            "doc_1": {
+                "vicky": 0.2386,
+                "parate": 0.2386
+            },
+            "doc_2": {
+                "nowhere": 0.2386,
+                "find": 0.2386
+            },
+            "doc_3": {
+                "also": 0.159,
+                "n't": 0.159,
+                "knosw": 0.159
+            }
+        },
+        "statistics": {},
+        "sentiment": {
+            "doc_1": {
+                "neg": 0.0,
+                "neu": 0.476,
+                "pos": 0.524,
+                "compound": 0.296
+            },
+            "doc_2": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "doc_3": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        }
+    },
+    "915": {
+        "lemmas": {
+            "doc_1": [
+                "vicky",
+                "parate"
+            ],
+            "doc_2": [
+                "nowhere",
+                "find"
+            ],
+            "doc_3": [
+                "also",
+                "n't",
+                "knosw"
+            ]
+        },
+        "bow": {
+            "doc_1": {
+                "vicky": 1,
+                "parate": 1
+            },
+            "doc_2": {
+                "nowhere": 1,
+                "find": 1
+            },
+            "doc_3": {
+                "also": 1,
+                "n't": 1,
+                "knosw": 1
+            }
+        },
+        "tfidf": {
+            "doc_1": {
+                "vicky": 0.2386,
+                "parate": 0.2386
+            },
+            "doc_2": {
+                "nowhere": 0.2386,
+                "find": 0.2386
+            },
+            "doc_3": {
+                "also": 0.159,
+                "n't": 0.159,
+                "knosw": 0.159
+            }
+        },
+        "statistics": {
+            "word_count": 15,
+            "sentence_count": 3,
+            "average_sentence_length": 5.0,
+            "stop_words_count": 4,
+            "filler_words_count": 0,
+            "stopword_ratio": 0.26666666666666666,
+            "filler_ratio": 0.0,
+            "vocabulary_count": 12,
+            "vocabulary_ratio": 1.0,
+            "no_punctuation_tokens": [
+                "vicky",
+                "parate",
+                "ok.",
+                "nowhere",
+                "to",
+                "be",
+                "found",
+                "i",
+                "also",
+                "do",
+                "n't",
+                "knosw"
+            ],
+            "no_punctuation_tokens_count": 12
+        },
+        "sentiment": {
+            "doc_1": {
+                "neg": 0.0,
+                "neu": 0.476,
+                "pos": 0.524,
+                "compound": 0.296
+            },
+            "doc_2": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "doc_3": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        }
     }
 }
