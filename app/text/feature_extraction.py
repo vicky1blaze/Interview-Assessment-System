@@ -8,7 +8,7 @@ import math
 sia = SentimentIntensityAnalyzer()
 
 def extract_features_statistics(candidates_data, candidate_id):
-    text = candidates_data[candidate_id]["combined_answer"].lower()
+    text = candidates_data[candidate_id]["text"]["combined_answer"].lower()
 
     sent_tokens = sent_tokenize(text)
     word_tokens = word_tokenize(text)

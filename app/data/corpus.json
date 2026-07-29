@@ -735,5 +735,12 @@
                 "compound": 0.0
             }
         }
+    },
+    "874": {
+        "lemmas": {},
+        "bow": {},
+        "tfidf": {},
+        "statistics": {},
+        "sentiment": {}
     }
 }
