@@ -20,7 +20,7 @@ def main():
             break
 
         candidate_id = temp_id
-        extension = ".wav"
+        # extension = ".wav"
 
         if candidate_id not in candidates_data:
             candidates_data[candidate_id] = {
@@ -45,35 +45,41 @@ def main():
 
         for question_id, question in questions.items():
             print(f"\n{question}")
-            # candidate_answer = input("Answer: ")
+            candidate_answer = input("Answer: ")
 
-            audio_path = "speech/audio/cid_" + candidate_id + "_" + question_id + extension
+            # =========================================================================================
+            # Speech Module: If speech enable use this
+            # =========================================================================================
 
-            record(audio_path)
-            candidates_data = speech_to_text(audio_path, candidates_data, candidate_id, question_id)
+            # audio_path = "speech/audio/cid_" + candidate_id + "_" + question_id + extension    
 
-    #         space = " " if candidates_data[candidate_id]["text"]["combined_answer"].endswith(".") else ". "
-    #         candidates_data[candidate_id]["text"]["combined_answer"] += space + candidate_answer
+            # record(audio_path) 
+            # candidates_data = speech_to_text(audio_path, candidates_data, candidate_id, question_id)
+            # 
+            # =========================================================================================    
 
-    #         doc_counter += 1
-    #         doc_key = f"doc_{doc_counter}"
+            space = " " if candidates_data[candidate_id]["text"]["combined_answer"].endswith(".") else ". "
+            candidates_data[candidate_id]["text"]["combined_answer"] += space + candidate_answer
 
-    #         candidates_data[candidate_id]["text"]["answers"][question_id] = candidate_answer
+            doc_counter += 1
+            doc_key = f"doc_{doc_counter}"
 
-    #         lemma = preprocess(candidate_answer)
-    #         corpus[candidate_id]["lemmas"][doc_key] = lemma
+            candidates_data[candidate_id]["text"]["answers"][question_id] = candidate_answer
+
+            lemma = preprocess(candidate_answer)
+            corpus[candidate_id]["lemmas"][doc_key] = lemma
             
-    #         sentiment_score = extract_features_sentiment(candidate_answer)
-    #         corpus[candidate_id]["sentiment"][doc_key] = sentiment_score
+            sentiment_score = extract_features_sentiment(candidate_answer) # Re-think on Sentiment
+            corpus[candidate_id]["sentiment"][doc_key] = sentiment_score
 
-    #         bow = extract_features_bow(lemma)
-    #         corpus[candidate_id]["bow"][doc_key] = bow
+            bow = extract_features_bow(lemma)
+            corpus[candidate_id]["bow"][doc_key] = bow
 
-    #         corpus = extract_features_tfidf(candidate_id, corpus)
+            corpus = extract_features_tfidf(candidate_id, corpus)
 
-    # if candidate_id != "-1":
-    #     features = extract_features_statistics(candidates_data, candidate_id)
-    #     corpus[candidate_id]["statistics"] = features
+    if candidate_id != "-1":
+        features = extract_features_statistics(candidates_data, candidate_id)
+        corpus[candidate_id]["statistics"] = features
 
     save_data(candidates_data, corpus)
 

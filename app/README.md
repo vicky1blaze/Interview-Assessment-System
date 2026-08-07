@@ -5,8 +5,9 @@ An AI-powered interview assessment platform.
 ## Current Module
 
 ✅ Text Analysis
+✅ Speech Analysis
 
 Future Modules
 
-- Speech Analysis
 - Video Analysis
+- Skill Passport 
