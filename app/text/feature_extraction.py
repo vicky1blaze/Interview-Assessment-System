@@ -69,10 +69,12 @@ def extract_features_bow(lemma):
     return dict(bow)
 
 def extract_features_tfidf(candidate_id, corpus):
-    doc_count = len(corpus[candidate_id]["bow"].keys())
     tf = {}
-    terms_counts = {}
     idf = {}
+    df = {}
+    doc_overall_count = 0
+
+    # Comput TF (Locally) ===========================================================
 
     for doc in corpus[candidate_id]["bow"].keys():
         total_terms = sum(corpus[candidate_id]["bow"][doc].values())
@@ -84,12 +86,23 @@ def extract_features_tfidf(candidate_id, corpus):
             tf_of_term = term_frequency / total_terms
             tf[doc][term] = tf_of_term
 
-            terms_counts[term] = terms_counts.get(term, 0) + 1
+    # Compute IDF (Globally) ========================================================
 
-    for term, term_frequency in terms_counts.items():
-        idf_score = math.log10(doc_count / term_frequency)
+    for candidate in corpus.values():
+        for doc_tokens in candidate["lemmas"].values():
+            doc_overall_count += 1
 
-        idf[term] = idf_score
+            unique_tokens = set(doc_tokens)
+
+            for token in unique_tokens:
+                df[token] = df.get(token, 0) + 1
+
+    for token, freq in df.items():
+        idf_score = round(math.log10(doc_overall_count / freq), 4)
+
+        idf[token] = idf.get(token, 0) + idf_score
+
+    # Compute TF-IDF ================================================================
 
     for doc in tf.keys():
         for term, term_tf in tf[doc].items():
