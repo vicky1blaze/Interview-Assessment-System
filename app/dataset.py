@@ -6,9 +6,14 @@ def load_data(file_path):
 
     return file
 
-def save_data(file_path, file):
+def save_data(file_path, file, message):
 
     with open(file_path, "w") as f:
         json.dump(file, f, indent=4)
 
-    print("Saved successfully\n")
+
+    print("\n")
+    print("="*30)
+    print("Log: ", message)
+    print("="*30)
+    print("\n")

@@ -1930,5 +1930,666 @@
                 }
             }
         }
+    },
+    "999": {
+        "lemmas": {
+            "qid_1": [
+                "vicky",
+                "machine",
+                "learning",
+                "name"
+            ],
+            "qid_2": [
+                "im",
+                "nowhere",
+                "find"
+            ],
+            "qid_3": [
+                "cod",
+                "full",
+                "free",
+                "time"
+            ],
+            "qid_4": [
+                "understand",
+                "pattern",
+                "help",
+                "prediction"
+            ]
+        },
+        "bow": {
+            "qid_1": {
+                "vicky": 1,
+                "machine": 1,
+                "learning": 1,
+                "name": 1
+            },
+            "qid_2": {
+                "im": 1,
+                "nowhere": 1,
+                "find": 1
+            },
+            "qid_3": {
+                "cod": 1,
+                "full": 1,
+                "free": 1,
+                "time": 1
+            },
+            "qid_4": {
+                "understand": 1,
+                "pattern": 1,
+                "help": 1,
+                "prediction": 1
+            }
+        },
+        "tfidf": {
+            "qid_1": {
+                "vicky": 0.1895,
+                "machine": 0.1488,
+                "learning": 0.1714,
+                "name": 0.3746
+            },
+            "qid_2": {
+                "im": 0.4994,
+                "nowhere": 0.2988,
+                "find": 0.2988
+            },
+            "qid_3": {
+                "cod": 0.2386,
+                "full": 0.3746,
+                "free": 0.2241,
+                "time": 0.2113
+            },
+            "qid_4": {
+                "understand": 0.2241,
+                "pattern": 0.2241,
+                "help": 0.4498,
+                "prediction": 0.4498
+            }
+        },
+        "statistics": {
+            "word_count": 34,
+            "sentence_count": 5,
+            "average_sentence_length": 6.8,
+            "stop_words_count": 13,
+            "filler_words_count": 1,
+            "stopword_ratio": 0.38235294117647056,
+            "filler_ratio": 0.029411764705882353,
+            "vocabulary_count": 26,
+            "vocabulary_ratio": 0.896551724137931,
+            "no_punctuation_tokens": [
+                "vicky",
+                "machine",
+                "learning",
+                "is",
+                "my",
+                "name",
+                "im",
+                "from",
+                "nowhere",
+                "to",
+                "be",
+                "found",
+                "i",
+                "like",
+                "to",
+                "do",
+                "coding",
+                "in",
+                "my",
+                "full",
+                "free",
+                "time",
+                "it",
+                "understands",
+                "patterns",
+                "and",
+                "helps",
+                "in",
+                "predictions"
+            ],
+            "no_punctuation_tokens_count": 29
+        },
+        "sentiment": {
+            "qid_1": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_2": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_3": {
+                "neg": 0.0,
+                "neu": 0.547,
+                "pos": 0.453,
+                "compound": 0.7003
+            },
+            "qid_4": {
+                "neg": 0.0,
+                "neu": 0.698,
+                "pos": 0.302,
+                "compound": 0.3818
+            }
+        },
+        "lexical_semantic_score": {
+            "similarity": {
+                "question_wise": {
+                    "qid_1": {
+                        "score": 0.6838,
+                        "level": "Moderate"
+                    },
+                    "qid_2": {
+                        "score": 0.0,
+                        "level": "Low"
+                    },
+                    "qid_3": {
+                        "score": 0.768,
+                        "level": "High"
+                    },
+                    "qid_4": {
+                        "score": 0.0,
+                        "level": "Low"
+                    }
+                },
+                "overall": {
+                    "score": 0.363,
+                    "level": "Low"
+                }
+            },
+            "coverage": {
+                "question_wise": {
+                    "qid_1": {
+                        "score": 0.5,
+                        "matched": [
+                            "machine",
+                            "name"
+                        ],
+                        "missing": [
+                            "learn",
+                            "full"
+                        ]
+                    },
+                    "qid_2": {
+                        "score": 0.0,
+                        "matched": [],
+                        "missing": [
+                            "machine",
+                            "learning"
+                        ]
+                    },
+                    "qid_3": {
+                        "score": 1.0,
+                        "matched": [
+                            "time",
+                            "full",
+                            "free"
+                        ],
+                        "missing": []
+                    },
+                    "qid_4": {
+                        "score": 0.0,
+                        "matched": [],
+                        "missing": [
+                            "machine",
+                            "learn"
+                        ]
+                    }
+                },
+                "overall": {
+                    "score": 0.375,
+                    "level": "Low"
+                }
+            },
+            "final": {
+                "question_wise": {
+                    "qid_1": {
+                        "score": 0.6103,
+                        "level": "Moderate"
+                    },
+                    "qid_2": {
+                        "score": 0.0,
+                        "level": "Low"
+                    },
+                    "qid_3": {
+                        "score": 0.8608,
+                        "level": "High"
+                    },
+                    "qid_4": {
+                        "score": 0.0,
+                        "level": "Low"
+                    }
+                },
+                "overall": {
+                    "score": 0.3678,
+                    "level": "Low"
+                }
+            }
+        }
+    },
+    "1111": {
+        "lemmas": {
+            "qid_1": [
+                "vicky",
+                "machine",
+                "learning",
+                "name"
+            ],
+            "qid_2": [
+                "im",
+                "nowhere",
+                "find"
+            ],
+            "qid_3": [
+                "cod",
+                "full",
+                "free",
+                "time"
+            ],
+            "qid_4": [
+                "understand",
+                "pattern",
+                "help",
+                "prediction"
+            ]
+        },
+        "bow": {
+            "qid_1": {
+                "vicky": 1,
+                "machine": 1,
+                "learning": 1,
+                "name": 1
+            },
+            "qid_2": {
+                "im": 1,
+                "nowhere": 1,
+                "find": 1
+            },
+            "qid_3": {
+                "cod": 1,
+                "full": 1,
+                "free": 1,
+                "time": 1
+            },
+            "qid_4": {
+                "understand": 1,
+                "pattern": 1,
+                "help": 1,
+                "prediction": 1
+            }
+        },
+        "tfidf": {
+            "qid_1": {
+                "vicky": 0.1867,
+                "machine": 0.1489,
+                "learning": 0.17,
+                "name": 0.3372
+            },
+            "qid_2": {
+                "im": 0.4497,
+                "nowhere": 0.2906,
+                "find": 0.2906
+            },
+            "qid_3": {
+                "cod": 0.2308,
+                "full": 0.3372,
+                "free": 0.218,
+                "time": 0.2065
+            },
+            "qid_4": {
+                "understand": 0.218,
+                "pattern": 0.218,
+                "help": 0.3812,
+                "prediction": 0.3812
+            }
+        },
+        "statistics": {
+            "word_count": 34,
+            "sentence_count": 5,
+            "average_sentence_length": 6.8,
+            "stop_words_count": 13,
+            "filler_words_count": 1,
+            "stopword_ratio": 0.38235294117647056,
+            "filler_ratio": 0.029411764705882353,
+            "vocabulary_count": 26,
+            "vocabulary_ratio": 0.896551724137931,
+            "no_punctuation_tokens": [
+                "vicky",
+                "machine",
+                "learning",
+                "is",
+                "my",
+                "name",
+                "im",
+                "from",
+                "nowhere",
+                "to",
+                "be",
+                "found",
+                "i",
+                "like",
+                "to",
+                "do",
+                "coding",
+                "in",
+                "my",
+                "full",
+                "free",
+                "time",
+                "it",
+                "understands",
+                "patterns",
+                "and",
+                "helps",
+                "in",
+                "predictions"
+            ],
+            "no_punctuation_tokens_count": 29
+        },
+        "sentiment": {
+            "qid_1": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_2": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_3": {
+                "neg": 0.0,
+                "neu": 0.547,
+                "pos": 0.453,
+                "compound": 0.7003
+            },
+            "qid_4": {
+                "neg": 0.0,
+                "neu": 0.698,
+                "pos": 0.302,
+                "compound": 0.3818
+            }
+        },
+        "lexical_semantic_score": {
+            "similarity": {
+                "question_wise": {
+                    "qid_1": {
+                        "score": 0.663,
+                        "level": "Moderate"
+                    },
+                    "qid_2": {
+                        "score": 0.0,
+                        "level": "Low"
+                    },
+                    "qid_3": {
+                        "score": 0.7797,
+                        "level": "High"
+                    },
+                    "qid_4": {
+                        "score": 0.0,
+                        "level": "Low"
+                    }
+                },
+                "overall": {
+                    "score": 0.3607,
+                    "level": "Low"
+                }
+            },
+            "coverage": {
+                "question_wise": {
+                    "qid_1": {
+                        "score": 0.5,
+                        "matched": [
+                            "name",
+                            "machine"
+                        ],
+                        "missing": [
+                            "learn",
+                            "full"
+                        ]
+                    },
+                    "qid_2": {
+                        "score": 0.0,
+                        "matched": [],
+                        "missing": [
+                            "learning",
+                            "machine"
+                        ]
+                    },
+                    "qid_3": {
+                        "score": 1.0,
+                        "matched": [
+                            "time",
+                            "free",
+                            "full"
+                        ],
+                        "missing": []
+                    },
+                    "qid_4": {
+                        "score": 0.0,
+                        "matched": [],
+                        "missing": [
+                            "learn",
+                            "machine"
+                        ]
+                    }
+                },
+                "overall": {
+                    "score": 0.375,
+                    "level": "Low"
+                }
+            },
+            "final": {
+                "question_wise": {
+                    "qid_1": {
+                        "score": 0.5978,
+                        "level": "Moderate"
+                    },
+                    "qid_2": {
+                        "score": 0.0,
+                        "level": "Low"
+                    },
+                    "qid_3": {
+                        "score": 0.8678,
+                        "level": "High"
+                    },
+                    "qid_4": {
+                        "score": 0.0,
+                        "level": "Low"
+                    }
+                },
+                "overall": {
+                    "score": 0.3664,
+                    "level": "Low"
+                }
+            }
+        }
+    },
+    "11145": {
+        "lemmas": {
+            "qid_1": [
+                "jhdsnzvl"
+            ],
+            "qid_2": [
+                "srlirbht"
+            ],
+            "qid_3": [
+                "slrijo"
+            ],
+            "qid_4": [
+                "sroop9"
+            ]
+        },
+        "bow": {
+            "qid_1": {
+                "jhdsnzvl": 1
+            },
+            "qid_2": {
+                "srlirbht": 1
+            },
+            "qid_3": {
+                "slrijo": 1
+            },
+            "qid_4": {
+                "sroop9": 1
+            }
+        },
+        "tfidf": {
+            "qid_1": {
+                "jhdsnzvl": 1.8513
+            },
+            "qid_2": {
+                "srlirbht": 1.8513
+            },
+            "qid_3": {
+                "slrijo": 1.8513
+            },
+            "qid_4": {
+                "sroop9": 1.8513
+            }
+        },
+        "statistics": {
+            "word_count": 8,
+            "sentence_count": 5,
+            "average_sentence_length": 1.6,
+            "stop_words_count": 0,
+            "filler_words_count": 0,
+            "stopword_ratio": 0.0,
+            "filler_ratio": 0.0,
+            "vocabulary_count": 4,
+            "vocabulary_ratio": 1.0,
+            "no_punctuation_tokens": [
+                "jhdsnzvl",
+                "srlirbht",
+                "slrijo",
+                "sroop9"
+            ],
+            "no_punctuation_tokens_count": 4
+        },
+        "sentiment": {
+            "qid_1": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_2": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_3": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_4": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        },
+        "lexical_semantic_score": {
+            "similarity": {
+                "question_wise": {
+                    "qid_1": {
+                        "score": 0.0,
+                        "level": "Low"
+                    },
+                    "qid_2": {
+                        "score": 0.0,
+                        "level": "Low"
+                    },
+                    "qid_3": {
+                        "score": 0.0,
+                        "level": "Low"
+                    },
+                    "qid_4": {
+                        "score": 0.0,
+                        "level": "Low"
+                    }
+                },
+                "overall": {
+                    "score": 0.0,
+                    "level": "Low"
+                }
+            },
+            "coverage": {
+                "question_wise": {
+                    "qid_1": {
+                        "score": 0.0,
+                        "matched": [],
+                        "missing": [
+                            "machine",
+                            "name",
+                            "learn",
+                            "full"
+                        ]
+                    },
+                    "qid_2": {
+                        "score": 0.0,
+                        "matched": [],
+                        "missing": [
+                            "machine",
+                            "learning"
+                        ]
+                    },
+                    "qid_3": {
+                        "score": 0.0,
+                        "matched": [],
+                        "missing": [
+                            "time",
+                            "full",
+                            "free"
+                        ]
+                    },
+                    "qid_4": {
+                        "score": 0.0,
+                        "matched": [],
+                        "missing": [
+                            "machine",
+                            "learn"
+                        ]
+                    }
+                },
+                "overall": {
+                    "score": 0.0,
+                    "level": "Low"
+                }
+            },
+            "final": {
+                "question_wise": {
+                    "qid_1": {
+                        "score": 0.0,
+                        "level": "Low"
+                    },
+                    "qid_2": {
+                        "score": 0.0,
+                        "level": "Low"
+                    },
+                    "qid_3": {
+                        "score": 0.0,
+                        "level": "Low"
+                    },
+                    "qid_4": {
+                        "score": 0.0,
+                        "level": "Low"
+                    }
+                },
+                "overall": {
+                    "score": 0.0,
+                    "level": "Low"
+                }
+            }
+        }
     }
 }

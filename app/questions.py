@@ -71,6 +71,6 @@ def questions_tfidf():
 
     tokens = compute_tf_idf(tokens)
 
-    save_data("data/questions.json", tokens)
+    save_data("data/questions.json", tokens, "Question set loaded")
 
     return tokens

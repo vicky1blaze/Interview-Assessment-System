@@ -1,6 +1,6 @@
 from text.preprocessing import preprocess
 from feedback import feedback
-from text.feature_extraction import extract_features_statistics, extract_features_sentiment, extract_features_bow, extract_features_tfidf, compute_relevance, compute_overall_relevance
+from text.feature_extraction import extract_features_statistics, extract_features_sentiment, extract_features_bow, extract_features_tfidf, evaluate_candidate
 from answers import candidates_data
 from questions import questions, questions_tfidf
 from dataset import load_data, save_data
@@ -8,21 +8,19 @@ from speech.speech_to_text import record, speech_to_text
 
 def main():
     global corpus, candidate_id
+    # extension = ".wav"
 
     qid_counter = 0
 
     corpus = load_data("data/corpus.json")
-    candidates_data = load_data("data/candidate.json")
-    questions_data = load_data("data/questions.json") 
+    candidates_data = load_data("data/candidates.json")
+    questions_statistics = questions_tfidf()
 
     while True:
-        temp_id = input("\nEnter the ID (Enter -1 to exit):").strip()
+        candidate_id = input("\nEnter the Candidate ID (Enter -1 to exit): ").strip()
     
-        if temp_id == "-1":
+        if candidate_id == "-1":
             break
-
-        candidate_id = temp_id
-        # extension = ".wav"
 
         if candidate_id not in candidates_data:
             candidates_data[candidate_id] = {
@@ -50,9 +48,13 @@ def main():
                     }
                 }
 
+        Q = 1
+
         for question_id, question in questions.items():
-            print(f"\n{question}")
+            print(f"\nQ{Q}: {question}")
             candidate_answer = input("Answer: ")
+
+            Q += 1
 
             # =========================================================================================
             # Speech Module: If speech enable use this
@@ -83,28 +85,14 @@ def main():
             corpus[candidate_id]["bow"][qid_key] = bow
 
         corpus = extract_features_tfidf(candidate_id, corpus)
-        question_tfidf = questions_tfidf()
 
-        # =============================================================================================
+        corpus = evaluate_candidate(corpus, questions_statistics, candidate_id)
 
-        for qid, data_vec in corpus[candidate_id]["tfidf"].items():
-            qid_vec = question_tfidf["tfidf"][qid]
-
-            if qid not in corpus[candidate_id]["relevance_score"]["question_wise"]:
-                corpus[candidate_id]["relevance_score"]["question_wise"][qid] = {}
-
-            corpus[candidate_id]["relevance_score"]["question_wise"][qid] = compute_relevance(data_vec, qid_vec, 0)
-
-        corpus = compute_overall_relevance(corpus, candidate_id)
-
-        # ==========================================================================================
-
-    if candidate_id != "-1":
         features = extract_features_statistics(candidates_data, candidate_id)
         corpus[candidate_id]["statistics"] = features
 
-    save_data(corpus)
-    save_data(candidates_data)
+    save_data("data/candidates.json", candidates_data, "Saved Candidate Data")
+    save_data("data/corpus.json", corpus, "Saved Candidate Stats")
 
 if __name__ == "__main__":
     main()

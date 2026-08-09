@@ -142,86 +142,124 @@ def cosine_similarity(vec1, vec2):
     # Step 6: Cosine similarity
     return dot_product / (mag1 * mag2)
 
-def compute_relevance(question_vec, answer_vec, similarity):
-    if similarity == 0:
-        similarity = cosine_similarity(question_vec, answer_vec)
-
-    # Optional interpretation layer
-    if similarity > 0.7:
-        level = "High"
-    elif similarity > 0.4:
-        level = "Moderate"
-    else:
-        level = "Low"
-    
-    return {
-        "score": round(similarity, 4),
-        "level": level
-    }
-
-def compute_overall_relevance(corpus, candidate_id):
-    scores = []
-
-    for qid in corpus[candidate_id]["relevance_score"]["question_wise"].keys():
-        scores.append(corpus[candidate_id]["relevance_score"]["question_wise"][qid]["score"])
-
-    final_score = np.mean(scores)
-
-    corpus[candidate_id]["relevance_score"]["overall_score"] = compute_relevance(0, 0, final_score)
-
-    return corpus
-
 
 def compute_coverage(question_tokens, answer_tokens):
     if not question_tokens:
-            return {
-                "score": 0.0,
-                "matched": [],
-                "missing": []
-            }
+        return {
+            "score": 0.0,
+            "matched": [],
+            "missing": []
+        }
 
-    
     q_set = set(question_tokens)
     a_set = set(answer_tokens)
 
     matched = q_set.intersection(a_set)
     missing = q_set - a_set
 
-    score = round(len(matched) / len(q_set), 4)
+    score = len(matched) / len(q_set)
 
-    return{
-        "score": score,
+    return {
+        "score": round(score, 4),
         "matched": list(matched),
         "missing": list(missing)
     }
 
-def compute_overall_coverage(similarity, coverage, w_sim=0.6, w_cov=0.4):
-    final_score = round((w_sim * similarity) + (w_cov * coverage), 4)
+def get_level(score):
+    if score > 0.7:
+        return "High"
+    elif score > 0.4:
+        return "Moderate"
+    else:
+        return "Low"
 
-    if final_score > 0.7:
-        level = "High"
-    elif final_score > 0.5:
-        level = "Moderate"
-    elif final_score > 0.3:
-        level = "Low"
+def compute_final_score(similarity, coverage, w_sim=0.6, w_cov=0.4):
+    final = (w_sim * similarity) + (w_cov * coverage)
 
     return {
-        "score": final_score,
-        "level": level
+        "score": round(final, 4),
+        "level": get_level(final)
     }
 
-def evalute_candidate(corpus, candidate_id):
-    for qid, data_vec in corpus[candidate_id]["tfidf"].items():
-                qid_vec = question_tfidf["tfidf"][qid]
-    
-                if qid not in corpus[candidate_id]["lexical_semantic_score"]:
-                    corpus[candidate_id]["lexical_semantic_score"]["similarity"][qid] = {}
-                    corpus[candidate_id]["lexical_semantic_score"]["coverage"][qid] = {}
-    
-                corpus[candidate_id]["lexical_semantic_score"]["similarity"][qid] = compute_relevance(data_vec, qid_vec, 0)
-                corpus[candidate_id]["lexical_semantic_score"]["coverage"][qid] = compute_coverage(qid_vec.keys(), data_vec.keys())
+def evaluate_candidate(corpus, questions, candidate_id, w_sim=0.6, w_cov=0.4):
 
-            compute_overall_coverage()
-            corpus = compute_overall_relevance(corpus, candidate_id)
+    # ===== Initialize structure =====
+    corpus[candidate_id]["lexical_semantic_score"] = {
+        "similarity": {
+            "question_wise": {},
+            "overall": {}
+        },
+        "coverage": {
+            "question_wise": {},
+            "overall": {}
+        },
+        "final": {
+            "question_wise": {},
+            "overall": {}
+        }
+    }
+
+    sim_scores = []
+    cov_scores = []
+    final_scores = []
+
+    # ===== Loop through each question =====
+    for qid in questions["tfidf"].keys():
+
+        # ---- Fetch vectors ----
+        answer_vec = corpus[candidate_id]["tfidf"].get(qid, {})
+        question_vec = questions["tfidf"][qid]
+
+        # ---- Fetch tokens (IMPORTANT) ----
+        answer_tokens = corpus[candidate_id]["lemmas"].get(qid, [])
+        question_tokens = questions["lemmas"][qid]
+
+        # ===== 1. Cosine Similarity =====
+        sim = cosine_similarity(question_vec, answer_vec)
+        sim_scores.append(sim)
+
+        corpus[candidate_id]["lexical_semantic_score"]["similarity"]["question_wise"][qid] = {
+            "score": round(sim, 4),
+            "level": get_level(sim)
+        }
+
+        # ===== 2. Coverage =====
+        coverage_data = compute_coverage(question_tokens, answer_tokens)
+        cov = coverage_data["score"]
+        cov_scores.append(cov)
+
+        corpus[candidate_id]["lexical_semantic_score"]["coverage"]["question_wise"][qid] = coverage_data
+
+        # ===== 3. Final Score =====
+        final_data = compute_final_score(sim, cov, w_sim, w_cov)
+        final_scores.append(final_data["score"])
+
+        corpus[candidate_id]["lexical_semantic_score"]["final"]["question_wise"][qid] = final_data
+
+    # ===== OVERALL CALCULATIONS =====
+
+    def safe_avg(arr):
+        return sum(arr) / len(arr) if arr else 0.0
+
+    avg_sim = safe_avg(sim_scores)
+    avg_cov = safe_avg(cov_scores)
+    avg_final = safe_avg(final_scores)
+
+    corpus[candidate_id]["lexical_semantic_score"]["similarity"]["overall"] = {
+        "score": round(avg_sim, 4),
+        "level": get_level(avg_sim)
+    }
+
+    corpus[candidate_id]["lexical_semantic_score"]["coverage"]["overall"] = {
+        "score": round(avg_cov, 4),
+        "level": get_level(avg_cov)
+    }
+
+    corpus[candidate_id]["lexical_semantic_score"]["final"]["overall"] = {
+        "score": round(avg_final, 4),
+        "level": get_level(avg_final)
+    }
+
+    return corpus
 
 
