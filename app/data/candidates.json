@@ -82,5 +82,125 @@
             },
             "combined_answer": "  My name is Vicky Paradeh.  I'm from Mumbai and I reside in the Darwasti.  I like to do coding and I am working on my college project."
         }
+    },
+    "41": {
+        "text": {
+            "answers": {
+                "qid_1": "machine learning is my fll name",
+                "qid_2": "im from virar",
+                "qid_3": "full free time",
+                "qid_4": "nothing"
+            },
+            "combined_answer": ". machine learning is my fll name. im from virar. full free time. nothing"
+        },
+        "speech": {
+            "answers": {},
+            "combined_answer": ""
+        }
+    },
+    "465": {
+        "text": {
+            "answers": {
+                "qid_1": "nothing but machine learning",
+                "qid_2": "I'm from your heart my love",
+                "qid_3": "coding I like in my free time",
+                "qid_4": "Machine learning is to understand complex patterns"
+            },
+            "combined_answer": ". nothing but machine learning. I'm from your heart my love. coding I like in my free time. Machine learning is to understand complex patterns"
+        },
+        "speech": {
+            "answers": {},
+            "combined_answer": ""
+        }
+    },
+    "964": {
+        "text": {
+            "answers": {
+                "qid_1": "nothing but machine learning",
+                "qid_2": "I'm from your heart my love",
+                "qid_3": "coding I like in my free time",
+                "qid_4": "Machine learning is to understand complex patterns"
+            },
+            "combined_answer": ". nothing but machine learning. I'm from your heart my love. coding I like in my free time. Machine learning is to understand complex patterns"
+        },
+        "speech": {
+            "answers": {},
+            "combined_answer": ""
+        }
+    },
+    "108": {
+        "text": {
+            "answers": {
+                "qid_1": "nothing but machine learning",
+                "qid_2": "I'm from your heart my love",
+                "qid_3": "coding I like in my free time",
+                "qid_4": "Machine learning is to understand complex patterns"
+            },
+            "combined_answer": ". nothing but machine learning. I'm from your heart my love. coding I like in my free time. Machine learning is to understand complex patterns"
+        },
+        "speech": {
+            "answers": {},
+            "combined_answer": ""
+        }
+    },
+    "110": {
+        "text": {
+            "answers": {
+                "qid_1": "nothing but machine learning",
+                "qid_2": "I'm from your heart my love",
+                "qid_3": "coding I like in my free time",
+                "qid_4": "Machine learning is to understand complex patterns"
+            },
+            "combined_answer": ". nothing but machine learning. I'm from your heart my love. coding I like in my free time. Machine learning is to understand complex patterns"
+        },
+        "speech": {
+            "answers": {},
+            "combined_answer": ""
+        }
+    },
+    "111": {
+        "text": {
+            "answers": {
+                "qid_1": "nothing but machine learning",
+                "qid_2": "I'm from your heart my love",
+                "qid_3": "coding I like in my free time",
+                "qid_4": "Machine learning is to understand complex patterns"
+            },
+            "combined_answer": ". nothing but machine learning. I'm from your heart my love. coding I like in my free time. Machine learning is to understand complex patterns"
+        },
+        "speech": {
+            "answers": {},
+            "combined_answer": ""
+        }
+    },
+    "113": {
+        "text": {
+            "answers": {
+                "qid_1": "nothing but machine learning",
+                "qid_2": "I'm from your heart my love",
+                "qid_3": "coding I like in my free time",
+                "qid_4": "Machine learning is to understand complex patterns"
+            },
+            "combined_answer": ". nothing but machine learning. I'm from your heart my love. coding I like in my free time. Machine learning is to understand complex patterns"
+        },
+        "speech": {
+            "answers": {},
+            "combined_answer": ""
+        }
+    },
+    "162": {
+        "text": {
+            "answers": {
+                "qid_1": "machine not in my learning experience",
+                "qid_2": "it's matter of time, from where I came",
+                "qid_3": "nothing dude",
+                "qid_4": "machine learning is to understand patterns"
+            },
+            "combined_answer": ". machine not in my learning experience. it's matter of time, from where I came. nothing dude. machine learning is to understand patterns"
+        },
+        "speech": {
+            "answers": {},
+            "combined_answer": ""
+        }
     }
 }

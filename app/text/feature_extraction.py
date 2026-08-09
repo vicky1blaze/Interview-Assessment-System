@@ -3,7 +3,7 @@ from text.preprocessing import remove_punctuation, stop_words
 from filler_words import filler_words
 from nltk.sentiment import SentimentIntensityAnalyzer
 from collections import Counter
-import math
+import math, numpy as np
 
 sia = SentimentIntensityAnalyzer()
 
@@ -114,3 +114,114 @@ def extract_features_tfidf(candidate_id, corpus):
             corpus[candidate_id]["tfidf"][doc][term] = tfidf
 
     return corpus
+
+def cosine_similarity(vec1, vec2):
+
+    # Step 1: Get all unique words
+    all_words = set(vec1.keys()).union(set(vec2.keys()))
+    
+    # Step 2: Create aligned vectors
+    v1 = []
+    v2 = []
+    
+    for word in all_words:
+        v1.append(vec1.get(word, 0))
+        v2.append(vec2.get(word, 0))
+    
+    # Step 3: Dot product
+    dot_product = sum(a * b for a, b in zip(v1, v2))
+    
+    # Step 4: Magnitudes
+    mag1 = math.sqrt(sum(a * a for a in v1))
+    mag2 = math.sqrt(sum(b * b for b in v2))
+    
+    # Step 5: Avoid division by zero
+    if mag1 == 0 or mag2 == 0:
+        return 0.0
+    
+    # Step 6: Cosine similarity
+    return dot_product / (mag1 * mag2)
+
+def compute_relevance(question_vec, answer_vec, similarity):
+    if similarity == 0:
+        similarity = cosine_similarity(question_vec, answer_vec)
+
+    # Optional interpretation layer
+    if similarity > 0.7:
+        level = "High"
+    elif similarity > 0.4:
+        level = "Moderate"
+    else:
+        level = "Low"
+    
+    return {
+        "score": round(similarity, 4),
+        "level": level
+    }
+
+def compute_overall_relevance(corpus, candidate_id):
+    scores = []
+
+    for qid in corpus[candidate_id]["relevance_score"]["question_wise"].keys():
+        scores.append(corpus[candidate_id]["relevance_score"]["question_wise"][qid]["score"])
+
+    final_score = np.mean(scores)
+
+    corpus[candidate_id]["relevance_score"]["overall_score"] = compute_relevance(0, 0, final_score)
+
+    return corpus
+
+
+def compute_coverage(question_tokens, answer_tokens):
+    if not question_tokens:
+            return {
+                "score": 0.0,
+                "matched": [],
+                "missing": []
+            }
+
+    
+    q_set = set(question_tokens)
+    a_set = set(answer_tokens)
+
+    matched = q_set.intersection(a_set)
+    missing = q_set - a_set
+
+    score = round(len(matched) / len(q_set), 4)
+
+    return{
+        "score": score,
+        "matched": list(matched),
+        "missing": list(missing)
+    }
+
+def compute_overall_coverage(similarity, coverage, w_sim=0.6, w_cov=0.4):
+    final_score = round((w_sim * similarity) + (w_cov * coverage), 4)
+
+    if final_score > 0.7:
+        level = "High"
+    elif final_score > 0.5:
+        level = "Moderate"
+    elif final_score > 0.3:
+        level = "Low"
+
+    return {
+        "score": final_score,
+        "level": level
+    }
+
+def evalute_candidate(corpus, candidate_id):
+    for qid, data_vec in corpus[candidate_id]["tfidf"].items():
+                qid_vec = question_tfidf["tfidf"][qid]
+    
+                if qid not in corpus[candidate_id]["lexical_semantic_score"]:
+                    corpus[candidate_id]["lexical_semantic_score"]["similarity"][qid] = {}
+                    corpus[candidate_id]["lexical_semantic_score"]["coverage"][qid] = {}
+    
+                corpus[candidate_id]["lexical_semantic_score"]["similarity"][qid] = compute_relevance(data_vec, qid_vec, 0)
+                corpus[candidate_id]["lexical_semantic_score"]["coverage"][qid] = compute_coverage(qid_vec.keys(), data_vec.keys())
+
+            compute_overall_coverage()
+            corpus = compute_overall_relevance(corpus, candidate_id)
+
+

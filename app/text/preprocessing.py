@@ -78,10 +78,10 @@ def preprocess(raw_text):
     # Filler word removal
     tokens = remove_filler(tokens)
 
-    # Stop word removal        
-    tokens = remove_stop_words(tokens)
-
     # POS Tagging and Lemmitization
-    lemma = pos_tag_lemmatize(tokens)
+    tokens = pos_tag_lemmatize(tokens)
+
+    # Stop word removal        
+    lemma = remove_stop_words(tokens)
 
     return lemma

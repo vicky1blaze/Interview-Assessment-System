@@ -1,0 +1,71 @@
+{
+    "questions": {
+        "qid_1": "What is your machine learning full name?",
+        "qid_2": "Where are you from machine learning?",
+        "qid_3": "What do you like to do in your full free time?",
+        "qid_4": "What is Machine learning?"
+    },
+    "lemmas": {
+        "qid_1": [
+            "machine",
+            "learn",
+            "full",
+            "name"
+        ],
+        "qid_2": [
+            "machine",
+            "learning"
+        ],
+        "qid_3": [
+            "full",
+            "free",
+            "time"
+        ],
+        "qid_4": [
+            "machine",
+            "learn"
+        ]
+    },
+    "bow": {
+        "qid_1": {
+            "machine": 1,
+            "learn": 1,
+            "full": 1,
+            "name": 1
+        },
+        "qid_2": {
+            "machine": 1,
+            "learning": 1
+        },
+        "qid_3": {
+            "full": 1,
+            "free": 1,
+            "time": 1
+        },
+        "qid_4": {
+            "machine": 1,
+            "learn": 1
+        }
+    },
+    "tfidf": {
+        "qid_1": {
+            "machine": 0.0312,
+            "learn": 0.0753,
+            "full": 0.0753,
+            "name": 0.1505
+        },
+        "qid_2": {
+            "machine": 0.0625,
+            "learning": 0.301
+        },
+        "qid_3": {
+            "full": 0.1003,
+            "free": 0.2007,
+            "time": 0.2007
+        },
+        "qid_4": {
+            "machine": 0.0625,
+            "learn": 0.1505
+        }
+    }
+}

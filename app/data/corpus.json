@@ -1,19 +1,19 @@
 {
     "100": {
         "lemmas": {
-            "doc_1": [
+            "qid_1": [
                 "vicky",
                 "parate",
                 "gooding",
                 "mood"
             ],
-            "doc_2": [
+            "qid_2": [
                 "application",
                 "determine",
                 "good",
                 "parate"
             ],
-            "doc_3": [
+            "qid_3": [
                 "make",
                 "sure",
                 "python",
@@ -24,19 +24,19 @@
             ]
         },
         "bow": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 1,
                 "parate": 1,
                 "gooding": 1,
                 "mood": 1
             },
-            "doc_2": {
+            "qid_2": {
                 "application": 1,
                 "determine": 1,
                 "good": 1,
                 "parate": 1
             },
-            "doc_3": {
+            "qid_3": {
                 "make": 1,
                 "sure": 1,
                 "python": 2,
@@ -46,19 +46,19 @@
             }
         },
         "tfidf": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 0.1193,
                 "parate": 0.044,
                 "gooding": 0.1193,
                 "mood": 0.1193
             },
-            "doc_2": {
+            "qid_2": {
                 "application": 0.1193,
                 "determine": 0.1193,
                 "good": 0.1193,
                 "parate": 0.044
             },
-            "doc_3": {
+            "qid_3": {
                 "make": 0.0682,
                 "sure": 0.0682,
                 "python": 0.1363,
@@ -70,47 +70,47 @@
     },
     "215": {
         "lemmas": {
-            "doc_1": [
+            "qid_1": [
                 "vicky",
                 "parate",
                 "parate"
             ],
-            "doc_2": [
+            "qid_2": [
                 "vicky",
                 "kishor"
             ],
-            "doc_3": [
+            "qid_3": [
                 "nothing"
             ]
         },
         "bow": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 1,
                 "parate": 2
             },
-            "doc_2": {
+            "qid_2": {
                 "vicky": 1,
                 "kishor": 1
             },
-            "doc_3": {
+            "qid_3": {
                 "nothing": 1
             }
         },
         "tfidf": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 0.0587,
                 "parate": 0.3181
             },
-            "doc_2": {
+            "qid_2": {
                 "vicky": 0.088,
                 "kishor": 0.2386
             },
-            "doc_3": {
+            "qid_3": {
                 "nothing": 0.4771
             }
         },
         "statistics": {
-            "doc_1": {
+            "qid_1": {
                 "word_count": 3,
                 "sentence_count": 1,
                 "average_sentence_length": 3.0,
@@ -127,7 +127,7 @@
                 ],
                 "no_punctuation_tokens_count": 3
             },
-            "doc_2": {
+            "qid_2": {
                 "word_count": 2,
                 "sentence_count": 1,
                 "average_sentence_length": 2.0,
@@ -143,7 +143,7 @@
                 ],
                 "no_punctuation_tokens_count": 2
             },
-            "doc_3": {
+            "qid_3": {
                 "word_count": 1,
                 "sentence_count": 1,
                 "average_sentence_length": 1.0,
@@ -160,19 +160,19 @@
             }
         },
         "sentiment": {
-            "doc_1": {
+            "qid_1": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
                 "compound": 0.0
             },
-            "doc_2": {
+            "qid_2": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
                 "compound": 0.0
             },
-            "doc_3": {
+            "qid_3": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
@@ -182,52 +182,52 @@
     },
     "315": {
         "lemmas": {
-            "doc_1": [
+            "qid_1": [
                 "vicky",
                 "parate"
             ],
-            "doc_2": [
+            "qid_2": [
                 "nowhere",
                 "find"
             ],
-            "doc_3": [
+            "qid_3": [
                 "also",
                 "n't",
                 "knosw"
             ]
         },
         "bow": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 1,
                 "parate": 1
             },
-            "doc_2": {
+            "qid_2": {
                 "nowhere": 1,
                 "find": 1
             },
-            "doc_3": {
+            "qid_3": {
                 "also": 1,
                 "n't": 1,
                 "knosw": 1
             }
         },
         "tfidf": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 0.2386,
                 "parate": 0.2386
             },
-            "doc_2": {
+            "qid_2": {
                 "nowhere": 0.2386,
                 "find": 0.2386
             },
-            "doc_3": {
+            "qid_3": {
                 "also": 0.159,
                 "n't": 0.159,
                 "knosw": 0.159
             }
         },
         "statistics": {
-            "doc_1": {
+            "qid_1": {
                 "word_count": 4,
                 "sentence_count": 1,
                 "average_sentence_length": 4.0,
@@ -244,7 +244,7 @@
                 ],
                 "no_punctuation_tokens_count": 3
             },
-            "doc_2": {
+            "qid_2": {
                 "word_count": 4,
                 "sentence_count": 1,
                 "average_sentence_length": 4.0,
@@ -262,7 +262,7 @@
                 ],
                 "no_punctuation_tokens_count": 4
             },
-            "doc_3": {
+            "qid_3": {
                 "word_count": 5,
                 "sentence_count": 1,
                 "average_sentence_length": 5.0,
@@ -283,19 +283,19 @@
             }
         },
         "sentiment": {
-            "doc_1": {
+            "qid_1": {
                 "neg": 0.0,
                 "neu": 0.476,
                 "pos": 0.524,
                 "compound": 0.296
             },
-            "doc_2": {
+            "qid_2": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
                 "compound": 0.0
             },
-            "doc_3": {
+            "qid_3": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
@@ -305,45 +305,45 @@
     },
     "415": {
         "lemmas": {
-            "doc_1": [
+            "qid_1": [
                 "vicky",
                 "parate"
             ],
-            "doc_2": [
+            "qid_2": [
                 "nowhere",
                 "find"
             ],
-            "doc_3": [
+            "qid_3": [
                 "also",
                 "n't",
                 "knosw"
             ]
         },
         "bow": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 1,
                 "parate": 1
             },
-            "doc_2": {
+            "qid_2": {
                 "nowhere": 1,
                 "find": 1
             },
-            "doc_3": {
+            "qid_3": {
                 "also": 1,
                 "n't": 1,
                 "knosw": 1
             }
         },
         "tfidf": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 0.2386,
                 "parate": 0.2386
             },
-            "doc_2": {
+            "qid_2": {
                 "nowhere": 0.2386,
                 "find": 0.2386
             },
-            "doc_3": {
+            "qid_3": {
                 "also": 0.159,
                 "n't": 0.159,
                 "knosw": 0.159
@@ -351,19 +351,19 @@
         },
         "statistics": {},
         "sentiment": {
-            "doc_1": {
+            "qid_1": {
                 "neg": 0.0,
                 "neu": 0.476,
                 "pos": 0.524,
                 "compound": 0.296
             },
-            "doc_2": {
+            "qid_2": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
                 "compound": 0.0
             },
-            "doc_3": {
+            "qid_3": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
@@ -373,45 +373,45 @@
     },
     "515": {
         "lemmas": {
-            "doc_1": [
+            "qid_1": [
                 "vicky",
                 "parate"
             ],
-            "doc_2": [
+            "qid_2": [
                 "nowhere",
                 "find"
             ],
-            "doc_3": [
+            "qid_3": [
                 "also",
                 "n't",
                 "knosw"
             ]
         },
         "bow": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 1,
                 "parate": 1
             },
-            "doc_2": {
+            "qid_2": {
                 "nowhere": 1,
                 "find": 1
             },
-            "doc_3": {
+            "qid_3": {
                 "also": 1,
                 "n't": 1,
                 "knosw": 1
             }
         },
         "tfidf": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 0.2386,
                 "parate": 0.2386
             },
-            "doc_2": {
+            "qid_2": {
                 "nowhere": 0.2386,
                 "find": 0.2386
             },
-            "doc_3": {
+            "qid_3": {
                 "also": 0.159,
                 "n't": 0.159,
                 "knosw": 0.159
@@ -419,19 +419,19 @@
         },
         "statistics": {},
         "sentiment": {
-            "doc_1": {
+            "qid_1": {
                 "neg": 0.0,
                 "neu": 0.476,
                 "pos": 0.524,
                 "compound": 0.296
             },
-            "doc_2": {
+            "qid_2": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
                 "compound": 0.0
             },
-            "doc_3": {
+            "qid_3": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
@@ -441,45 +441,45 @@
     },
     "615": {
         "lemmas": {
-            "doc_1": [
+            "qid_1": [
                 "vicky",
                 "parate"
             ],
-            "doc_2": [
+            "qid_2": [
                 "nowhere",
                 "find"
             ],
-            "doc_3": [
+            "qid_3": [
                 "also",
                 "n't",
                 "knosw"
             ]
         },
         "bow": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 1,
                 "parate": 1
             },
-            "doc_2": {
+            "qid_2": {
                 "nowhere": 1,
                 "find": 1
             },
-            "doc_3": {
+            "qid_3": {
                 "also": 1,
                 "n't": 1,
                 "knosw": 1
             }
         },
         "tfidf": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 0.2386,
                 "parate": 0.2386
             },
-            "doc_2": {
+            "qid_2": {
                 "nowhere": 0.2386,
                 "find": 0.2386
             },
-            "doc_3": {
+            "qid_3": {
                 "also": 0.159,
                 "n't": 0.159,
                 "knosw": 0.159
@@ -487,19 +487,19 @@
         },
         "statistics": {},
         "sentiment": {
-            "doc_1": {
+            "qid_1": {
                 "neg": 0.0,
                 "neu": 0.476,
                 "pos": 0.524,
                 "compound": 0.296
             },
-            "doc_2": {
+            "qid_2": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
                 "compound": 0.0
             },
-            "doc_3": {
+            "qid_3": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
@@ -509,45 +509,45 @@
     },
     "715": {
         "lemmas": {
-            "doc_1": [
+            "qid_1": [
                 "vicky",
                 "parate"
             ],
-            "doc_2": [
+            "qid_2": [
                 "nowhere",
                 "find"
             ],
-            "doc_3": [
+            "qid_3": [
                 "also",
                 "n't",
                 "knosw"
             ]
         },
         "bow": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 1,
                 "parate": 1
             },
-            "doc_2": {
+            "qid_2": {
                 "nowhere": 1,
                 "find": 1
             },
-            "doc_3": {
+            "qid_3": {
                 "also": 1,
                 "n't": 1,
                 "knosw": 1
             }
         },
         "tfidf": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 0.2386,
                 "parate": 0.2386
             },
-            "doc_2": {
+            "qid_2": {
                 "nowhere": 0.2386,
                 "find": 0.2386
             },
-            "doc_3": {
+            "qid_3": {
                 "also": 0.159,
                 "n't": 0.159,
                 "knosw": 0.159
@@ -555,19 +555,19 @@
         },
         "statistics": {},
         "sentiment": {
-            "doc_1": {
+            "qid_1": {
                 "neg": 0.0,
                 "neu": 0.476,
                 "pos": 0.524,
                 "compound": 0.296
             },
-            "doc_2": {
+            "qid_2": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
                 "compound": 0.0
             },
-            "doc_3": {
+            "qid_3": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
@@ -577,45 +577,45 @@
     },
     "815": {
         "lemmas": {
-            "doc_1": [
+            "qid_1": [
                 "vicky",
                 "parate"
             ],
-            "doc_2": [
+            "qid_2": [
                 "nowhere",
                 "find"
             ],
-            "doc_3": [
+            "qid_3": [
                 "also",
                 "n't",
                 "knosw"
             ]
         },
         "bow": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 1,
                 "parate": 1
             },
-            "doc_2": {
+            "qid_2": {
                 "nowhere": 1,
                 "find": 1
             },
-            "doc_3": {
+            "qid_3": {
                 "also": 1,
                 "n't": 1,
                 "knosw": 1
             }
         },
         "tfidf": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 0.2386,
                 "parate": 0.2386
             },
-            "doc_2": {
+            "qid_2": {
                 "nowhere": 0.2386,
                 "find": 0.2386
             },
-            "doc_3": {
+            "qid_3": {
                 "also": 0.159,
                 "n't": 0.159,
                 "knosw": 0.159
@@ -623,19 +623,19 @@
         },
         "statistics": {},
         "sentiment": {
-            "doc_1": {
+            "qid_1": {
                 "neg": 0.0,
                 "neu": 0.476,
                 "pos": 0.524,
                 "compound": 0.296
             },
-            "doc_2": {
+            "qid_2": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
                 "compound": 0.0
             },
-            "doc_3": {
+            "qid_3": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
@@ -645,45 +645,45 @@
     },
     "915": {
         "lemmas": {
-            "doc_1": [
+            "qid_1": [
                 "vicky",
                 "parate"
             ],
-            "doc_2": [
+            "qid_2": [
                 "nowhere",
                 "find"
             ],
-            "doc_3": [
+            "qid_3": [
                 "also",
                 "n't",
                 "knosw"
             ]
         },
         "bow": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 1,
                 "parate": 1
             },
-            "doc_2": {
+            "qid_2": {
                 "nowhere": 1,
                 "find": 1
             },
-            "doc_3": {
+            "qid_3": {
                 "also": 1,
                 "n't": 1,
                 "knosw": 1
             }
         },
         "tfidf": {
-            "doc_1": {
+            "qid_1": {
                 "vicky": 0.2386,
                 "parate": 0.2386
             },
-            "doc_2": {
+            "qid_2": {
                 "nowhere": 0.2386,
                 "find": 0.2386
             },
-            "doc_3": {
+            "qid_3": {
                 "also": 0.159,
                 "n't": 0.159,
                 "knosw": 0.159
@@ -716,19 +716,19 @@
             "no_punctuation_tokens_count": 12
         },
         "sentiment": {
-            "doc_1": {
+            "qid_1": {
                 "neg": 0.0,
                 "neu": 0.476,
                 "pos": 0.524,
                 "compound": 0.296
             },
-            "doc_2": {
+            "qid_2": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
                 "compound": 0.0
             },
-            "doc_3": {
+            "qid_3": {
                 "neg": 0.0,
                 "neu": 1.0,
                 "pos": 0.0,
@@ -742,5 +742,1193 @@
         "tfidf": {},
         "statistics": {},
         "sentiment": {}
+    },
+    "41": {
+        "lemmas": {
+            "qid_1": [
+                "machine",
+                "learn",
+                "fll",
+                "name"
+            ],
+            "qid_2": [
+                "im",
+                "virar"
+            ],
+            "qid_3": [
+                "full",
+                "free",
+                "time"
+            ],
+            "qid_4": [
+                "nothing"
+            ]
+        },
+        "bow": {
+            "qid_1": {
+                "machine": 1,
+                "learn": 1,
+                "fll": 1,
+                "name": 1
+            },
+            "qid_2": {
+                "im": 1,
+                "virar": 1
+            },
+            "qid_3": {
+                "full": 1,
+                "free": 1,
+                "time": 1
+            },
+            "qid_4": {
+                "nothing": 1
+            }
+        },
+        "tfidf": {
+            "qid_1": {
+                "machine": 0.3729,
+                "learn": 0.3729,
+                "fll": 0.3729,
+                "name": 0.3729
+            },
+            "qid_2": {
+                "im": 0.7457,
+                "virar": 0.7457
+            },
+            "qid_3": {
+                "full": 0.4971,
+                "free": 0.4971,
+                "time": 0.4971
+            },
+            "qid_4": {
+                "nothing": 1.1903
+            }
+        },
+        "statistics": {
+            "word_count": 17,
+            "sentence_count": 5,
+            "average_sentence_length": 3.4,
+            "stop_words_count": 3,
+            "filler_words_count": 0,
+            "stopword_ratio": 0.17647058823529413,
+            "filler_ratio": 0.0,
+            "vocabulary_count": 13,
+            "vocabulary_ratio": 1.0,
+            "no_punctuation_tokens": [
+                "machine",
+                "learning",
+                "is",
+                "my",
+                "fll",
+                "name",
+                "im",
+                "from",
+                "virar",
+                "full",
+                "free",
+                "time",
+                "nothing"
+            ],
+            "no_punctuation_tokens_count": 13
+        },
+        "sentiment": {
+            "qid_1": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_2": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_3": {
+                "neg": 0.0,
+                "neu": 0.377,
+                "pos": 0.623,
+                "compound": 0.5106
+            },
+            "qid_4": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        }
+    },
+    "465": {
+        "lemmas": {
+            "qid_1": [
+                "nothing",
+                "machine",
+                "learning"
+            ],
+            "qid_2": [
+                "'m",
+                "heart",
+                "love"
+            ],
+            "qid_3": [
+                "cod",
+                "free",
+                "time"
+            ],
+            "qid_4": [
+                "machine",
+                "learn",
+                "understand",
+                "complex",
+                "pattern"
+            ]
+        },
+        "bow": {
+            "qid_1": {
+                "nothing": 1,
+                "machine": 1,
+                "learning": 1
+            },
+            "qid_2": {
+                "'m": 1,
+                "heart": 1,
+                "love": 1
+            },
+            "qid_3": {
+                "cod": 1,
+                "free": 1,
+                "time": 1
+            },
+            "qid_4": {
+                "machine": 1,
+                "learn": 1,
+                "understand": 1,
+                "complex": 1,
+                "pattern": 1
+            }
+        },
+        "tfidf": {
+            "qid_1": {
+                "nothing": 0.3556,
+                "machine": 0.3556,
+                "learning": 0.5147
+            },
+            "qid_2": {
+                "'m": 0.5147,
+                "heart": 0.5147,
+                "love": 0.5147
+            },
+            "qid_3": {
+                "cod": 0.5147,
+                "free": 0.4143,
+                "time": 0.4143
+            },
+            "qid_4": {
+                "machine": 0.2134,
+                "learn": 0.2486,
+                "understand": 0.3088,
+                "complex": 0.3088,
+                "pattern": 0.3088
+            }
+        },
+        "statistics": {
+            "word_count": 29,
+            "sentence_count": 5,
+            "average_sentence_length": 5.8,
+            "stop_words_count": 10,
+            "filler_words_count": 1,
+            "stopword_ratio": 0.3448275862068966,
+            "filler_ratio": 0.034482758620689655,
+            "vocabulary_count": 21,
+            "vocabulary_ratio": 0.84,
+            "no_punctuation_tokens": [
+                "nothing",
+                "but",
+                "machine",
+                "learning",
+                "i",
+                "'m",
+                "from",
+                "your",
+                "heart",
+                "my",
+                "love",
+                "coding",
+                "i",
+                "like",
+                "in",
+                "my",
+                "free",
+                "time",
+                "machine",
+                "learning",
+                "is",
+                "to",
+                "understand",
+                "complex",
+                "patterns"
+            ],
+            "no_punctuation_tokens_count": 25
+        },
+        "sentiment": {
+            "qid_1": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_2": {
+                "neg": 0.0,
+                "neu": 0.543,
+                "pos": 0.457,
+                "compound": 0.6369
+            },
+            "qid_3": {
+                "neg": 0.0,
+                "neu": 0.408,
+                "pos": 0.592,
+                "compound": 0.7003
+            },
+            "qid_4": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        }
+    },
+    "964": {
+        "lemmas": {
+            "qid_1": [
+                "nothing",
+                "machine",
+                "learning"
+            ],
+            "qid_2": [
+                "'m",
+                "heart",
+                "love"
+            ],
+            "qid_3": [
+                "cod",
+                "free",
+                "time"
+            ],
+            "qid_4": [
+                "machine",
+                "learn",
+                "understand",
+                "complex",
+                "pattern"
+            ]
+        },
+        "bow": {
+            "qid_1": {
+                "nothing": 1,
+                "machine": 1,
+                "learning": 1
+            },
+            "qid_2": {
+                "'m": 1,
+                "heart": 1,
+                "love": 1
+            },
+            "qid_3": {
+                "cod": 1,
+                "free": 1,
+                "time": 1
+            },
+            "qid_4": {
+                "machine": 1,
+                "learn": 1,
+                "understand": 1,
+                "complex": 1,
+                "pattern": 1
+            }
+        },
+        "tfidf": {
+            "qid_1": {
+                "nothing": 0.3297,
+                "machine": 0.2974,
+                "learning": 0.43
+            },
+            "qid_2": {
+                "'m": 0.43,
+                "heart": 0.43,
+                "love": 0.43
+            },
+            "qid_3": {
+                "cod": 0.43,
+                "free": 0.3713,
+                "time": 0.3713
+            },
+            "qid_4": {
+                "machine": 0.1784,
+                "learn": 0.2228,
+                "understand": 0.258,
+                "complex": 0.258,
+                "pattern": 0.258
+            }
+        },
+        "statistics": {
+            "word_count": 29,
+            "sentence_count": 5,
+            "average_sentence_length": 5.8,
+            "stop_words_count": 10,
+            "filler_words_count": 1,
+            "stopword_ratio": 0.3448275862068966,
+            "filler_ratio": 0.034482758620689655,
+            "vocabulary_count": 21,
+            "vocabulary_ratio": 0.84,
+            "no_punctuation_tokens": [
+                "nothing",
+                "but",
+                "machine",
+                "learning",
+                "i",
+                "'m",
+                "from",
+                "your",
+                "heart",
+                "my",
+                "love",
+                "coding",
+                "i",
+                "like",
+                "in",
+                "my",
+                "free",
+                "time",
+                "machine",
+                "learning",
+                "is",
+                "to",
+                "understand",
+                "complex",
+                "patterns"
+            ],
+            "no_punctuation_tokens_count": 25
+        },
+        "sentiment": {
+            "qid_1": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_2": {
+                "neg": 0.0,
+                "neu": 0.543,
+                "pos": 0.457,
+                "compound": 0.6369
+            },
+            "qid_3": {
+                "neg": 0.0,
+                "neu": 0.408,
+                "pos": 0.592,
+                "compound": 0.7003
+            },
+            "qid_4": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        }
+    },
+    "108": {
+        "lemmas": {
+            "qid_1": [
+                "nothing",
+                "but",
+                "machine",
+                "learning"
+            ],
+            "qid_2": [
+                "i",
+                "'m",
+                "from",
+                "your",
+                "heart",
+                "my",
+                "love"
+            ],
+            "qid_3": [
+                "cod",
+                "i",
+                "in",
+                "my",
+                "free",
+                "time"
+            ],
+            "qid_4": [
+                "machine",
+                "learning",
+                "be",
+                "to",
+                "understand",
+                "complex",
+                "pattern"
+            ]
+        },
+        "bow": {
+            "qid_1": {
+                "nothing": 1,
+                "but": 1,
+                "machine": 1,
+                "learning": 1
+            },
+            "qid_2": {
+                "i": 1,
+                "'m": 1,
+                "from": 1,
+                "your": 1,
+                "heart": 1,
+                "my": 1,
+                "love": 1
+            },
+            "qid_3": {
+                "cod": 1,
+                "i": 1,
+                "in": 1,
+                "my": 1,
+                "free": 1,
+                "time": 1
+            },
+            "qid_4": {
+                "machine": 1,
+                "learning": 1,
+                "be": 1,
+                "to": 1,
+                "understand": 1,
+                "complex": 1,
+                "pattern": 1
+            }
+        },
+        "tfidf": {
+            "qid_1": {
+                "nothing": 0.2336,
+                "but": 0.4084,
+                "machine": 0.1971,
+                "learning": 0.2579
+            },
+            "qid_2": {
+                "i": 0.1903,
+                "'m": 0.1652,
+                "from": 0.2334,
+                "your": 0.2334,
+                "heart": 0.1652,
+                "my": 0.1903,
+                "love": 0.1652
+            },
+            "qid_3": {
+                "cod": 0.1927,
+                "i": 0.2221,
+                "in": 0.2722,
+                "my": 0.2221,
+                "free": 0.1719,
+                "time": 0.1719
+            },
+            "qid_4": {
+                "machine": 0.1126,
+                "learning": 0.1473,
+                "be": 0.2334,
+                "to": 0.2334,
+                "understand": 0.1652,
+                "complex": 0.1652,
+                "pattern": 0.1652
+            }
+        },
+        "statistics": {
+            "word_count": 29,
+            "sentence_count": 5,
+            "average_sentence_length": 5.8,
+            "stop_words_count": 10,
+            "filler_words_count": 1,
+            "stopword_ratio": 0.3448275862068966,
+            "filler_ratio": 0.034482758620689655,
+            "vocabulary_count": 21,
+            "vocabulary_ratio": 0.84,
+            "no_punctuation_tokens": [
+                "nothing",
+                "but",
+                "machine",
+                "learning",
+                "i",
+                "'m",
+                "from",
+                "your",
+                "heart",
+                "my",
+                "love",
+                "coding",
+                "i",
+                "like",
+                "in",
+                "my",
+                "free",
+                "time",
+                "machine",
+                "learning",
+                "is",
+                "to",
+                "understand",
+                "complex",
+                "patterns"
+            ],
+            "no_punctuation_tokens_count": 25
+        },
+        "sentiment": {
+            "qid_1": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_2": {
+                "neg": 0.0,
+                "neu": 0.543,
+                "pos": 0.457,
+                "compound": 0.6369
+            },
+            "qid_3": {
+                "neg": 0.0,
+                "neu": 0.408,
+                "pos": 0.592,
+                "compound": 0.7003
+            },
+            "qid_4": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        }
+    },
+    "110": {
+        "lemmas": {
+            "qid_1": [
+                "nothing",
+                "but",
+                "machine",
+                "learning"
+            ],
+            "qid_2": [
+                "i",
+                "'m",
+                "from",
+                "your",
+                "heart",
+                "my",
+                "love"
+            ],
+            "qid_3": [
+                "cod",
+                "i",
+                "in",
+                "my",
+                "free",
+                "time"
+            ],
+            "qid_4": [
+                "machine",
+                "learning",
+                "be",
+                "to",
+                "understand",
+                "complex",
+                "pattern"
+            ]
+        },
+        "bow": {
+            "qid_1": {
+                "nothing": 1,
+                "but": 1,
+                "machine": 1,
+                "learning": 1
+            },
+            "qid_2": {
+                "i": 1,
+                "'m": 1,
+                "from": 1,
+                "your": 1,
+                "heart": 1,
+                "my": 1,
+                "love": 1
+            },
+            "qid_3": {
+                "cod": 1,
+                "i": 1,
+                "in": 1,
+                "my": 1,
+                "free": 1,
+                "time": 1
+            },
+            "qid_4": {
+                "machine": 1,
+                "learning": 1,
+                "be": 1,
+                "to": 1,
+                "understand": 1,
+                "complex": 1,
+                "pattern": 1
+            }
+        },
+        "tfidf": {
+            "qid_1": {
+                "nothing": 0.2235,
+                "but": 0.3428,
+                "machine": 0.1795,
+                "learning": 0.2235
+            },
+            "qid_2": {
+                "i": 0.1529,
+                "'m": 0.1529,
+                "from": 0.1959,
+                "your": 0.1959,
+                "heart": 0.1529,
+                "my": 0.1529,
+                "love": 0.1529
+            },
+            "qid_3": {
+                "cod": 0.1783,
+                "i": 0.1783,
+                "in": 0.2285,
+                "my": 0.1783,
+                "free": 0.1622,
+                "time": 0.1622
+            },
+            "qid_4": {
+                "machine": 0.1026,
+                "learning": 0.1277,
+                "be": 0.1959,
+                "to": 0.1959,
+                "understand": 0.1529,
+                "complex": 0.1529,
+                "pattern": 0.1529
+            }
+        },
+        "statistics": {
+            "word_count": 29,
+            "sentence_count": 5,
+            "average_sentence_length": 5.8,
+            "stop_words_count": 10,
+            "filler_words_count": 1,
+            "stopword_ratio": 0.3448275862068966,
+            "filler_ratio": 0.034482758620689655,
+            "vocabulary_count": 21,
+            "vocabulary_ratio": 0.84,
+            "no_punctuation_tokens": [
+                "nothing",
+                "but",
+                "machine",
+                "learning",
+                "i",
+                "'m",
+                "from",
+                "your",
+                "heart",
+                "my",
+                "love",
+                "coding",
+                "i",
+                "like",
+                "in",
+                "my",
+                "free",
+                "time",
+                "machine",
+                "learning",
+                "is",
+                "to",
+                "understand",
+                "complex",
+                "patterns"
+            ],
+            "no_punctuation_tokens_count": 25
+        },
+        "sentiment": {
+            "qid_1": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_2": {
+                "neg": 0.0,
+                "neu": 0.543,
+                "pos": 0.457,
+                "compound": 0.6369
+            },
+            "qid_3": {
+                "neg": 0.0,
+                "neu": 0.408,
+                "pos": 0.592,
+                "compound": 0.7003
+            },
+            "qid_4": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        }
+    },
+    "111": {
+        "lemmas": {
+            "qid_1": [
+                "nothing",
+                "machine",
+                "learning"
+            ],
+            "qid_2": [
+                "'m",
+                "heart",
+                "love"
+            ],
+            "qid_3": [
+                "cod",
+                "free",
+                "time"
+            ],
+            "qid_4": [
+                "machine",
+                "learning",
+                "understand",
+                "complex",
+                "pattern"
+            ]
+        },
+        "bow": {
+            "qid_1": {
+                "nothing": 1,
+                "machine": 1,
+                "learning": 1
+            },
+            "qid_2": {
+                "'m": 1,
+                "heart": 1,
+                "love": 1
+            },
+            "qid_3": {
+                "cod": 1,
+                "free": 1,
+                "time": 1
+            },
+            "qid_4": {
+                "machine": 1,
+                "learning": 1,
+                "understand": 1,
+                "complex": 1,
+                "pattern": 1
+            }
+        },
+        "tfidf": {
+            "qid_1": {
+                "nothing": 0.2875,
+                "machine": 0.2221,
+                "learning": 0.2682
+            },
+            "qid_2": {
+                "'m": 0.3362,
+                "heart": 0.3362,
+                "love": 0.3362
+            },
+            "qid_3": {
+                "cod": 0.3362,
+                "free": 0.3098,
+                "time": 0.3098
+            },
+            "qid_4": {
+                "machine": 0.1332,
+                "learning": 0.1609,
+                "understand": 0.2017,
+                "complex": 0.2017,
+                "pattern": 0.2017
+            }
+        },
+        "statistics": {
+            "word_count": 29,
+            "sentence_count": 5,
+            "average_sentence_length": 5.8,
+            "stop_words_count": 10,
+            "filler_words_count": 1,
+            "stopword_ratio": 0.3448275862068966,
+            "filler_ratio": 0.034482758620689655,
+            "vocabulary_count": 21,
+            "vocabulary_ratio": 0.84,
+            "no_punctuation_tokens": [
+                "nothing",
+                "but",
+                "machine",
+                "learning",
+                "i",
+                "'m",
+                "from",
+                "your",
+                "heart",
+                "my",
+                "love",
+                "coding",
+                "i",
+                "like",
+                "in",
+                "my",
+                "free",
+                "time",
+                "machine",
+                "learning",
+                "is",
+                "to",
+                "understand",
+                "complex",
+                "patterns"
+            ],
+            "no_punctuation_tokens_count": 25
+        },
+        "sentiment": {
+            "qid_1": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_2": {
+                "neg": 0.0,
+                "neu": 0.543,
+                "pos": 0.457,
+                "compound": 0.6369
+            },
+            "qid_3": {
+                "neg": 0.0,
+                "neu": 0.408,
+                "pos": 0.592,
+                "compound": 0.7003
+            },
+            "qid_4": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        }
+    },
+    "113": {
+        "lemmas": {
+            "qid_1": [
+                "nothing",
+                "machine",
+                "learning"
+            ],
+            "qid_2": [
+                "'m",
+                "heart",
+                "love"
+            ],
+            "qid_3": [
+                "cod",
+                "free",
+                "time"
+            ],
+            "qid_4": [
+                "machine",
+                "learning",
+                "understand",
+                "complex",
+                "pattern"
+            ]
+        },
+        "bow": {
+            "qid_1": {
+                "nothing": 1,
+                "machine": 1,
+                "learning": 1
+            },
+            "qid_2": {
+                "'m": 1,
+                "heart": 1,
+                "love": 1
+            },
+            "qid_3": {
+                "cod": 1,
+                "free": 1,
+                "time": 1
+            },
+            "qid_4": {
+                "machine": 1,
+                "learning": 1,
+                "understand": 1,
+                "complex": 1,
+                "pattern": 1
+            }
+        },
+        "tfidf": {
+            "qid_1": {
+                "nothing": 0.2791,
+                "machine": 0.2088,
+                "learning": 0.2468
+            },
+            "qid_2": {
+                "'m": 0.3207,
+                "heart": 0.3207,
+                "love": 0.3207
+            },
+            "qid_3": {
+                "cod": 0.3207,
+                "free": 0.2984,
+                "time": 0.2984
+            },
+            "qid_4": {
+                "machine": 0.1253,
+                "learning": 0.1481,
+                "understand": 0.1924,
+                "complex": 0.1924,
+                "pattern": 0.1924
+            }
+        },
+        "statistics": {
+            "word_count": 29,
+            "sentence_count": 5,
+            "average_sentence_length": 5.8,
+            "stop_words_count": 10,
+            "filler_words_count": 1,
+            "stopword_ratio": 0.3448275862068966,
+            "filler_ratio": 0.034482758620689655,
+            "vocabulary_count": 21,
+            "vocabulary_ratio": 0.84,
+            "no_punctuation_tokens": [
+                "nothing",
+                "but",
+                "machine",
+                "learning",
+                "i",
+                "'m",
+                "from",
+                "your",
+                "heart",
+                "my",
+                "love",
+                "coding",
+                "i",
+                "like",
+                "in",
+                "my",
+                "free",
+                "time",
+                "machine",
+                "learning",
+                "is",
+                "to",
+                "understand",
+                "complex",
+                "patterns"
+            ],
+            "no_punctuation_tokens_count": 25
+        },
+        "sentiment": {
+            "qid_1": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_2": {
+                "neg": 0.0,
+                "neu": 0.543,
+                "pos": 0.457,
+                "compound": 0.6369
+            },
+            "qid_3": {
+                "neg": 0.0,
+                "neu": 0.408,
+                "pos": 0.592,
+                "compound": 0.7003
+            },
+            "qid_4": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        },
+        "relevance_score": {
+            "overall_score": {},
+            "question_wise": {
+                "qid_1": {
+                    "score": 0.0816,
+                    "level": "Low"
+                },
+                "qid_2": {
+                    "score": 0.0,
+                    "level": "Low"
+                },
+                "qid_3": {
+                    "score": 0.7507,
+                    "level": "High"
+                },
+                "qid_4": {
+                    "score": 0.1246,
+                    "level": "Low"
+                }
+            }
+        }
+    },
+    "162": {
+        "lemmas": {
+            "qid_1": [
+                "machine",
+                "learning",
+                "experience"
+            ],
+            "qid_2": [
+                "'s",
+                "matter",
+                "time",
+                "come"
+            ],
+            "qid_3": [
+                "nothing",
+                "dude"
+            ],
+            "qid_4": [
+                "machine",
+                "learning",
+                "understand",
+                "pattern"
+            ]
+        },
+        "bow": {
+            "qid_1": {
+                "machine": 1,
+                "learning": 1,
+                "experience": 1
+            },
+            "qid_2": {
+                "'s": 1,
+                "matter": 1,
+                "time": 1,
+                "come": 1
+            },
+            "qid_3": {
+                "nothing": 1,
+                "dude": 1
+            },
+            "qid_4": {
+                "machine": 1,
+                "learning": 1,
+                "understand": 1,
+                "pattern": 1
+            }
+        },
+        "tfidf": {
+            "qid_1": {
+                "machine": 0.1983,
+                "learning": 0.2306,
+                "experience": 0.5903
+            },
+            "qid_2": {
+                "'s": 0.4427,
+                "matter": 0.4427,
+                "time": 0.217,
+                "come": 0.4427
+            },
+            "qid_3": {
+                "nothing": 0.4083,
+                "dude": 0.8854
+            },
+            "qid_4": {
+                "machine": 0.1487,
+                "learning": 0.1729,
+                "understand": 0.2314,
+                "pattern": 0.2314
+            }
+        },
+        "statistics": {
+            "word_count": 28,
+            "sentence_count": 5,
+            "average_sentence_length": 5.6,
+            "stop_words_count": 10,
+            "filler_words_count": 0,
+            "stopword_ratio": 0.35714285714285715,
+            "filler_ratio": 0.0,
+            "vocabulary_count": 21,
+            "vocabulary_ratio": 0.9130434782608695,
+            "no_punctuation_tokens": [
+                "machine",
+                "not",
+                "in",
+                "my",
+                "learning",
+                "experience",
+                "it",
+                "'s",
+                "matter",
+                "of",
+                "time",
+                "from",
+                "where",
+                "i",
+                "came",
+                "nothing",
+                "dude",
+                "machine",
+                "learning",
+                "is",
+                "to",
+                "understand",
+                "patterns"
+            ],
+            "no_punctuation_tokens_count": 23
+        },
+        "sentiment": {
+            "qid_1": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_2": {
+                "neg": 0.0,
+                "neu": 0.845,
+                "pos": 0.155,
+                "compound": 0.0258
+            },
+            "qid_3": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            },
+            "qid_4": {
+                "neg": 0.0,
+                "neu": 1.0,
+                "pos": 0.0,
+                "compound": 0.0
+            }
+        },
+        "relevance_score": {
+            "overall_score": {
+                "score": 0.0482,
+                "level": "Low"
+            },
+            "question_wise": {
+                "qid_1": {
+                    "score": 0.0498,
+                    "level": "Low"
+                },
+                "qid_2": {
+                    "score": 0.0,
+                    "level": "Low"
+                },
+                "qid_3": {
+                    "score": 0.0,
+                    "level": "Low"
+                },
+                "qid_4": {
+                    "score": 0.143,
+                    "level": "Low"
+                }
+            }
+        }
     }
 }

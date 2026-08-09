@@ -1,6 +1,7 @@
 from text.preprocessing import preprocess
 from collections import Counter
 import math
+from dataset import load_data, save_data
 
 questions = {
     "qid_1" : "What is your machine learning full name?",
@@ -9,31 +10,23 @@ questions = {
     "qid_4": "What is Machine learning?"
 }
 
-tokens = {}
+# load_data("data/questions.json")
 
-for qid, question in questions.items():
-    tokens[qid] = preprocess(question)
-
-def questions_bow(tokens):
-    bow = {}
-
-    na = {'token': 0}
-
-    for qid, token in tokens.items():
-        bow[qid] = Counter(token) if token else na
+def questions_bow(token):
+    bow = Counter(token)
 
     return dict(bow) 
 
-def tf_idf(tokens):
+def compute_tf_idf(tokens):
     tf = {}
     df = {}
     idf = {}
     tokens_tf_idf = {}
-    doc_count = len(tokens.keys())
+    doc_count = len(tokens["questions"].keys())
 
     # Compute TF (Locally) =========================================================
 
-    for qid, question in tokens.items():
+    for qid, question in tokens["bow"].items():
         question_length = len(question)
 
         if qid not in tf:
@@ -50,12 +43,34 @@ def tf_idf(tokens):
         idf[term] = math.log10(doc_count / freq)
 
     for qid in tf.keys():
-
-        if qid not in tokens_tf_idf:
-            tokens_tf_idf[qid] = {}
-
         for term, freq in tf[qid].items():
             
-            tokens_tf_idf[qid][term] = round(tf[qid][term] * idf[term], 4)
+            tokens["tfidf"][qid][term] = round(tf[qid][term] * idf[term], 4)
 
-    return tokens_tf_idf
+    return tokens
+
+def questions_tfidf():
+    tokens = {
+        "questions": {},
+        "lemmas": {},
+        "bow": {},
+        "tfidf": {} 
+    }
+
+    for qid, question in questions.items():
+
+        if qid not in tokens:
+            tokens["questions"][qid] = {},
+            tokens["lemmas"][qid] = {},
+            tokens["bow"][qid] = {},
+            tokens["tfidf"][qid] = {}
+
+        tokens["questions"][qid] = question
+        tokens["lemmas"][qid] = preprocess(question)
+        tokens["bow"][qid] = questions_bow(tokens["lemmas"][qid])
+
+    tokens = compute_tf_idf(tokens)
+
+    save_data("data/questions.json", tokens)
+
+    return tokens
