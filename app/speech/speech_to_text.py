@@ -43,14 +43,46 @@ def record(audio_path):
 
     print("Recording saved!\n")
 
-def speech_to_text(audio_path, candidate_data, candidate_id, question_id):
+def speech_to_text(audio_path, candidates_data, corpus_data, candidate_id, question_id):
+    """
+    Transcribe audio and store in the new hierarchy:
+    - candidates_data[candidate_id]["responses"][question_id]["speech"]["transcript"]
+    - corpus_data[candidate_id]["responses"][question_id]["speech"]["transcript"]
+    
+    Also stores audio_path in candidates.
+    """
     segments, info = model.transcribe(audio_path)
 
-    if question_id not in candidate_data[candidate_id]["speech"]["answers"]:
-         candidate_data[candidate_id]["speech"]["answers"][question_id] = ""
-
+    transcript = ""
     for segment in segments:
-            candidate_data[candidate_id]["speech"]["answers"][question_id] += segment.text
-            candidate_data[candidate_id]["speech"]["combined_answer"] += segment.text
+        transcript += segment.text
 
-    return candidate_data
+    # Store in candidates.json
+    if "responses" not in candidates_data["candidates"][candidate_id]:
+        candidates_data["candidates"][candidate_id]["responses"] = {}
+    
+    if question_id not in candidates_data["candidates"][candidate_id]["responses"]:
+        candidates_data["candidates"][candidate_id]["responses"][question_id] = {
+            "text": {"answer": ""},
+            "speech": {"audio_path": None, "transcript": None},
+            "video": {"video_path": None}
+        }
+    
+    candidates_data["candidates"][candidate_id]["responses"][question_id]["speech"]["audio_path"] = audio_path
+    candidates_data["candidates"][candidate_id]["responses"][question_id]["speech"]["transcript"] = transcript
+
+    # Store in corpus.json
+    if "responses" not in corpus_data["corpus"][candidate_id]:
+        corpus_data["corpus"][candidate_id]["responses"] = {}
+    
+    if question_id not in corpus_data["corpus"][candidate_id]["responses"]:
+        corpus_data["corpus"][candidate_id]["responses"][question_id] = {
+            "text": {"processed": {}, "features": {}},
+            "speech": {"transcript": "", "features": {}},
+            "video": {"features": {}},
+            "evaluation": {}
+        }
+
+    corpus_data["corpus"][candidate_id]["responses"][question_id]["speech"]["transcript"] = transcript
+
+    return candidates_data, corpus_data

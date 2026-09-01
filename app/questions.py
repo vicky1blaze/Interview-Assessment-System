@@ -10,8 +10,6 @@ questions = {
     "qid_4": "What is Machine learning?"
 }
 
-# load_data("data/questions.json")
-
 def questions_bow(token):
     bow = Counter(token)
 
@@ -50,7 +48,25 @@ def compute_tf_idf(tokens):
     return tokens
 
 def questions_tfidf():
-    tokens = {
+    """
+    Build questions.json in the new canonical hierarchy:
+    {
+      "questions": {
+        "qid_1": {
+          "metadata": {...},
+          "question": "...",
+          "reference": {
+            "lemmas": [...],
+            "bow": {...},
+            "tfidf": {...},
+            "keywords": [...]
+          }
+        }
+      }
+    }
+    """
+    # First, build the flat structure for TF-IDF computation
+    flat_tokens = {
         "questions": {},
         "lemmas": {},
         "bow": {},
@@ -58,19 +74,41 @@ def questions_tfidf():
     }
 
     for qid, question in questions.items():
+        flat_tokens["questions"][qid] = question
+        flat_tokens["lemmas"][qid] = preprocess(question)
+        flat_tokens["bow"][qid] = questions_bow(flat_tokens["lemmas"][qid])
+        flat_tokens["tfidf"][qid] = {}
 
-        if qid not in tokens:
-            tokens["questions"][qid] = {},
-            tokens["lemmas"][qid] = {},
-            tokens["bow"][qid] = {},
-            tokens["tfidf"][qid] = {}
+    # Compute TF-IDF
+    flat_tokens = compute_tf_idf(flat_tokens)
 
-        tokens["questions"][qid] = question
-        tokens["lemmas"][qid] = preprocess(question)
-        tokens["bow"][qid] = questions_bow(tokens["lemmas"][qid])
+    # Now transform into the new canonical hierarchy
+    canonical_questions = {
+        "questions": {}
+    }
 
-    tokens = compute_tf_idf(tokens)
+    for qid, question in questions.items():
+        canonical_questions["questions"][qid] = {
+            "metadata": {
+                "question_id": qid,
+                "category": None,
+                "difficulty": None
+            },
+            "question": question,
+            "reference": {
+                "lemmas": flat_tokens["lemmas"][qid],
+                "bow": flat_tokens["bow"][qid],
+                "tfidf": flat_tokens["tfidf"][qid],
+                "keywords": flat_tokens["lemmas"][qid]  # keywords are the processed lemmas
+            }
+        }
 
-    save_data("data/questions.json", tokens, "Question set loaded")
+    save_data("data/questions.json", canonical_questions, "Question set loaded")
 
-    return tokens
+    # Return a structure that maintains backward compatibility for internal use
+    return {
+        "questions": canonical_questions["questions"],
+        "lemmas": flat_tokens["lemmas"],
+        "bow": flat_tokens["bow"],
+        "tfidf": flat_tokens["tfidf"]
+    }

@@ -8,13 +8,21 @@ from speech.speech_to_text import record, speech_to_text
 
 def main():
     global corpus, candidate_id
-    # extension = ".wav"
+    extension = ".wav"
 
-    qid_counter = 0
-
-    corpus = load_data("data/corpus.json")
+    corpus_data = load_data("data/corpus.json")
     candidates_data = load_data("data/candidates.json")
     questions_statistics = questions_tfidf()
+
+    # Ensure root-level structure
+    if "corpus" not in corpus_data:
+        corpus_data = {"corpus": {}}
+    if "candidates" not in candidates_data:
+        candidates_data = {"candidates": {}}
+
+    print("█"*60)
+    print("\t\tInterview Assesment System")
+    print("█"*60, "\n")
 
     while True:
         candidate_id = input("\nEnter the Candidate ID (Enter -1 to exit): ").strip()
@@ -22,79 +30,127 @@ def main():
         if candidate_id == "-1":
             break
 
-        if candidate_id not in candidates_data:
-            candidates_data[candidate_id] = {
-                "text": {
-                     "answers": {},
-                     "combined_answer": ""
+        # Initialize candidate in new hierarchy if not exists
+        if candidate_id not in candidates_data["candidates"]:
+            candidates_data["candidates"][candidate_id] = {
+                "metadata": {
+                    "candidate_id": candidate_id,
+                    "created_at": None
                 },
-                "speech": {
-                     "answers": {},
-                     "combined_answer": ""
+                "responses": {}
+            }
+
+        if candidate_id not in corpus_data["corpus"]:
+            corpus_data["corpus"][candidate_id] = {
+                "metadata": {
+                    "candidate_id": candidate_id
+                },
+                "responses": {},
+                "overall": {
+                    "text": {"features": {"statistics": {}, "sentiment": {}}},
+                    "speech": {"features": {}},
+                    "video": {"features": {}},
+                    "evaluation": {"semantic": {}, "lexical": {}, "rule_based": {}},
+                    "fusion": {"features": {}}
                 }
             }
 
-        if candidate_id not in corpus:
-                corpus[candidate_id] = {
-                    "lemmas": {},
-                    "bow": {},
-                    "tfidf":{},
-                    "statistics": {},
-                    "sentiment": {},
-                    "lexical_semantic_score": {
-                        "similarity": {},
-                        "coverage": {},
-                        "final": {}
-                    }
-                }
-
         Q = 1
+
+        combined_answer_text = ""
+
+        # Select answer mode: Text/Speech
+
+        mode_of_answer = int(input("Select the mode of answer: \n 1. Text \n 2. Speech \nEnter Choice: "))
+
+        if mode_of_answer == 1:
+            text_mode = True
+            print("\nLog: Initializing text mode")
+        else:
+            text_mode = False
+            print("\nLog: Initializing speech mode")
 
         for question_id, question in questions.items():
             print(f"\nQ{Q}: {question}")
-            candidate_answer = input("Answer: ")
 
-            Q += 1
-
+            if text_mode:
+                candidate_answer = input("Answer: ")
+            else:
+                
             # =========================================================================================
-            # Speech Module: If speech enable use this
+            # Speech Module
             # =========================================================================================
 
-            # audio_path = "speech/audio/cid_" + candidate_id + "_" + question_id + extension    
+                audio_path = "speech/audio/cid_" + candidate_id + "_" + question_id + extension    
+                
+                record(audio_path) 
+                candidates_data, corpus_data = speech_to_text(audio_path, candidates_data, corpus_data, candidate_id, question_id)
+                candidate_answer = candidates_data["candidates"][candidate_id]["responses"][question_id]["speech"]["transcript"]
 
-            # record(audio_path) 
-            # candidates_data = speech_to_text(audio_path, candidates_data, candidate_id, question_id)
-            # 
-            # =========================================================================================    
+            Q += 1    
 
-            space = " " if candidates_data[candidate_id]["text"]["combined_answer"].endswith(".") else ". "
-            candidates_data[candidate_id]["text"]["combined_answer"] += space + candidate_answer
+            # Add to combined answer for overall statistics
+            space = " " if combined_answer_text.endswith(".") else ". "
+            combined_answer_text += space + candidate_answer
 
-            qid_counter += 1
-            qid_key = f"qid_{qid_counter}"
+            # Store answer in candidates.json under new hierarchy
+            candidates_data["candidates"][candidate_id]["responses"][question_id] = {
+                "text": {
+                    "answer": candidate_answer
+                },
+                "speech": {
+                    "audio_path": None,
+                    "transcript": None
+                },
+                "video": {
+                    "video_path": None
+                }
+            }
 
-            candidates_data[candidate_id]["text"]["answers"][question_id] = candidate_answer
-
+            # Process answer and store in corpus under new hierarchy
             lemma = preprocess(candidate_answer)
-            corpus[candidate_id]["lemmas"][qid_key] = lemma
             
-            sentiment_score = extract_features_sentiment(candidate_answer) # Re-think on Sentiment
-            corpus[candidate_id]["sentiment"][qid_key] = sentiment_score
+            corpus_data["corpus"][candidate_id]["responses"][question_id] = {
+                "text": {
+                    "processed": {
+                        "lemmas": lemma,
+                        "bow": extract_features_bow(lemma),
+                        "tfidf": {}
+                    },
+                    "features": {
+                        "statistics": extract_features_statistics(candidate_answer),
+                        "sentiment": extract_features_sentiment(candidate_answer)
+                    }
+                },
+                "speech": {
+                    "transcript": "",
+                    "features": {}
+                },
+                "video": {
+                    "features": {}
+                },
+                "evaluation": {}
+            }
 
-            bow = extract_features_bow(lemma)
-            corpus[candidate_id]["bow"][qid_key] = bow
+        # Compute TF-IDF for all responses
+        corpus_data["corpus"] = extract_features_tfidf(candidate_id, corpus_data["corpus"])
 
-        corpus = extract_features_tfidf(candidate_id, corpus)
+        # Evaluate candidate against questions
+        corpus_data["corpus"] = evaluate_candidate(corpus_data["corpus"], questions_statistics, candidate_id)
 
-        corpus = evaluate_candidate(corpus, questions_statistics, candidate_id)
+        # Compute overall statistics from combined answer
+        overall_stats = extract_features_statistics(combined_answer_text)
+        corpus_data["corpus"][candidate_id]["overall"]["text"]["features"]["statistics"] = overall_stats
+        
+        # Compute overall sentiment from combined answer
+        overall_sentiment = extract_features_sentiment(combined_answer_text)
+        corpus_data["corpus"][candidate_id]["overall"]["text"]["features"]["sentiment"] = overall_sentiment
 
-        features = extract_features_statistics(candidates_data, candidate_id)
-        corpus[candidate_id]["statistics"] = features
-
+    # Save with new structure
     save_data("data/candidates.json", candidates_data, "Saved Candidate Data")
-    save_data("data/corpus.json", corpus, "Saved Candidate Stats")
+    save_data("data/corpus.json", corpus_data, "Saved Candidate Stats")
+    
+    # feedback(candidate_id, corpus_data)
 
 if __name__ == "__main__":
     main()
-
-# # feedback(candidate_id, corpus)

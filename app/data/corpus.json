@@ -1,2593 +1,840 @@
 {
-    "100": {
-        "lemmas": {
-            "qid_1": [
-                "vicky",
-                "parate",
-                "gooding",
-                "mood"
-            ],
-            "qid_2": [
-                "application",
-                "determine",
-                "good",
-                "parate"
-            ],
-            "qid_3": [
-                "make",
-                "sure",
-                "python",
-                "python",
-                "feel",
-                "since",
-                "know"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "vicky": 1,
-                "parate": 1,
-                "gooding": 1,
-                "mood": 1
-            },
-            "qid_2": {
-                "application": 1,
-                "determine": 1,
-                "good": 1,
-                "parate": 1
-            },
-            "qid_3": {
-                "make": 1,
-                "sure": 1,
-                "python": 2,
-                "feel": 1,
-                "since": 1,
-                "know": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "vicky": 0.1193,
-                "parate": 0.044,
-                "gooding": 0.1193,
-                "mood": 0.1193
-            },
-            "qid_2": {
-                "application": 0.1193,
-                "determine": 0.1193,
-                "good": 0.1193,
-                "parate": 0.044
-            },
-            "qid_3": {
-                "make": 0.0682,
-                "sure": 0.0682,
-                "python": 0.1363,
-                "feel": 0.0682,
-                "since": 0.0682,
-                "know": 0.0682
-            }
-        }
-    },
-    "215": {
-        "lemmas": {
-            "qid_1": [
-                "vicky",
-                "parate",
-                "parate"
-            ],
-            "qid_2": [
-                "vicky",
-                "kishor"
-            ],
-            "qid_3": [
-                "nothing"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "vicky": 1,
-                "parate": 2
-            },
-            "qid_2": {
-                "vicky": 1,
-                "kishor": 1
-            },
-            "qid_3": {
-                "nothing": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "vicky": 0.0587,
-                "parate": 0.3181
-            },
-            "qid_2": {
-                "vicky": 0.088,
-                "kishor": 0.2386
-            },
-            "qid_3": {
-                "nothing": 0.4771
-            }
-        },
-        "statistics": {
-            "qid_1": {
-                "word_count": 3,
-                "sentence_count": 1,
-                "average_sentence_length": 3.0,
-                "stop_words_count": 0,
-                "filler_words_count": 0,
-                "stopword_ratio": 0.0,
-                "filler_ratio": 0.0,
-                "vocabulary_count": 2,
-                "vocabulary_ratio": 0.6666666666666666,
-                "no_punctuation_tokens": [
-                    "vicky",
-                    "parate",
-                    "parate"
-                ],
-                "no_punctuation_tokens_count": 3
-            },
-            "qid_2": {
-                "word_count": 2,
-                "sentence_count": 1,
-                "average_sentence_length": 2.0,
-                "stop_words_count": 0,
-                "filler_words_count": 0,
-                "stopword_ratio": 0.0,
-                "filler_ratio": 0.0,
-                "vocabulary_count": 2,
-                "vocabulary_ratio": 1.0,
-                "no_punctuation_tokens": [
-                    "vicky",
-                    "kishor"
-                ],
-                "no_punctuation_tokens_count": 2
-            },
-            "qid_3": {
-                "word_count": 1,
-                "sentence_count": 1,
-                "average_sentence_length": 1.0,
-                "stop_words_count": 0,
-                "filler_words_count": 0,
-                "stopword_ratio": 0.0,
-                "filler_ratio": 0.0,
-                "vocabulary_count": 1,
-                "vocabulary_ratio": 1.0,
-                "no_punctuation_tokens": [
-                    "nothing"
-                ],
-                "no_punctuation_tokens_count": 1
-            }
-        },
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        }
-    },
-    "315": {
-        "lemmas": {
-            "qid_1": [
-                "vicky",
-                "parate"
-            ],
-            "qid_2": [
-                "nowhere",
-                "find"
-            ],
-            "qid_3": [
-                "also",
-                "n't",
-                "knosw"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "vicky": 1,
-                "parate": 1
-            },
-            "qid_2": {
-                "nowhere": 1,
-                "find": 1
-            },
-            "qid_3": {
-                "also": 1,
-                "n't": 1,
-                "knosw": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "vicky": 0.2386,
-                "parate": 0.2386
-            },
-            "qid_2": {
-                "nowhere": 0.2386,
-                "find": 0.2386
-            },
-            "qid_3": {
-                "also": 0.159,
-                "n't": 0.159,
-                "knosw": 0.159
-            }
-        },
-        "statistics": {
-            "qid_1": {
-                "word_count": 4,
-                "sentence_count": 1,
-                "average_sentence_length": 4.0,
-                "stop_words_count": 0,
-                "filler_words_count": 1,
-                "stopword_ratio": 0.0,
-                "filler_ratio": 0.25,
-                "vocabulary_count": 3,
-                "vocabulary_ratio": 1.0,
-                "no_punctuation_tokens": [
-                    "vicky",
-                    "parate",
-                    "ok"
-                ],
-                "no_punctuation_tokens_count": 3
-            },
-            "qid_2": {
-                "word_count": 4,
-                "sentence_count": 1,
-                "average_sentence_length": 4.0,
-                "stop_words_count": 2,
-                "filler_words_count": 0,
-                "stopword_ratio": 0.5,
-                "filler_ratio": 0.0,
-                "vocabulary_count": 4,
-                "vocabulary_ratio": 1.0,
-                "no_punctuation_tokens": [
-                    "nowhere",
-                    "to",
-                    "be",
-                    "found"
-                ],
-                "no_punctuation_tokens_count": 4
-            },
-            "qid_3": {
-                "word_count": 5,
-                "sentence_count": 1,
-                "average_sentence_length": 5.0,
-                "stop_words_count": 2,
-                "filler_words_count": 0,
-                "stopword_ratio": 0.4,
-                "filler_ratio": 0.0,
-                "vocabulary_count": 5,
-                "vocabulary_ratio": 1.0,
-                "no_punctuation_tokens": [
-                    "i",
-                    "also",
-                    "do",
-                    "n't",
-                    "knosw"
-                ],
-                "no_punctuation_tokens_count": 5
-            }
-        },
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 0.476,
-                "pos": 0.524,
-                "compound": 0.296
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        }
-    },
-    "415": {
-        "lemmas": {
-            "qid_1": [
-                "vicky",
-                "parate"
-            ],
-            "qid_2": [
-                "nowhere",
-                "find"
-            ],
-            "qid_3": [
-                "also",
-                "n't",
-                "knosw"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "vicky": 1,
-                "parate": 1
-            },
-            "qid_2": {
-                "nowhere": 1,
-                "find": 1
-            },
-            "qid_3": {
-                "also": 1,
-                "n't": 1,
-                "knosw": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "vicky": 0.2386,
-                "parate": 0.2386
-            },
-            "qid_2": {
-                "nowhere": 0.2386,
-                "find": 0.2386
-            },
-            "qid_3": {
-                "also": 0.159,
-                "n't": 0.159,
-                "knosw": 0.159
-            }
-        },
-        "statistics": {},
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 0.476,
-                "pos": 0.524,
-                "compound": 0.296
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        }
-    },
-    "515": {
-        "lemmas": {
-            "qid_1": [
-                "vicky",
-                "parate"
-            ],
-            "qid_2": [
-                "nowhere",
-                "find"
-            ],
-            "qid_3": [
-                "also",
-                "n't",
-                "knosw"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "vicky": 1,
-                "parate": 1
-            },
-            "qid_2": {
-                "nowhere": 1,
-                "find": 1
-            },
-            "qid_3": {
-                "also": 1,
-                "n't": 1,
-                "knosw": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "vicky": 0.2386,
-                "parate": 0.2386
-            },
-            "qid_2": {
-                "nowhere": 0.2386,
-                "find": 0.2386
-            },
-            "qid_3": {
-                "also": 0.159,
-                "n't": 0.159,
-                "knosw": 0.159
-            }
-        },
-        "statistics": {},
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 0.476,
-                "pos": 0.524,
-                "compound": 0.296
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        }
-    },
-    "615": {
-        "lemmas": {
-            "qid_1": [
-                "vicky",
-                "parate"
-            ],
-            "qid_2": [
-                "nowhere",
-                "find"
-            ],
-            "qid_3": [
-                "also",
-                "n't",
-                "knosw"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "vicky": 1,
-                "parate": 1
-            },
-            "qid_2": {
-                "nowhere": 1,
-                "find": 1
-            },
-            "qid_3": {
-                "also": 1,
-                "n't": 1,
-                "knosw": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "vicky": 0.2386,
-                "parate": 0.2386
-            },
-            "qid_2": {
-                "nowhere": 0.2386,
-                "find": 0.2386
-            },
-            "qid_3": {
-                "also": 0.159,
-                "n't": 0.159,
-                "knosw": 0.159
-            }
-        },
-        "statistics": {},
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 0.476,
-                "pos": 0.524,
-                "compound": 0.296
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        }
-    },
-    "715": {
-        "lemmas": {
-            "qid_1": [
-                "vicky",
-                "parate"
-            ],
-            "qid_2": [
-                "nowhere",
-                "find"
-            ],
-            "qid_3": [
-                "also",
-                "n't",
-                "knosw"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "vicky": 1,
-                "parate": 1
-            },
-            "qid_2": {
-                "nowhere": 1,
-                "find": 1
-            },
-            "qid_3": {
-                "also": 1,
-                "n't": 1,
-                "knosw": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "vicky": 0.2386,
-                "parate": 0.2386
-            },
-            "qid_2": {
-                "nowhere": 0.2386,
-                "find": 0.2386
-            },
-            "qid_3": {
-                "also": 0.159,
-                "n't": 0.159,
-                "knosw": 0.159
-            }
-        },
-        "statistics": {},
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 0.476,
-                "pos": 0.524,
-                "compound": 0.296
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        }
-    },
-    "815": {
-        "lemmas": {
-            "qid_1": [
-                "vicky",
-                "parate"
-            ],
-            "qid_2": [
-                "nowhere",
-                "find"
-            ],
-            "qid_3": [
-                "also",
-                "n't",
-                "knosw"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "vicky": 1,
-                "parate": 1
-            },
-            "qid_2": {
-                "nowhere": 1,
-                "find": 1
-            },
-            "qid_3": {
-                "also": 1,
-                "n't": 1,
-                "knosw": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "vicky": 0.2386,
-                "parate": 0.2386
-            },
-            "qid_2": {
-                "nowhere": 0.2386,
-                "find": 0.2386
-            },
-            "qid_3": {
-                "also": 0.159,
-                "n't": 0.159,
-                "knosw": 0.159
-            }
-        },
-        "statistics": {},
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 0.476,
-                "pos": 0.524,
-                "compound": 0.296
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        }
-    },
-    "915": {
-        "lemmas": {
-            "qid_1": [
-                "vicky",
-                "parate"
-            ],
-            "qid_2": [
-                "nowhere",
-                "find"
-            ],
-            "qid_3": [
-                "also",
-                "n't",
-                "knosw"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "vicky": 1,
-                "parate": 1
-            },
-            "qid_2": {
-                "nowhere": 1,
-                "find": 1
-            },
-            "qid_3": {
-                "also": 1,
-                "n't": 1,
-                "knosw": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "vicky": 0.2386,
-                "parate": 0.2386
-            },
-            "qid_2": {
-                "nowhere": 0.2386,
-                "find": 0.2386
-            },
-            "qid_3": {
-                "also": 0.159,
-                "n't": 0.159,
-                "knosw": 0.159
-            }
-        },
-        "statistics": {
-            "word_count": 15,
-            "sentence_count": 3,
-            "average_sentence_length": 5.0,
-            "stop_words_count": 4,
-            "filler_words_count": 0,
-            "stopword_ratio": 0.26666666666666666,
-            "filler_ratio": 0.0,
-            "vocabulary_count": 12,
-            "vocabulary_ratio": 1.0,
-            "no_punctuation_tokens": [
-                "vicky",
-                "parate",
-                "ok.",
-                "nowhere",
-                "to",
-                "be",
-                "found",
-                "i",
-                "also",
-                "do",
-                "n't",
-                "knosw"
-            ],
-            "no_punctuation_tokens_count": 12
-        },
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 0.476,
-                "pos": 0.524,
-                "compound": 0.296
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        }
-    },
-    "874": {
-        "lemmas": {},
-        "bow": {},
-        "tfidf": {},
-        "statistics": {},
-        "sentiment": {}
-    },
-    "41": {
-        "lemmas": {
-            "qid_1": [
-                "machine",
-                "learn",
-                "fll",
-                "name"
-            ],
-            "qid_2": [
-                "im",
-                "virar"
-            ],
-            "qid_3": [
-                "full",
-                "free",
-                "time"
-            ],
-            "qid_4": [
-                "nothing"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "machine": 1,
-                "learn": 1,
-                "fll": 1,
-                "name": 1
-            },
-            "qid_2": {
-                "im": 1,
-                "virar": 1
-            },
-            "qid_3": {
-                "full": 1,
-                "free": 1,
-                "time": 1
-            },
-            "qid_4": {
-                "nothing": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "machine": 0.3729,
-                "learn": 0.3729,
-                "fll": 0.3729,
-                "name": 0.3729
-            },
-            "qid_2": {
-                "im": 0.7457,
-                "virar": 0.7457
-            },
-            "qid_3": {
-                "full": 0.4971,
-                "free": 0.4971,
-                "time": 0.4971
-            },
-            "qid_4": {
-                "nothing": 1.1903
-            }
-        },
-        "statistics": {
-            "word_count": 17,
-            "sentence_count": 5,
-            "average_sentence_length": 3.4,
-            "stop_words_count": 3,
-            "filler_words_count": 0,
-            "stopword_ratio": 0.17647058823529413,
-            "filler_ratio": 0.0,
-            "vocabulary_count": 13,
-            "vocabulary_ratio": 1.0,
-            "no_punctuation_tokens": [
-                "machine",
-                "learning",
-                "is",
-                "my",
-                "fll",
-                "name",
-                "im",
-                "from",
-                "virar",
-                "full",
-                "free",
-                "time",
-                "nothing"
-            ],
-            "no_punctuation_tokens_count": 13
-        },
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 0.377,
-                "pos": 0.623,
-                "compound": 0.5106
-            },
-            "qid_4": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        }
-    },
-    "465": {
-        "lemmas": {
-            "qid_1": [
-                "nothing",
-                "machine",
-                "learning"
-            ],
-            "qid_2": [
-                "'m",
-                "heart",
-                "love"
-            ],
-            "qid_3": [
-                "cod",
-                "free",
-                "time"
-            ],
-            "qid_4": [
-                "machine",
-                "learn",
-                "understand",
-                "complex",
-                "pattern"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "nothing": 1,
-                "machine": 1,
-                "learning": 1
-            },
-            "qid_2": {
-                "'m": 1,
-                "heart": 1,
-                "love": 1
-            },
-            "qid_3": {
-                "cod": 1,
-                "free": 1,
-                "time": 1
-            },
-            "qid_4": {
-                "machine": 1,
-                "learn": 1,
-                "understand": 1,
-                "complex": 1,
-                "pattern": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "nothing": 0.3556,
-                "machine": 0.3556,
-                "learning": 0.5147
-            },
-            "qid_2": {
-                "'m": 0.5147,
-                "heart": 0.5147,
-                "love": 0.5147
-            },
-            "qid_3": {
-                "cod": 0.5147,
-                "free": 0.4143,
-                "time": 0.4143
-            },
-            "qid_4": {
-                "machine": 0.2134,
-                "learn": 0.2486,
-                "understand": 0.3088,
-                "complex": 0.3088,
-                "pattern": 0.3088
-            }
-        },
-        "statistics": {
-            "word_count": 29,
-            "sentence_count": 5,
-            "average_sentence_length": 5.8,
-            "stop_words_count": 10,
-            "filler_words_count": 1,
-            "stopword_ratio": 0.3448275862068966,
-            "filler_ratio": 0.034482758620689655,
-            "vocabulary_count": 21,
-            "vocabulary_ratio": 0.84,
-            "no_punctuation_tokens": [
-                "nothing",
-                "but",
-                "machine",
-                "learning",
-                "i",
-                "'m",
-                "from",
-                "your",
-                "heart",
-                "my",
-                "love",
-                "coding",
-                "i",
-                "like",
-                "in",
-                "my",
-                "free",
-                "time",
-                "machine",
-                "learning",
-                "is",
-                "to",
-                "understand",
-                "complex",
-                "patterns"
-            ],
-            "no_punctuation_tokens_count": 25
-        },
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 0.543,
-                "pos": 0.457,
-                "compound": 0.6369
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 0.408,
-                "pos": 0.592,
-                "compound": 0.7003
-            },
-            "qid_4": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        }
-    },
-    "964": {
-        "lemmas": {
-            "qid_1": [
-                "nothing",
-                "machine",
-                "learning"
-            ],
-            "qid_2": [
-                "'m",
-                "heart",
-                "love"
-            ],
-            "qid_3": [
-                "cod",
-                "free",
-                "time"
-            ],
-            "qid_4": [
-                "machine",
-                "learn",
-                "understand",
-                "complex",
-                "pattern"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "nothing": 1,
-                "machine": 1,
-                "learning": 1
-            },
-            "qid_2": {
-                "'m": 1,
-                "heart": 1,
-                "love": 1
-            },
-            "qid_3": {
-                "cod": 1,
-                "free": 1,
-                "time": 1
-            },
-            "qid_4": {
-                "machine": 1,
-                "learn": 1,
-                "understand": 1,
-                "complex": 1,
-                "pattern": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "nothing": 0.3297,
-                "machine": 0.2974,
-                "learning": 0.43
-            },
-            "qid_2": {
-                "'m": 0.43,
-                "heart": 0.43,
-                "love": 0.43
-            },
-            "qid_3": {
-                "cod": 0.43,
-                "free": 0.3713,
-                "time": 0.3713
-            },
-            "qid_4": {
-                "machine": 0.1784,
-                "learn": 0.2228,
-                "understand": 0.258,
-                "complex": 0.258,
-                "pattern": 0.258
-            }
-        },
-        "statistics": {
-            "word_count": 29,
-            "sentence_count": 5,
-            "average_sentence_length": 5.8,
-            "stop_words_count": 10,
-            "filler_words_count": 1,
-            "stopword_ratio": 0.3448275862068966,
-            "filler_ratio": 0.034482758620689655,
-            "vocabulary_count": 21,
-            "vocabulary_ratio": 0.84,
-            "no_punctuation_tokens": [
-                "nothing",
-                "but",
-                "machine",
-                "learning",
-                "i",
-                "'m",
-                "from",
-                "your",
-                "heart",
-                "my",
-                "love",
-                "coding",
-                "i",
-                "like",
-                "in",
-                "my",
-                "free",
-                "time",
-                "machine",
-                "learning",
-                "is",
-                "to",
-                "understand",
-                "complex",
-                "patterns"
-            ],
-            "no_punctuation_tokens_count": 25
-        },
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 0.543,
-                "pos": 0.457,
-                "compound": 0.6369
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 0.408,
-                "pos": 0.592,
-                "compound": 0.7003
-            },
-            "qid_4": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        }
-    },
-    "108": {
-        "lemmas": {
-            "qid_1": [
-                "nothing",
-                "but",
-                "machine",
-                "learning"
-            ],
-            "qid_2": [
-                "i",
-                "'m",
-                "from",
-                "your",
-                "heart",
-                "my",
-                "love"
-            ],
-            "qid_3": [
-                "cod",
-                "i",
-                "in",
-                "my",
-                "free",
-                "time"
-            ],
-            "qid_4": [
-                "machine",
-                "learning",
-                "be",
-                "to",
-                "understand",
-                "complex",
-                "pattern"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "nothing": 1,
-                "but": 1,
-                "machine": 1,
-                "learning": 1
-            },
-            "qid_2": {
-                "i": 1,
-                "'m": 1,
-                "from": 1,
-                "your": 1,
-                "heart": 1,
-                "my": 1,
-                "love": 1
-            },
-            "qid_3": {
-                "cod": 1,
-                "i": 1,
-                "in": 1,
-                "my": 1,
-                "free": 1,
-                "time": 1
-            },
-            "qid_4": {
-                "machine": 1,
-                "learning": 1,
-                "be": 1,
-                "to": 1,
-                "understand": 1,
-                "complex": 1,
-                "pattern": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "nothing": 0.2336,
-                "but": 0.4084,
-                "machine": 0.1971,
-                "learning": 0.2579
-            },
-            "qid_2": {
-                "i": 0.1903,
-                "'m": 0.1652,
-                "from": 0.2334,
-                "your": 0.2334,
-                "heart": 0.1652,
-                "my": 0.1903,
-                "love": 0.1652
-            },
-            "qid_3": {
-                "cod": 0.1927,
-                "i": 0.2221,
-                "in": 0.2722,
-                "my": 0.2221,
-                "free": 0.1719,
-                "time": 0.1719
-            },
-            "qid_4": {
-                "machine": 0.1126,
-                "learning": 0.1473,
-                "be": 0.2334,
-                "to": 0.2334,
-                "understand": 0.1652,
-                "complex": 0.1652,
-                "pattern": 0.1652
-            }
-        },
-        "statistics": {
-            "word_count": 29,
-            "sentence_count": 5,
-            "average_sentence_length": 5.8,
-            "stop_words_count": 10,
-            "filler_words_count": 1,
-            "stopword_ratio": 0.3448275862068966,
-            "filler_ratio": 0.034482758620689655,
-            "vocabulary_count": 21,
-            "vocabulary_ratio": 0.84,
-            "no_punctuation_tokens": [
-                "nothing",
-                "but",
-                "machine",
-                "learning",
-                "i",
-                "'m",
-                "from",
-                "your",
-                "heart",
-                "my",
-                "love",
-                "coding",
-                "i",
-                "like",
-                "in",
-                "my",
-                "free",
-                "time",
-                "machine",
-                "learning",
-                "is",
-                "to",
-                "understand",
-                "complex",
-                "patterns"
-            ],
-            "no_punctuation_tokens_count": 25
-        },
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 0.543,
-                "pos": 0.457,
-                "compound": 0.6369
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 0.408,
-                "pos": 0.592,
-                "compound": 0.7003
-            },
-            "qid_4": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        }
-    },
-    "110": {
-        "lemmas": {
-            "qid_1": [
-                "nothing",
-                "but",
-                "machine",
-                "learning"
-            ],
-            "qid_2": [
-                "i",
-                "'m",
-                "from",
-                "your",
-                "heart",
-                "my",
-                "love"
-            ],
-            "qid_3": [
-                "cod",
-                "i",
-                "in",
-                "my",
-                "free",
-                "time"
-            ],
-            "qid_4": [
-                "machine",
-                "learning",
-                "be",
-                "to",
-                "understand",
-                "complex",
-                "pattern"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "nothing": 1,
-                "but": 1,
-                "machine": 1,
-                "learning": 1
-            },
-            "qid_2": {
-                "i": 1,
-                "'m": 1,
-                "from": 1,
-                "your": 1,
-                "heart": 1,
-                "my": 1,
-                "love": 1
-            },
-            "qid_3": {
-                "cod": 1,
-                "i": 1,
-                "in": 1,
-                "my": 1,
-                "free": 1,
-                "time": 1
-            },
-            "qid_4": {
-                "machine": 1,
-                "learning": 1,
-                "be": 1,
-                "to": 1,
-                "understand": 1,
-                "complex": 1,
-                "pattern": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "nothing": 0.2235,
-                "but": 0.3428,
-                "machine": 0.1795,
-                "learning": 0.2235
-            },
-            "qid_2": {
-                "i": 0.1529,
-                "'m": 0.1529,
-                "from": 0.1959,
-                "your": 0.1959,
-                "heart": 0.1529,
-                "my": 0.1529,
-                "love": 0.1529
-            },
-            "qid_3": {
-                "cod": 0.1783,
-                "i": 0.1783,
-                "in": 0.2285,
-                "my": 0.1783,
-                "free": 0.1622,
-                "time": 0.1622
-            },
-            "qid_4": {
-                "machine": 0.1026,
-                "learning": 0.1277,
-                "be": 0.1959,
-                "to": 0.1959,
-                "understand": 0.1529,
-                "complex": 0.1529,
-                "pattern": 0.1529
-            }
-        },
-        "statistics": {
-            "word_count": 29,
-            "sentence_count": 5,
-            "average_sentence_length": 5.8,
-            "stop_words_count": 10,
-            "filler_words_count": 1,
-            "stopword_ratio": 0.3448275862068966,
-            "filler_ratio": 0.034482758620689655,
-            "vocabulary_count": 21,
-            "vocabulary_ratio": 0.84,
-            "no_punctuation_tokens": [
-                "nothing",
-                "but",
-                "machine",
-                "learning",
-                "i",
-                "'m",
-                "from",
-                "your",
-                "heart",
-                "my",
-                "love",
-                "coding",
-                "i",
-                "like",
-                "in",
-                "my",
-                "free",
-                "time",
-                "machine",
-                "learning",
-                "is",
-                "to",
-                "understand",
-                "complex",
-                "patterns"
-            ],
-            "no_punctuation_tokens_count": 25
-        },
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 0.543,
-                "pos": 0.457,
-                "compound": 0.6369
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 0.408,
-                "pos": 0.592,
-                "compound": 0.7003
-            },
-            "qid_4": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        }
-    },
-    "111": {
-        "lemmas": {
-            "qid_1": [
-                "nothing",
-                "machine",
-                "learning"
-            ],
-            "qid_2": [
-                "'m",
-                "heart",
-                "love"
-            ],
-            "qid_3": [
-                "cod",
-                "free",
-                "time"
-            ],
-            "qid_4": [
-                "machine",
-                "learning",
-                "understand",
-                "complex",
-                "pattern"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "nothing": 1,
-                "machine": 1,
-                "learning": 1
-            },
-            "qid_2": {
-                "'m": 1,
-                "heart": 1,
-                "love": 1
-            },
-            "qid_3": {
-                "cod": 1,
-                "free": 1,
-                "time": 1
-            },
-            "qid_4": {
-                "machine": 1,
-                "learning": 1,
-                "understand": 1,
-                "complex": 1,
-                "pattern": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "nothing": 0.2875,
-                "machine": 0.2221,
-                "learning": 0.2682
-            },
-            "qid_2": {
-                "'m": 0.3362,
-                "heart": 0.3362,
-                "love": 0.3362
-            },
-            "qid_3": {
-                "cod": 0.3362,
-                "free": 0.3098,
-                "time": 0.3098
-            },
-            "qid_4": {
-                "machine": 0.1332,
-                "learning": 0.1609,
-                "understand": 0.2017,
-                "complex": 0.2017,
-                "pattern": 0.2017
-            }
-        },
-        "statistics": {
-            "word_count": 29,
-            "sentence_count": 5,
-            "average_sentence_length": 5.8,
-            "stop_words_count": 10,
-            "filler_words_count": 1,
-            "stopword_ratio": 0.3448275862068966,
-            "filler_ratio": 0.034482758620689655,
-            "vocabulary_count": 21,
-            "vocabulary_ratio": 0.84,
-            "no_punctuation_tokens": [
-                "nothing",
-                "but",
-                "machine",
-                "learning",
-                "i",
-                "'m",
-                "from",
-                "your",
-                "heart",
-                "my",
-                "love",
-                "coding",
-                "i",
-                "like",
-                "in",
-                "my",
-                "free",
-                "time",
-                "machine",
-                "learning",
-                "is",
-                "to",
-                "understand",
-                "complex",
-                "patterns"
-            ],
-            "no_punctuation_tokens_count": 25
-        },
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 0.543,
-                "pos": 0.457,
-                "compound": 0.6369
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 0.408,
-                "pos": 0.592,
-                "compound": 0.7003
-            },
-            "qid_4": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        }
-    },
-    "113": {
-        "lemmas": {
-            "qid_1": [
-                "nothing",
-                "machine",
-                "learning"
-            ],
-            "qid_2": [
-                "'m",
-                "heart",
-                "love"
-            ],
-            "qid_3": [
-                "cod",
-                "free",
-                "time"
-            ],
-            "qid_4": [
-                "machine",
-                "learning",
-                "understand",
-                "complex",
-                "pattern"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "nothing": 1,
-                "machine": 1,
-                "learning": 1
-            },
-            "qid_2": {
-                "'m": 1,
-                "heart": 1,
-                "love": 1
-            },
-            "qid_3": {
-                "cod": 1,
-                "free": 1,
-                "time": 1
-            },
-            "qid_4": {
-                "machine": 1,
-                "learning": 1,
-                "understand": 1,
-                "complex": 1,
-                "pattern": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "nothing": 0.2791,
-                "machine": 0.2088,
-                "learning": 0.2468
-            },
-            "qid_2": {
-                "'m": 0.3207,
-                "heart": 0.3207,
-                "love": 0.3207
-            },
-            "qid_3": {
-                "cod": 0.3207,
-                "free": 0.2984,
-                "time": 0.2984
-            },
-            "qid_4": {
-                "machine": 0.1253,
-                "learning": 0.1481,
-                "understand": 0.1924,
-                "complex": 0.1924,
-                "pattern": 0.1924
-            }
-        },
-        "statistics": {
-            "word_count": 29,
-            "sentence_count": 5,
-            "average_sentence_length": 5.8,
-            "stop_words_count": 10,
-            "filler_words_count": 1,
-            "stopword_ratio": 0.3448275862068966,
-            "filler_ratio": 0.034482758620689655,
-            "vocabulary_count": 21,
-            "vocabulary_ratio": 0.84,
-            "no_punctuation_tokens": [
-                "nothing",
-                "but",
-                "machine",
-                "learning",
-                "i",
-                "'m",
-                "from",
-                "your",
-                "heart",
-                "my",
-                "love",
-                "coding",
-                "i",
-                "like",
-                "in",
-                "my",
-                "free",
-                "time",
-                "machine",
-                "learning",
-                "is",
-                "to",
-                "understand",
-                "complex",
-                "patterns"
-            ],
-            "no_punctuation_tokens_count": 25
-        },
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 0.543,
-                "pos": 0.457,
-                "compound": 0.6369
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 0.408,
-                "pos": 0.592,
-                "compound": 0.7003
-            },
-            "qid_4": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        },
-        "relevance_score": {
-            "overall_score": {},
-            "question_wise": {
+    "corpus": {
+        "03": {
+            "metadata": {
+                "candidate_id": "03"
+            },
+            "responses": {
                 "qid_1": {
-                    "score": 0.0816,
-                    "level": "Low"
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "uhiujd",
+                                "kshxs",
+                                "olkx"
+                            ],
+                            "bow": {
+                                "uhiujd": 1,
+                                "kshxs": 1,
+                                "olkx": 1
+                            },
+                            "tfidf": {
+                                "uhiujd": 0.2007,
+                                "kshxs": 0.2007,
+                                "olkx": 0.2007
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 3,
+                                "sentence_count": 1,
+                                "average_sentence_length": 3.0,
+                                "stop_words_count": 0,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.0,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 3,
+                                "vocabulary_ratio": 1.0,
+                                "vocabulary_score": 1.0,
+                                "no_punctuation_tokens": [
+                                    "uhiujd",
+                                    "kshxs",
+                                    "olkx"
+                                ],
+                                "no_punctuation_tokens_count": 3
+                            },
+                            "sentiment": {
+                                "neg": 0.0,
+                                "neu": 1.0,
+                                "pos": 0.0,
+                                "compound": 0.0
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "",
+                        "features": {}
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 0.0,
+                                "matched": [],
+                                "missing": [
+                                    "name",
+                                    "learn",
+                                    "full",
+                                    "machine"
+                                ]
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        }
+                    }
                 },
                 "qid_2": {
-                    "score": 0.0,
-                    "level": "Low"
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "oishdsn",
+                                "skchsjc"
+                            ],
+                            "bow": {
+                                "oishdsn": 1,
+                                "skchsjc": 1
+                            },
+                            "tfidf": {
+                                "oishdsn": 0.301,
+                                "skchsjc": 0.301
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 2,
+                                "sentence_count": 1,
+                                "average_sentence_length": 2.0,
+                                "stop_words_count": 0,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.0,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 2,
+                                "vocabulary_ratio": 1.0,
+                                "vocabulary_score": 1.0,
+                                "no_punctuation_tokens": [
+                                    "oishdsn",
+                                    "skchsjc"
+                                ],
+                                "no_punctuation_tokens_count": 2
+                            },
+                            "sentiment": {
+                                "neg": 0.0,
+                                "neu": 1.0,
+                                "pos": 0.0,
+                                "compound": 0.0
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "",
+                        "features": {}
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 0.0,
+                                "matched": [],
+                                "missing": [
+                                    "learning",
+                                    "machine"
+                                ]
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        }
+                    }
                 },
                 "qid_3": {
-                    "score": 0.7507,
-                    "level": "High"
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "isjc",
+                                "skhddi"
+                            ],
+                            "bow": {
+                                "isjc": 1,
+                                "skhddi": 1
+                            },
+                            "tfidf": {
+                                "isjc": 0.301,
+                                "skhddi": 0.301
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 2,
+                                "sentence_count": 1,
+                                "average_sentence_length": 2.0,
+                                "stop_words_count": 0,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.0,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 2,
+                                "vocabulary_ratio": 1.0,
+                                "vocabulary_score": 1.0,
+                                "no_punctuation_tokens": [
+                                    "isjc",
+                                    "skhddi"
+                                ],
+                                "no_punctuation_tokens_count": 2
+                            },
+                            "sentiment": {
+                                "neg": 0.0,
+                                "neu": 1.0,
+                                "pos": 0.0,
+                                "compound": 0.0
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "",
+                        "features": {}
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 0.0,
+                                "matched": [],
+                                "missing": [
+                                    "time",
+                                    "free",
+                                    "full"
+                                ]
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        }
+                    }
                 },
                 "qid_4": {
-                    "score": 0.1246,
-                    "level": "Low"
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "ikshcn",
+                                "oj"
+                            ],
+                            "bow": {
+                                "ikshcn": 1,
+                                "oj": 1
+                            },
+                            "tfidf": {
+                                "ikshcn": 0.301,
+                                "oj": 0.301
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 2,
+                                "sentence_count": 1,
+                                "average_sentence_length": 2.0,
+                                "stop_words_count": 0,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.0,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 2,
+                                "vocabulary_ratio": 1.0,
+                                "vocabulary_score": 1.0,
+                                "no_punctuation_tokens": [
+                                    "ikshcn",
+                                    "oj"
+                                ],
+                                "no_punctuation_tokens_count": 2
+                            },
+                            "sentiment": {
+                                "neg": 0.0,
+                                "neu": 1.0,
+                                "pos": 0.0,
+                                "compound": 0.0
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "",
+                        "features": {}
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 0.0,
+                                "matched": [],
+                                "missing": [
+                                    "machine",
+                                    "learn"
+                                ]
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        }
+                    }
+                }
+            },
+            "overall": {
+                "text": {
+                    "features": {
+                        "statistics": {
+                            "word_count": 13,
+                            "sentence_count": 5,
+                            "average_sentence_length": 2.6,
+                            "stop_words_count": 0,
+                            "filler_words_count": 0,
+                            "stopword_ratio": 0.0,
+                            "filler_ratio": 0.0,
+                            "vocabulary_count": 9,
+                            "vocabulary_ratio": 1.0,
+                            "vocabulary_score": 1.0,
+                            "no_punctuation_tokens": [
+                                "uhiujd",
+                                "kshxs",
+                                "olkx",
+                                "oishdsn",
+                                "skchsjc",
+                                "isjc",
+                                "skhddi",
+                                "ikshcn",
+                                "oj"
+                            ],
+                            "no_punctuation_tokens_count": 9
+                        },
+                        "sentiment": {
+                            "neg": 0.0,
+                            "neu": 1.0,
+                            "pos": 0.0,
+                            "compound": 0.0
+                        }
+                    }
+                },
+                "speech": {
+                    "features": {}
+                },
+                "video": {
+                    "features": {}
+                },
+                "evaluation": {
+                    "semantic": {
+                        "similarity_score": {
+                            "score": 0.0,
+                            "level": "Low"
+                        }
+                    },
+                    "lexical": {
+                        "keyword_coverage": {
+                            "score": 0.0,
+                            "level": "Low"
+                        }
+                    },
+                    "rule_based": {
+                        "combined_score": {
+                            "score": 0.0,
+                            "level": "Low"
+                        }
+                    }
+                },
+                "fusion": {
+                    "features": {}
                 }
             }
-        }
-    },
-    "162": {
-        "lemmas": {
-            "qid_1": [
-                "machine",
-                "learning",
-                "experience"
-            ],
-            "qid_2": [
-                "'s",
-                "matter",
-                "time",
-                "come"
-            ],
-            "qid_3": [
-                "nothing",
-                "dude"
-            ],
-            "qid_4": [
-                "machine",
-                "learning",
-                "understand",
-                "pattern"
-            ]
         },
-        "bow": {
-            "qid_1": {
-                "machine": 1,
-                "learning": 1,
-                "experience": 1
+        "809": {
+            "metadata": {
+                "candidate_id": "809"
             },
-            "qid_2": {
-                "'s": 1,
-                "matter": 1,
-                "time": 1,
-                "come": 1
-            },
-            "qid_3": {
-                "nothing": 1,
-                "dude": 1
-            },
-            "qid_4": {
-                "machine": 1,
-                "learning": 1,
-                "understand": 1,
-                "pattern": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "machine": 0.1983,
-                "learning": 0.2306,
-                "experience": 0.5903
-            },
-            "qid_2": {
-                "'s": 0.4427,
-                "matter": 0.4427,
-                "time": 0.217,
-                "come": 0.4427
-            },
-            "qid_3": {
-                "nothing": 0.4083,
-                "dude": 0.8854
-            },
-            "qid_4": {
-                "machine": 0.1487,
-                "learning": 0.1729,
-                "understand": 0.2314,
-                "pattern": 0.2314
-            }
-        },
-        "statistics": {
-            "word_count": 28,
-            "sentence_count": 5,
-            "average_sentence_length": 5.6,
-            "stop_words_count": 10,
-            "filler_words_count": 0,
-            "stopword_ratio": 0.35714285714285715,
-            "filler_ratio": 0.0,
-            "vocabulary_count": 21,
-            "vocabulary_ratio": 0.9130434782608695,
-            "no_punctuation_tokens": [
-                "machine",
-                "not",
-                "in",
-                "my",
-                "learning",
-                "experience",
-                "it",
-                "'s",
-                "matter",
-                "of",
-                "time",
-                "from",
-                "where",
-                "i",
-                "came",
-                "nothing",
-                "dude",
-                "machine",
-                "learning",
-                "is",
-                "to",
-                "understand",
-                "patterns"
-            ],
-            "no_punctuation_tokens_count": 23
-        },
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 0.845,
-                "pos": 0.155,
-                "compound": 0.0258
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_4": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        },
-        "relevance_score": {
-            "overall_score": {
-                "score": 0.0482,
-                "level": "Low"
-            },
-            "question_wise": {
+            "responses": {
                 "qid_1": {
-                    "score": 0.0498,
-                    "level": "Low"
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "full",
+                                "name",
+                                "machine",
+                                "learn",
+                                "stop",
+                                "recording"
+                            ],
+                            "bow": {
+                                "full": 1,
+                                "name": 1,
+                                "machine": 1,
+                                "learn": 1,
+                                "stop": 1,
+                                "recording": 1
+                            },
+                            "tfidf": {
+                                "full": 0.1505,
+                                "name": 0.1505,
+                                "machine": 0.1505,
+                                "learn": 0.1505,
+                                "stop": 0.1505,
+                                "recording": 0.1505
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 12,
+                                "sentence_count": 1,
+                                "average_sentence_length": 12.0,
+                                "stop_words_count": 4,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.3333333333333333,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 9,
+                                "vocabulary_ratio": 0.9,
+                                "vocabulary_score": 0.9,
+                                "no_punctuation_tokens": [
+                                    "my",
+                                    "my",
+                                    "full",
+                                    "name",
+                                    "is",
+                                    "machine",
+                                    "learning",
+                                    "to",
+                                    "stop",
+                                    "recording"
+                                ],
+                                "no_punctuation_tokens_count": 10
+                            },
+                            "sentiment": {
+                                "neg": 0.196,
+                                "neu": 0.804,
+                                "pos": 0.0,
+                                "compound": -0.296
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "",
+                        "features": {}
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.7255,
+                                "level": "High"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 1.0,
+                                "matched": [
+                                    "learn",
+                                    "full",
+                                    "machine",
+                                    "name"
+                                ],
+                                "missing": []
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.8353,
+                                "level": "High"
+                            }
+                        }
+                    }
                 },
                 "qid_2": {
-                    "score": 0.0,
-                    "level": "Low"
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "make",
+                                "possible",
+                                "thing",
+                                "think"
+                            ],
+                            "bow": {
+                                "make": 1,
+                                "possible": 1,
+                                "thing": 1,
+                                "think": 1
+                            },
+                            "tfidf": {
+                                "make": 0.2258,
+                                "possible": 0.2258,
+                                "thing": 0.2258,
+                                "think": 0.2258
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 11,
+                                "sentence_count": 1,
+                                "average_sentence_length": 11.0,
+                                "stop_words_count": 6,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.5454545454545454,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 10,
+                                "vocabulary_ratio": 1.0,
+                                "vocabulary_score": 1.0,
+                                "no_punctuation_tokens": [
+                                    "making",
+                                    "it",
+                                    "only",
+                                    "possible",
+                                    "for",
+                                    "the",
+                                    "thing",
+                                    "that",
+                                    "i",
+                                    "thought"
+                                ],
+                                "no_punctuation_tokens_count": 10
+                            },
+                            "sentiment": {
+                                "neg": 0.0,
+                                "neu": 1.0,
+                                "pos": 0.0,
+                                "compound": 0.0
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "",
+                        "features": {}
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 0.0,
+                                "matched": [],
+                                "missing": [
+                                    "learning",
+                                    "machine"
+                                ]
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        }
+                    }
                 },
                 "qid_3": {
-                    "score": 0.0,
-                    "level": "Low"
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "know",
+                                "free",
+                                "time"
+                            ],
+                            "bow": {
+                                "know": 1,
+                                "free": 1,
+                                "time": 1
+                            },
+                            "tfidf": {
+                                "know": 0.301,
+                                "free": 0.301,
+                                "time": 0.301
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 12,
+                                "sentence_count": 1,
+                                "average_sentence_length": 12.0,
+                                "stop_words_count": 8,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.6666666666666666,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 9,
+                                "vocabulary_ratio": 0.8181818181818182,
+                                "vocabulary_score": 0.8181818181818182,
+                                "no_punctuation_tokens": [
+                                    "i",
+                                    "do",
+                                    "not",
+                                    "know",
+                                    "what",
+                                    "i",
+                                    "do",
+                                    "in",
+                                    "my",
+                                    "free",
+                                    "time"
+                                ],
+                                "no_punctuation_tokens_count": 11
+                            },
+                            "sentiment": {
+                                "neg": 0.0,
+                                "neu": 0.708,
+                                "pos": 0.292,
+                                "compound": 0.5106
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "",
+                        "features": {}
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.7698,
+                                "level": "High"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 0.6667,
+                                "matched": [
+                                    "free",
+                                    "time"
+                                ],
+                                "missing": [
+                                    "full"
+                                ]
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.7286,
+                                "level": "High"
+                            }
+                        }
+                    }
                 },
                 "qid_4": {
-                    "score": 0.143,
-                    "level": "Low"
-                }
-            }
-        }
-    },
-    "999": {
-        "lemmas": {
-            "qid_1": [
-                "vicky",
-                "machine",
-                "learning",
-                "name"
-            ],
-            "qid_2": [
-                "im",
-                "nowhere",
-                "find"
-            ],
-            "qid_3": [
-                "cod",
-                "full",
-                "free",
-                "time"
-            ],
-            "qid_4": [
-                "understand",
-                "pattern",
-                "help",
-                "prediction"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "vicky": 1,
-                "machine": 1,
-                "learning": 1,
-                "name": 1
-            },
-            "qid_2": {
-                "im": 1,
-                "nowhere": 1,
-                "find": 1
-            },
-            "qid_3": {
-                "cod": 1,
-                "full": 1,
-                "free": 1,
-                "time": 1
-            },
-            "qid_4": {
-                "understand": 1,
-                "pattern": 1,
-                "help": 1,
-                "prediction": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "vicky": 0.1895,
-                "machine": 0.1488,
-                "learning": 0.1714,
-                "name": 0.3746
-            },
-            "qid_2": {
-                "im": 0.4994,
-                "nowhere": 0.2988,
-                "find": 0.2988
-            },
-            "qid_3": {
-                "cod": 0.2386,
-                "full": 0.3746,
-                "free": 0.2241,
-                "time": 0.2113
-            },
-            "qid_4": {
-                "understand": 0.2241,
-                "pattern": 0.2241,
-                "help": 0.4498,
-                "prediction": 0.4498
-            }
-        },
-        "statistics": {
-            "word_count": 34,
-            "sentence_count": 5,
-            "average_sentence_length": 6.8,
-            "stop_words_count": 13,
-            "filler_words_count": 1,
-            "stopword_ratio": 0.38235294117647056,
-            "filler_ratio": 0.029411764705882353,
-            "vocabulary_count": 26,
-            "vocabulary_ratio": 0.896551724137931,
-            "no_punctuation_tokens": [
-                "vicky",
-                "machine",
-                "learning",
-                "is",
-                "my",
-                "name",
-                "im",
-                "from",
-                "nowhere",
-                "to",
-                "be",
-                "found",
-                "i",
-                "like",
-                "to",
-                "do",
-                "coding",
-                "in",
-                "my",
-                "full",
-                "free",
-                "time",
-                "it",
-                "understands",
-                "patterns",
-                "and",
-                "helps",
-                "in",
-                "predictions"
-            ],
-            "no_punctuation_tokens_count": 29
-        },
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 0.547,
-                "pos": 0.453,
-                "compound": 0.7003
-            },
-            "qid_4": {
-                "neg": 0.0,
-                "neu": 0.698,
-                "pos": 0.302,
-                "compound": 0.3818
-            }
-        },
-        "lexical_semantic_score": {
-            "similarity": {
-                "question_wise": {
-                    "qid_1": {
-                        "score": 0.6838,
-                        "level": "Moderate"
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "motion",
+                                "learning",
+                                "study",
+                                "understand",
+                                "pattern"
+                            ],
+                            "bow": {
+                                "motion": 1,
+                                "learning": 1,
+                                "study": 1,
+                                "understand": 1,
+                                "pattern": 1
+                            },
+                            "tfidf": {
+                                "motion": 0.1806,
+                                "learning": 0.1806,
+                                "study": 0.1806,
+                                "understand": 0.1806,
+                                "pattern": 0.1806
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 9,
+                                "sentence_count": 1,
+                                "average_sentence_length": 9.0,
+                                "stop_words_count": 3,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.3333333333333333,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 8,
+                                "vocabulary_ratio": 1.0,
+                                "vocabulary_score": 1.0,
+                                "no_punctuation_tokens": [
+                                    "motion",
+                                    "learning",
+                                    "is",
+                                    "a",
+                                    "study",
+                                    "of",
+                                    "understanding",
+                                    "patterns"
+                                ],
+                                "no_punctuation_tokens_count": 8
+                            },
+                            "sentiment": {
+                                "neg": 0.0,
+                                "neu": 1.0,
+                                "pos": 0.0,
+                                "compound": 0.0
+                            }
+                        }
                     },
-                    "qid_2": {
-                        "score": 0.0,
-                        "level": "Low"
+                    "speech": {
+                        "transcript": "",
+                        "features": {}
                     },
-                    "qid_3": {
-                        "score": 0.768,
-                        "level": "High"
+                    "video": {
+                        "features": {}
                     },
-                    "qid_4": {
-                        "score": 0.0,
-                        "level": "Low"
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 0.0,
+                                "matched": [],
+                                "missing": [
+                                    "learn",
+                                    "machine"
+                                ]
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        }
                     }
-                },
-                "overall": {
-                    "score": 0.363,
-                    "level": "Low"
                 }
             },
-            "coverage": {
-                "question_wise": {
-                    "qid_1": {
-                        "score": 0.5,
-                        "matched": [
-                            "machine",
-                            "name"
-                        ],
-                        "missing": [
-                            "learn",
-                            "full"
-                        ]
-                    },
-                    "qid_2": {
-                        "score": 0.0,
-                        "matched": [],
-                        "missing": [
-                            "machine",
-                            "learning"
-                        ]
-                    },
-                    "qid_3": {
-                        "score": 1.0,
-                        "matched": [
-                            "time",
-                            "full",
-                            "free"
-                        ],
-                        "missing": []
-                    },
-                    "qid_4": {
-                        "score": 0.0,
-                        "matched": [],
-                        "missing": [
-                            "machine",
-                            "learn"
-                        ]
+            "overall": {
+                "text": {
+                    "features": {
+                        "statistics": {
+                            "word_count": 45,
+                            "sentence_count": 5,
+                            "average_sentence_length": 9.0,
+                            "stop_words_count": 21,
+                            "filler_words_count": 0,
+                            "stopword_ratio": 0.4666666666666667,
+                            "filler_ratio": 0.0,
+                            "vocabulary_count": 32,
+                            "vocabulary_ratio": 0.8205128205128205,
+                            "vocabulary_score": 0.8205128205128205,
+                            "no_punctuation_tokens": [
+                                "my",
+                                "my",
+                                "full",
+                                "name",
+                                "is",
+                                "machine",
+                                "learning",
+                                "to",
+                                "stop",
+                                "recording",
+                                "making",
+                                "it",
+                                "only",
+                                "possible",
+                                "for",
+                                "the",
+                                "thing",
+                                "that",
+                                "i",
+                                "thought",
+                                "i",
+                                "do",
+                                "not",
+                                "know",
+                                "what",
+                                "i",
+                                "do",
+                                "in",
+                                "my",
+                                "free",
+                                "time",
+                                "motion",
+                                "learning",
+                                "is",
+                                "a",
+                                "study",
+                                "of",
+                                "understanding",
+                                "patterns"
+                            ],
+                            "no_punctuation_tokens_count": 39
+                        },
+                        "sentiment": {
+                            "neg": 0.057,
+                            "neu": 0.857,
+                            "pos": 0.086,
+                            "compound": 0.2732
+                        }
                     }
                 },
-                "overall": {
-                    "score": 0.375,
-                    "level": "Low"
-                }
-            },
-            "final": {
-                "question_wise": {
-                    "qid_1": {
-                        "score": 0.6103,
-                        "level": "Moderate"
+                "speech": {
+                    "features": {}
+                },
+                "video": {
+                    "features": {}
+                },
+                "evaluation": {
+                    "semantic": {
+                        "similarity_score": {
+                            "score": 0.3738,
+                            "level": "Low"
+                        }
                     },
-                    "qid_2": {
-                        "score": 0.0,
-                        "level": "Low"
+                    "lexical": {
+                        "keyword_coverage": {
+                            "score": 0.4167,
+                            "level": "Moderate"
+                        }
                     },
-                    "qid_3": {
-                        "score": 0.8608,
-                        "level": "High"
-                    },
-                    "qid_4": {
-                        "score": 0.0,
-                        "level": "Low"
+                    "rule_based": {
+                        "combined_score": {
+                            "score": 0.391,
+                            "level": "Low"
+                        }
                     }
                 },
-                "overall": {
-                    "score": 0.3678,
-                    "level": "Low"
-                }
-            }
-        }
-    },
-    "1111": {
-        "lemmas": {
-            "qid_1": [
-                "vicky",
-                "machine",
-                "learning",
-                "name"
-            ],
-            "qid_2": [
-                "im",
-                "nowhere",
-                "find"
-            ],
-            "qid_3": [
-                "cod",
-                "full",
-                "free",
-                "time"
-            ],
-            "qid_4": [
-                "understand",
-                "pattern",
-                "help",
-                "prediction"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "vicky": 1,
-                "machine": 1,
-                "learning": 1,
-                "name": 1
-            },
-            "qid_2": {
-                "im": 1,
-                "nowhere": 1,
-                "find": 1
-            },
-            "qid_3": {
-                "cod": 1,
-                "full": 1,
-                "free": 1,
-                "time": 1
-            },
-            "qid_4": {
-                "understand": 1,
-                "pattern": 1,
-                "help": 1,
-                "prediction": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "vicky": 0.1867,
-                "machine": 0.1489,
-                "learning": 0.17,
-                "name": 0.3372
-            },
-            "qid_2": {
-                "im": 0.4497,
-                "nowhere": 0.2906,
-                "find": 0.2906
-            },
-            "qid_3": {
-                "cod": 0.2308,
-                "full": 0.3372,
-                "free": 0.218,
-                "time": 0.2065
-            },
-            "qid_4": {
-                "understand": 0.218,
-                "pattern": 0.218,
-                "help": 0.3812,
-                "prediction": 0.3812
-            }
-        },
-        "statistics": {
-            "word_count": 34,
-            "sentence_count": 5,
-            "average_sentence_length": 6.8,
-            "stop_words_count": 13,
-            "filler_words_count": 1,
-            "stopword_ratio": 0.38235294117647056,
-            "filler_ratio": 0.029411764705882353,
-            "vocabulary_count": 26,
-            "vocabulary_ratio": 0.896551724137931,
-            "no_punctuation_tokens": [
-                "vicky",
-                "machine",
-                "learning",
-                "is",
-                "my",
-                "name",
-                "im",
-                "from",
-                "nowhere",
-                "to",
-                "be",
-                "found",
-                "i",
-                "like",
-                "to",
-                "do",
-                "coding",
-                "in",
-                "my",
-                "full",
-                "free",
-                "time",
-                "it",
-                "understands",
-                "patterns",
-                "and",
-                "helps",
-                "in",
-                "predictions"
-            ],
-            "no_punctuation_tokens_count": 29
-        },
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 0.547,
-                "pos": 0.453,
-                "compound": 0.7003
-            },
-            "qid_4": {
-                "neg": 0.0,
-                "neu": 0.698,
-                "pos": 0.302,
-                "compound": 0.3818
-            }
-        },
-        "lexical_semantic_score": {
-            "similarity": {
-                "question_wise": {
-                    "qid_1": {
-                        "score": 0.663,
-                        "level": "Moderate"
-                    },
-                    "qid_2": {
-                        "score": 0.0,
-                        "level": "Low"
-                    },
-                    "qid_3": {
-                        "score": 0.7797,
-                        "level": "High"
-                    },
-                    "qid_4": {
-                        "score": 0.0,
-                        "level": "Low"
-                    }
-                },
-                "overall": {
-                    "score": 0.3607,
-                    "level": "Low"
-                }
-            },
-            "coverage": {
-                "question_wise": {
-                    "qid_1": {
-                        "score": 0.5,
-                        "matched": [
-                            "name",
-                            "machine"
-                        ],
-                        "missing": [
-                            "learn",
-                            "full"
-                        ]
-                    },
-                    "qid_2": {
-                        "score": 0.0,
-                        "matched": [],
-                        "missing": [
-                            "learning",
-                            "machine"
-                        ]
-                    },
-                    "qid_3": {
-                        "score": 1.0,
-                        "matched": [
-                            "time",
-                            "free",
-                            "full"
-                        ],
-                        "missing": []
-                    },
-                    "qid_4": {
-                        "score": 0.0,
-                        "matched": [],
-                        "missing": [
-                            "learn",
-                            "machine"
-                        ]
-                    }
-                },
-                "overall": {
-                    "score": 0.375,
-                    "level": "Low"
-                }
-            },
-            "final": {
-                "question_wise": {
-                    "qid_1": {
-                        "score": 0.5978,
-                        "level": "Moderate"
-                    },
-                    "qid_2": {
-                        "score": 0.0,
-                        "level": "Low"
-                    },
-                    "qid_3": {
-                        "score": 0.8678,
-                        "level": "High"
-                    },
-                    "qid_4": {
-                        "score": 0.0,
-                        "level": "Low"
-                    }
-                },
-                "overall": {
-                    "score": 0.3664,
-                    "level": "Low"
-                }
-            }
-        }
-    },
-    "11145": {
-        "lemmas": {
-            "qid_1": [
-                "jhdsnzvl"
-            ],
-            "qid_2": [
-                "srlirbht"
-            ],
-            "qid_3": [
-                "slrijo"
-            ],
-            "qid_4": [
-                "sroop9"
-            ]
-        },
-        "bow": {
-            "qid_1": {
-                "jhdsnzvl": 1
-            },
-            "qid_2": {
-                "srlirbht": 1
-            },
-            "qid_3": {
-                "slrijo": 1
-            },
-            "qid_4": {
-                "sroop9": 1
-            }
-        },
-        "tfidf": {
-            "qid_1": {
-                "jhdsnzvl": 1.8513
-            },
-            "qid_2": {
-                "srlirbht": 1.8513
-            },
-            "qid_3": {
-                "slrijo": 1.8513
-            },
-            "qid_4": {
-                "sroop9": 1.8513
-            }
-        },
-        "statistics": {
-            "word_count": 8,
-            "sentence_count": 5,
-            "average_sentence_length": 1.6,
-            "stop_words_count": 0,
-            "filler_words_count": 0,
-            "stopword_ratio": 0.0,
-            "filler_ratio": 0.0,
-            "vocabulary_count": 4,
-            "vocabulary_ratio": 1.0,
-            "no_punctuation_tokens": [
-                "jhdsnzvl",
-                "srlirbht",
-                "slrijo",
-                "sroop9"
-            ],
-            "no_punctuation_tokens_count": 4
-        },
-        "sentiment": {
-            "qid_1": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_2": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_3": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            },
-            "qid_4": {
-                "neg": 0.0,
-                "neu": 1.0,
-                "pos": 0.0,
-                "compound": 0.0
-            }
-        },
-        "lexical_semantic_score": {
-            "similarity": {
-                "question_wise": {
-                    "qid_1": {
-                        "score": 0.0,
-                        "level": "Low"
-                    },
-                    "qid_2": {
-                        "score": 0.0,
-                        "level": "Low"
-                    },
-                    "qid_3": {
-                        "score": 0.0,
-                        "level": "Low"
-                    },
-                    "qid_4": {
-                        "score": 0.0,
-                        "level": "Low"
-                    }
-                },
-                "overall": {
-                    "score": 0.0,
-                    "level": "Low"
-                }
-            },
-            "coverage": {
-                "question_wise": {
-                    "qid_1": {
-                        "score": 0.0,
-                        "matched": [],
-                        "missing": [
-                            "machine",
-                            "name",
-                            "learn",
-                            "full"
-                        ]
-                    },
-                    "qid_2": {
-                        "score": 0.0,
-                        "matched": [],
-                        "missing": [
-                            "machine",
-                            "learning"
-                        ]
-                    },
-                    "qid_3": {
-                        "score": 0.0,
-                        "matched": [],
-                        "missing": [
-                            "time",
-                            "full",
-                            "free"
-                        ]
-                    },
-                    "qid_4": {
-                        "score": 0.0,
-                        "matched": [],
-                        "missing": [
-                            "machine",
-                            "learn"
-                        ]
-                    }
-                },
-                "overall": {
-                    "score": 0.0,
-                    "level": "Low"
-                }
-            },
-            "final": {
-                "question_wise": {
-                    "qid_1": {
-                        "score": 0.0,
-                        "level": "Low"
-                    },
-                    "qid_2": {
-                        "score": 0.0,
-                        "level": "Low"
-                    },
-                    "qid_3": {
-                        "score": 0.0,
-                        "level": "Low"
-                    },
-                    "qid_4": {
-                        "score": 0.0,
-                        "level": "Low"
-                    }
-                },
-                "overall": {
-                    "score": 0.0,
-                    "level": "Low"
+                "fusion": {
+                    "features": {}
                 }
             }
         }

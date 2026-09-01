@@ -1,24 +1,19 @@
-def feedback(candidate_id, corpus):
-    # print(f"\n\nWord Tokenize: {tokens} \n")
-    # print(f"Sentence Tokenize: {sent_tok} \n")
-    # print(f"Clean list: {cleanes_list}\n")
+def feedback(candidate_id, corpus_data):
+    """
+    Display feedback for a candidate from the new corpus hierarchy.
+    Accesses: corpus_data["corpus"][candidate_id]["overall"]["text"]["features"]
+    """
+    if candidate_id not in corpus_data["corpus"]:
+        print(f"Candidate {candidate_id} not found in corpus.")
+        return
 
-    # print(f"Unique words: {vocabulary} \n")
-    # print(f"Total unique words: {len(vocabulary)} \n")
-    # print(f"Vocabulary Strength: {score_vocabs} \n")
-    # print(f"Filler word weightage: {filler_percent}% \n\n")
-
-    # print("============= Statistics ==============\n")
-       
-    print(f"Vocabulary Ratio: {int(corpus[candidate_id]["statistics"]["vocabulary_ratio"] * 100)}%")
-    print(f"Filler words ratio: {int(corpus[candidate_id]["statistics"]["filler_ratio"] * 100)}%")
-    print(f"Stop words ratio: {int(corpus[candidate_id]["statistics"]["stopword_ratio"] * 100)}%")
+    candidate_corpus = corpus_data["corpus"][candidate_id]
     
-    # print("============= Sentiment Score ==============\n")
-    # print(f"Positive: {corpus[candidate_id]["sentiment"]["pos"]}")
-    # print(f"Negative: {sentiment_score["neg"]}")
-    # print(f"Neutral: {sentiment_score["neu"]}")
-    # print(f"Compound: {sentiment_score["compound"]}")
-
-    # print(f"BoW: {bow}")
-    # print(f"\nLemmitized: {lemma}\n")
+    # Access overall statistics from the new hierarchy
+    if "overall" in candidate_corpus and "text" in candidate_corpus["overall"]:
+        if "features" in candidate_corpus["overall"]["text"]:
+            if "statistics" in candidate_corpus["overall"]["text"]["features"]:
+                stats = candidate_corpus["overall"]["text"]["features"]["statistics"]
+                print(f"Vocabulary Score: {int(stats.get('vocabulary_ratio', 0) * 100)}%")
+                print(f"Filler words ratio: {int(stats.get('filler_ratio', 0) * 100)}%")
+                print(f"Stop words ratio: {int(stats.get('stopword_ratio', 0) * 100)}%")
