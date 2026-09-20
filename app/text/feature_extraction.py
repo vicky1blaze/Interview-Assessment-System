@@ -1,206 +1,278 @@
-from nltk import word_tokenize, sent_tokenize
-from text.preprocessing import remove_punctuation, stop_words
-from filler_words import filler_words
-from nltk.sentiment import SentimentIntensityAnalyzer
-from collections import Counter
-import math, numpy as np
+"""
+feature_extraction.py - NLP Feature Extraction and Diagnostic Evaluation.
 
-sia = SentimentIntensityAnalyzer()
+Extracts text statistics, lexical metrics, sentiment scores, Bag-of-Words,
+TF-IDF vectors, TF-IDF cosine similarity, and keyword coverage.
+Provides the 12 numerical text features required by the neural network.
+"""
+
+from collections import Counter
+import math
+from string import punctuation
+import nltk
+from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.sentiment import SentimentIntensityAnalyzer
+try:
+    from text.preprocessing import remove_punctuation, stop_words, preprocess
+except ImportError:
+    from preprocessing import remove_punctuation, stop_words, preprocess
+
+try:
+    from text.filler_words import filler_words
+except ImportError:
+    from .filler_words import filler_words
+
+# Ensure VADER lexicon is downloaded
+try:
+    sia = SentimentIntensityAnalyzer()
+except LookupError:
+    nltk.download("vader_lexicon", quiet=True)
+    sia = SentimentIntensityAnalyzer()
 
 def extract_features_statistics(text):
     """
-    Extract statistics from raw text.
-    Returns a dictionary of statistics features.
+    Extract lexical statistics from raw text.
+    Handles empty/short text gracefully without division by zero.
     """
-    text = text.lower()
+    if not text or not isinstance(text, str):
+        return {
+            "word_count": 0,
+            "sentence_count": 0,
+            "average_sentence_length": 0.0,
+            "stop_words_count": 0,
+            "filler_words_count": 0,
+            "stopword_ratio": 0.0,
+            "filler_ratio": 0.0,
+            "vocabulary_count": 0,
+            "vocabulary_ratio": 0.0,
+            "vocabulary_score": 0.0,
+            "no_punctuation_tokens": [],
+            "no_punctuation_tokens_count": 0
+        }
 
-    sent_tokens = sent_tokenize(text)
-    word_tokens = word_tokenize(text)
+    text_lower = text.lower()
+    sent_tokens = [s for s in sent_tokenize(text_lower) if s.strip()]
+    word_tokens = word_tokenize(text_lower)
 
-    word_count = len(word_tokens)
-    sentence_count = len(sent_tokens)
+    # Filter out punctuation-only tokens
+    clean_tokens = remove_punctuation(word_tokens)
+    word_count = len(clean_tokens)
+    sentence_count = max(1, len(sent_tokens)) if word_count > 0 else 0
 
-    average_sentence_length = (word_count / sentence_count if sentence_count else 0)
+    average_sentence_length = (word_count / sentence_count) if sentence_count > 0 else 0.0
 
-    # Vocabulary
-
-    no_punctuation_tokens = remove_punctuation(word_tokens)
-    no_punctuation_tokens_count = len(no_punctuation_tokens)
-
-    vocabulary = set(no_punctuation_tokens)
+    # Vocabulary diversity
+    vocabulary = set(clean_tokens)
     vocabulary_count = len(vocabulary)
+    vocabulary_ratio = (vocabulary_count / word_count) if word_count > 0 else 0.0
 
-    vocabulary_ratio = (vocabulary_count / no_punctuation_tokens_count if no_punctuation_tokens_count else 0)
+    # Filler and stop words
+    filler_set = set(filler_words)
+    filler_words_count = sum(1 for t in clean_tokens if t in filler_set)
+    stop_words_count = sum(1 for t in clean_tokens if t in stop_words)
 
-    # Filler and stop words count
-
-    filler_words_count = 0
-    stop_words_count = 0
-
-    for token in word_tokens:
-        if token in filler_words:
-            filler_words_count += 1
-            
-        if token in stop_words:
-            stop_words_count += 1
-
-    filler_ratio = (filler_words_count / word_count if word_count else 0) 
-    stopword_ratio = (stop_words_count / word_count if word_count else 0)
-
-    # Vocabulary score: combination of unique vocabulary and word count
+    filler_ratio = (filler_words_count / word_count) if word_count > 0 else 0.0
+    stopword_ratio = (stop_words_count / word_count) if word_count > 0 else 0.0
     vocabulary_score = min(vocabulary_ratio, 1.0)
 
     return {
         "word_count": word_count,
         "sentence_count": sentence_count,
-        "average_sentence_length": average_sentence_length,
+        "average_sentence_length": round(average_sentence_length, 4),
         "stop_words_count": stop_words_count,
         "filler_words_count": filler_words_count,
-        "stopword_ratio": stopword_ratio,
-        "filler_ratio": filler_ratio,
+        "stopword_ratio": round(stopword_ratio, 4),
+        "filler_ratio": round(filler_ratio, 4),
         "vocabulary_count": vocabulary_count,
-        "vocabulary_ratio": vocabulary_ratio,
-        "vocabulary_score": vocabulary_score,
-        "no_punctuation_tokens": no_punctuation_tokens,
-        "no_punctuation_tokens_count": no_punctuation_tokens_count
+        "vocabulary_ratio": round(vocabulary_ratio, 4),
+        "vocabulary_score": round(vocabulary_score, 4),
+        "no_punctuation_tokens": clean_tokens,
+        "no_punctuation_tokens_count": word_count
     }
 
 def extract_features_sentiment(raw_text):
-    sentiment_score = sia.polarity_scores(raw_text)
-
-    return sentiment_score
-
-def extract_features_bow(lemma):
-    bow = Counter(lemma)
-
-    return dict(bow)
-
-def extract_features_tfidf(candidate_id, corpus):
     """
-    Compute TF-IDF for all answers of a candidate.
-    Stores results in: corpus[candidate_id]["responses"][qid]["text"]["processed"]["tfidf"]
+    Extract VADER sentiment polarity scores:
+    pos, neg, neu, compound.
+    """
+    if not raw_text or not isinstance(raw_text, str) or not raw_text.strip():
+        return {"neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0}
+
+    scores = sia.polarity_scores(raw_text)
+    return {
+        "neg": round(scores.get("neg", 0.0), 4),
+        "neu": round(scores.get("neu", 1.0), 4),
+        "pos": round(scores.get("pos", 0.0), 4),
+        "compound": round(scores.get("compound", 0.0), 4)
+    }
+
+def extract_features_bow(lemma_list):
+    """
+    Compute Bag-of-Words frequency distribution from lemma list.
+    """
+    if not lemma_list:
+        return {}
+    return dict(Counter(lemma_list))
+
+def extract_features_tfidf(candidate_id, corpus, questions=None):
+    """
+    Compute TF-IDF vectors for all responses of a candidate.
+    Term Frequency (TF) is computed locally per response.
+    Document Frequency (DF) and Inverse Document Frequency (IDF)
+    are calculated on a shared document corpus encompassing both reference
+    question texts and candidate responses, guaranteeing a consistent IDF baseline.
     """
     tf = {}
-    idf = {}
     df = {}
     doc_overall_count = 0
 
-    # Collect all lemmas for this candidate
-    candidate_lemmas = {}
-    for qid in corpus[candidate_id]["responses"].keys():
-        if "text" in corpus[candidate_id]["responses"][qid]:
-            if "processed" in corpus[candidate_id]["responses"][qid]["text"]:
-                if "lemmas" in corpus[candidate_id]["responses"][qid]["text"]["processed"]:
-                    candidate_lemmas[qid] = corpus[candidate_id]["responses"][qid]["text"]["processed"]["lemmas"]
+    candidate_responses = corpus.get(candidate_id, {}).get("responses", {})
 
-    # Compute TF (Locally) ===========================================================
-
-    for qid, lemmas in candidate_lemmas.items():
-        bow = corpus[candidate_id]["responses"][qid]["text"]["processed"]["bow"]
+    # Compute TF locally for this candidate's responses
+    for qid, q_data in candidate_responses.items():
+        processed = q_data.get("text", {}).get("processed", {})
+        bow = processed.get("bow", {})
         total_terms = sum(bow.values())
+        tf[qid] = {}
+        if total_terms > 0:
+            for term, count in bow.items():
+                tf[qid][term] = count / total_terms
 
-        if qid not in tf:
-            tf[qid] = {}
+    # 1. Include reference questions in document frequency count
+    q_lemmas_map = {}
+    if questions is not None:
+        if "lemmas" in questions:
+            q_lemmas_map = questions["lemmas"]
+        elif "questions" in questions and isinstance(questions["questions"], dict):
+            for qk, qv in questions["questions"].items():
+                if isinstance(qv, dict) and "reference" in qv:
+                    q_lemmas_map[qk] = qv["reference"].get("lemmas", [])
+                elif isinstance(qv, str):
+                    q_lemmas_map[qk] = preprocess(qv)
+        elif isinstance(questions, dict):
+            for qk, qv in questions.items():
+                if isinstance(qv, str):
+                    q_lemmas_map[qk] = preprocess(qv)
 
-        for term, term_frequency in bow.items():
-            tf_of_term = term_frequency / total_terms
-            tf[qid][term] = tf_of_term
+    # Fallback to standard canonical questions if none provided
+    if not q_lemmas_map:
+        try:
+            from core.questions import QUESTIONS_META
+            for qk, qv in QUESTIONS_META.items():
+                q_lemmas_map[qk] = preprocess(qv["question"])
+        except Exception:
+            try:
+                from questions import QUESTIONS_META
+                for qk, qv in QUESTIONS_META.items():
+                    q_lemmas_map[qk] = preprocess(qv["question"])
+            except Exception:
+                pass
 
-    # Compute IDF (Globally) ========================================================
+    for q_lemmas in q_lemmas_map.values():
+        if q_lemmas:
+            doc_overall_count += 1
+            for token in set(q_lemmas):
+                df[token] = df.get(token, 0) + 1
 
-    for candidate in corpus.values():
-        if "responses" in candidate:
-            for qid_data in candidate["responses"].values():
-                if "text" in qid_data and "processed" in qid_data["text"]:
-                    if "lemmas" in qid_data["text"]["processed"]:
-                        doc_overall_count += 1
-                        unique_tokens = set(qid_data["text"]["processed"]["lemmas"])
-                        for token in unique_tokens:
-                            df[token] = df.get(token, 0) + 1
+    # 2. Include all candidate responses across corpus in DF count
+    for c_id, c_data in corpus.items():
+        for resp in c_data.get("responses", {}).values():
+            lemmas = resp.get("text", {}).get("processed", {}).get("lemmas", [])
+            if lemmas:
+                doc_overall_count += 1
+                for token in set(lemmas):
+                    df[token] = df.get(token, 0) + 1
 
-    for token, freq in df.items():
-        idf_score = round(math.log10(doc_overall_count / freq) if freq > 0 else 0, 4)
-        idf[token] = idf.get(token, 0) + idf_score
+    # Safe document count baseline
+    doc_overall_count = max(doc_overall_count, 1)
 
-    # Compute TF-IDF ================================================================
+    # Compute shared IDF
+    idf = {}
+    for term, term_df in df.items():
+        idf[term] = math.log10(doc_overall_count / term_df) if term_df > 0 else 0.0
 
+    # Compute candidate TF-IDF using shared IDF
     for qid in tf.keys():
-        if qid not in corpus[candidate_id]["responses"]:
-            continue
-        if "text" not in corpus[candidate_id]["responses"][qid]:
-            continue
-        if "processed" not in corpus[candidate_id]["responses"][qid]["text"]:
-            corpus[candidate_id]["responses"][qid]["text"]["processed"] = {}
-        
-        corpus[candidate_id]["responses"][qid]["text"]["processed"]["tfidf"] = {}
-        
+        if "text" not in candidate_responses[qid]:
+            candidate_responses[qid]["text"] = {"processed": {}, "features": {}}
+        if "processed" not in candidate_responses[qid]["text"]:
+            candidate_responses[qid]["text"]["processed"] = {}
+
+        candidate_responses[qid]["text"]["processed"]["tfidf"] = {}
         for term, term_tf in tf[qid].items():
-            tfidf = round(term_tf * idf.get(term, 0), 4)
-            corpus[candidate_id]["responses"][qid]["text"]["processed"]["tfidf"][term] = tfidf
+            term_idf = idf.get(term, 0.0)
+            candidate_responses[qid]["text"]["processed"]["tfidf"][term] = round(term_tf * term_idf, 4)
+
+    # If reference questions dict was passed with a 'tfidf' dict, update question tfidf with shared IDF too
+    if questions is not None and isinstance(questions, dict) and "tfidf" in questions:
+        for qk, q_lemmas in q_lemmas_map.items():
+            if q_lemmas:
+                q_bow = Counter(q_lemmas)
+                q_total = sum(q_bow.values())
+                questions["tfidf"][qk] = {}
+                for term, cnt in q_bow.items():
+                    q_tf = cnt / q_total if q_total > 0 else 0.0
+                    questions["tfidf"][qk][term] = round(q_tf * idf.get(term, 0.0), 4)
 
     return corpus
 
 def cosine_similarity(vec1, vec2):
+    """
+    Compute TF-IDF cosine similarity between two word-weight dictionaries.
+    """
+    if not vec1 or not vec2:
+        return 0.0
 
-    # Step 1: Get all unique words
     all_words = set(vec1.keys()).union(set(vec2.keys()))
-    
-    # Step 2: Create aligned vectors
-    v1 = []
-    v2 = []
-    
-    for word in all_words:
-        v1.append(vec1.get(word, 0))
-        v2.append(vec2.get(word, 0))
-    
-    # Step 3: Dot product
+    v1 = [vec1.get(w, 0.0) for w in all_words]
+    v2 = [vec2.get(w, 0.0) for w in all_words]
+
     dot_product = sum(a * b for a, b in zip(v1, v2))
-    
-    # Step 4: Magnitudes
     mag1 = math.sqrt(sum(a * a for a in v1))
     mag2 = math.sqrt(sum(b * b for b in v2))
-    
-    # Step 5: Avoid division by zero
-    if mag1 == 0 or mag2 == 0:
-        return 0.0
-    
-    # Step 6: Cosine similarity
-    return dot_product / (mag1 * mag2)
 
+    if mag1 == 0.0 or mag2 == 0.0:
+        return 0.0
+
+    sim = dot_product / (mag1 * mag2)
+    return max(0.0, min(1.0, round(sim, 4)))
 
 def compute_coverage(question_tokens, answer_tokens):
+    """
+    Compute keyword coverage (lexical overlap ratio) between
+    question/reference keywords and candidate response lemmas.
+    """
     if not question_tokens:
-        return {
-            "score": 0.0,
-            "matched": [],
-            "missing": []
-        }
+        return {"score": 0.0, "matched": [], "missing": []}
 
     q_set = set(question_tokens)
-    a_set = set(answer_tokens)
+    a_set = set(answer_tokens) if answer_tokens else set()
 
     matched = q_set.intersection(a_set)
     missing = q_set - a_set
-
-    score = len(matched) / len(q_set)
+    score = len(matched) / len(q_set) if len(q_set) > 0 else 0.0
 
     return {
         "score": round(score, 4),
-        "matched": list(matched),
-        "missing": list(missing)
+        "matched": sorted(list(matched)),
+        "missing": sorted(list(missing))
     }
 
 def get_level(score):
-    if score > 0.7:
+    """Categorize a 0-1 scale score into Low / Moderate / High."""
+    if score >= 0.7:
         return "High"
-    elif score > 0.4:
+    elif score >= 0.4:
         return "Moderate"
     else:
         return "Low"
 
 def compute_final_score(similarity, coverage, w_sim=0.6, w_cov=0.4):
+    """
+    Compute the legacy rule-based diagnostic score (0.6*sim + 0.4*cov).
+    Preserved strictly for explainability and diagnostics, NOT used as final NN score.
+    """
     final = (w_sim * similarity) + (w_cov * coverage)
-
     return {
         "score": round(final, 4),
         "level": get_level(final)
@@ -208,133 +280,124 @@ def compute_final_score(similarity, coverage, w_sim=0.6, w_cov=0.4):
 
 def evaluate_candidate(corpus, questions, candidate_id, w_sim=0.6, w_cov=0.4):
     """
-    Evaluate a candidate's responses against questions using:
-    - Semantic similarity (cosine similarity)
-    - Lexical coverage (keyword matching)
-    - Rule-based combined score (weighted average)
+    Evaluate candidate responses against reference questions using:
+    - TF-IDF Cosine Similarity
+    - Lexical Keyword Coverage
+    - Rule-based Combined Score (diagnostic)
 
-    Stores results in the new hierarchy:
-    corpus[candidate_id]["responses"][qid]["evaluation"]["semantic"]["similarity_score"]
-    corpus[candidate_id]["responses"][qid]["evaluation"]["lexical"]["keyword_coverage"]
-    corpus[candidate_id]["responses"][qid]["evaluation"]["rule_based"]["combined_score"]
-
-    Also stores overall aggregates in:
-    corpus[candidate_id]["overall"]["evaluation"]["semantic|lexical|rule_based"]
+    Stores diagnostics in:
+    corpus[candidate_id]["responses"][qid]["evaluation"]["semantic|lexical|rule_based"]
     """
-
     sim_scores = []
     cov_scores = []
     final_scores = []
 
-    # ===== Loop through each question in the question bank =====
-    for qid in questions["tfidf"].keys():
-        # Initialize evaluation structure for this QID if not exists
-        if qid not in corpus[candidate_id]["responses"]:
-            corpus[candidate_id]["responses"][qid] = {
+    candidate_data = corpus.get(candidate_id, {})
+    responses = candidate_data.get("responses", {})
+
+    # Ensure candidate responses and reference questions share the same IDF basis
+    extract_features_tfidf(candidate_id, corpus, questions)
+
+    for qid in questions.get("tfidf", {}).keys():
+        if qid not in responses:
+            responses[qid] = {
                 "text": {"answer": "", "processed": {}, "features": {}},
                 "speech": {"audio_path": None, "transcript": None, "features": {}},
                 "video": {"video_path": None, "features": {}},
                 "evaluation": {}
             }
 
-        if "evaluation" not in corpus[candidate_id]["responses"][qid]:
-            corpus[candidate_id]["responses"][qid]["evaluation"] = {}
+        q_resp = responses[qid]
+        if "evaluation" not in q_resp:
+            q_resp["evaluation"] = {}
 
-        # ---- Fetch vectors ----
-        answer_vec = {}
-        if "text" in corpus[candidate_id]["responses"][qid]:
-            if "processed" in corpus[candidate_id]["responses"][qid]["text"]:
-                answer_vec = corpus[candidate_id]["responses"][qid]["text"]["processed"].get("tfidf", {})
+        answer_vec = q_resp.get("text", {}).get("processed", {}).get("tfidf", {})
+        question_vec = questions["tfidf"].get(qid, {})
 
-        question_vec = questions["tfidf"][qid]
+        answer_tokens = q_resp.get("text", {}).get("processed", {}).get("lemmas", [])
+        question_tokens = questions.get("lemmas", {}).get(qid, [])
 
-        # ---- Fetch tokens (IMPORTANT) ----
-        answer_tokens = []
-        if "text" in corpus[candidate_id]["responses"][qid]:
-            if "processed" in corpus[candidate_id]["responses"][qid]["text"]:
-                answer_tokens = corpus[candidate_id]["responses"][qid]["text"]["processed"].get("lemmas", [])
-
-        question_tokens = questions["lemmas"][qid]
-
-        # ===== 1. Semantic: Cosine Similarity =====
+        # 1. TF-IDF Cosine Similarity
         sim = cosine_similarity(question_vec, answer_vec)
         sim_scores.append(sim)
-
-        if "semantic" not in corpus[candidate_id]["responses"][qid]["evaluation"]:
-            corpus[candidate_id]["responses"][qid]["evaluation"]["semantic"] = {}
-
-        corpus[candidate_id]["responses"][qid]["evaluation"]["semantic"]["similarity_score"] = {
-            "score": round(sim, 4),
-            "level": get_level(sim)
+        q_resp["evaluation"]["semantic"] = {
+            "similarity_score": {
+                "score": sim,
+                "level": get_level(sim)
+            }
         }
 
-        # ===== 2. Lexical: Keyword Coverage =====
-        coverage_data = compute_coverage(question_tokens, answer_tokens)
-        cov = coverage_data["score"]
-        cov_scores.append(cov)
+        # 2. Keyword Coverage
+        cov_data = compute_coverage(question_tokens, answer_tokens)
+        cov_scores.append(cov_data["score"])
+        q_resp["evaluation"]["lexical"] = {
+            "keyword_coverage": cov_data
+        }
 
-        if "lexical" not in corpus[candidate_id]["responses"][qid]["evaluation"]:
-            corpus[candidate_id]["responses"][qid]["evaluation"]["lexical"] = {}
-
-        corpus[candidate_id]["responses"][qid]["evaluation"]["lexical"]["keyword_coverage"] = coverage_data
-
-        # ===== 3. Rule-based: Combined Score =====
-        final_data = compute_final_score(sim, cov, w_sim, w_cov)
-        final_scores.append(final_data["score"])
-
-        if "rule_based" not in corpus[candidate_id]["responses"][qid]["evaluation"]:
-            corpus[candidate_id]["responses"][qid]["evaluation"]["rule_based"] = {}
-
-        corpus[candidate_id]["responses"][qid]["evaluation"]["rule_based"]["combined_score"] = final_data
-
-    # ===== OVERALL CALCULATIONS =====
+        # 3. Rule-based Diagnostic Metric
+        diag_score = compute_final_score(sim, cov_data["score"], w_sim, w_cov)
+        final_scores.append(diag_score["score"])
+        q_resp["evaluation"]["rule_based"] = {
+            "combined_score": diag_score
+        }
 
     def safe_avg(arr):
-        return sum(arr) / len(arr) if arr else 0.0
+        return round(sum(arr) / len(arr), 4) if arr else 0.0
 
-    avg_sim = safe_avg(sim_scores)
-    avg_cov = safe_avg(cov_scores)
-    avg_final = safe_avg(final_scores)
-
-    # Initialize overall evaluation structure
-    if "overall" not in corpus[candidate_id]:
-        corpus[candidate_id]["overall"] = {
+    # Store overall diagnostic aggregates
+    if "overall" not in candidate_data:
+        candidate_data["overall"] = {
             "text": {"features": {"statistics": {}, "sentiment": {}}},
             "speech": {"features": {}},
             "video": {"features": {}},
-            "evaluation": {"semantic": {}, "lexical": {}, "rule_based": {}},
-            "fusion": {"features": {}}
+            "evaluation": {},
+            "fusion": {}
         }
 
-    if "evaluation" not in corpus[candidate_id]["overall"]:
-        corpus[candidate_id]["overall"]["evaluation"] = {
-            "semantic": {},
-            "lexical": {},
-            "rule_based": {}
-        }
-
-    # Store overall evaluation scores
-    corpus[candidate_id]["overall"]["evaluation"]["semantic"] = {
-        "similarity_score": {
-            "score": round(avg_sim, 4),
-            "level": get_level(avg_sim)
-        }
+    candidate_data["overall"]["evaluation"]["semantic"] = {
+        "similarity_score": {"score": safe_avg(sim_scores), "level": get_level(safe_avg(sim_scores))}
     }
-
-    corpus[candidate_id]["overall"]["evaluation"]["lexical"] = {
-        "keyword_coverage": {
-            "score": round(avg_cov, 4),
-            "level": get_level(avg_cov)
-        }
+    candidate_data["overall"]["evaluation"]["lexical"] = {
+        "keyword_coverage": {"score": safe_avg(cov_scores), "level": get_level(safe_avg(cov_scores))}
     }
-
-    corpus[candidate_id]["overall"]["evaluation"]["rule_based"] = {
-        "combined_score": {
-            "score": round(avg_final, 4),
-            "level": get_level(avg_final)
-        }
+    candidate_data["overall"]["evaluation"]["rule_based"] = {
+        "combined_score": {"score": safe_avg(final_scores), "level": get_level(safe_avg(final_scores))}
     }
 
     return corpus
 
+def get_text_feature_dict(raw_text, lemmas, candidate_tfidf, question_tfidf, question_keywords):
+    """
+    Extract the 12 numerical text features required for neural network regression:
+    1. word_count
+    2. sentence_count
+    3. average_sentence_length
+    4. vocabulary_ratio
+    5. filler_ratio
+    6. stopword_ratio
+    7. sentiment_pos
+    8. sentiment_neg
+    9. sentiment_neu
+    10. sentiment_compound
+    11. keyword_coverage
+    12. tfidf_cosine_similarity
+    """
+    stats = extract_features_statistics(raw_text)
+    sentiment = extract_features_sentiment(raw_text)
+    coverage = compute_coverage(question_keywords, lemmas)
+    similarity = cosine_similarity(question_tfidf, candidate_tfidf)
 
+    return {
+        "word_count": float(stats["word_count"]),
+        "sentence_count": float(stats["sentence_count"]),
+        "average_sentence_length": float(stats["average_sentence_length"]),
+        "vocabulary_ratio": float(stats["vocabulary_ratio"]),
+        "filler_ratio": float(stats["filler_ratio"]),
+        "stopword_ratio": float(stats["stopword_ratio"]),
+        "sentiment_pos": float(sentiment["pos"]),
+        "sentiment_neg": float(sentiment["neg"]),
+        "sentiment_neu": float(sentiment["neu"]),
+        "sentiment_compound": float(sentiment["compound"]),
+        "keyword_coverage": float(coverage["score"]),
+        "tfidf_cosine_similarity": float(similarity)
+    }

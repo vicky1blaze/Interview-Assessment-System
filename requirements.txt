@@ -1,0 +1,10 @@
+# Multi-Modal Interview Assessment System
+# Core requirements for Text & Speech modalities and Keras Neural Network Regression
+
+tensorflow>=2.13.0
+numpy>=1.24.0
+nltk>=3.8.0
+sounddevice>=0.4.6
+soundfile>=0.12.0
+faster-whisper>=0.9.0
+matplotlib>=3.7.0

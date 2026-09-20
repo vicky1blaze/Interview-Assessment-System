@@ -31,15 +31,15 @@
                                 "development": 1
                             },
                             "tfidf": {
-                                "background": 0.1219,
-                                "computer": 0.0884,
-                                "science": 0.1219,
-                                "focus": 0.1219,
-                                "machine": 0.1023,
-                                "learning": 0.1219,
-                                "algorithm": 0.1553,
-                                "software": 0.1553,
-                                "development": 0.1553
+                                "background": 0.106,
+                                "computer": 0.106,
+                                "science": 0.106,
+                                "focus": 0.106,
+                                "machine": 0.0726,
+                                "learning": 0.0726,
+                                "algorithm": 0.106,
+                                "software": 0.106,
+                                "development": 0.106
                             }
                         },
                         "features": {
@@ -100,7 +100,7 @@
                     "evaluation": {
                         "semantic": {
                             "similarity_score": {
-                                "score": 0.2225,
+                                "score": 0.251,
                                 "level": "Low"
                             }
                         },
@@ -117,12 +117,12 @@
                         },
                         "rule_based": {
                             "combined_score": {
-                                "score": 0.3335,
+                                "score": 0.3506,
                                 "level": "Low"
                             }
                         },
                         "neural_network": {
-                            "score": 67.7,
+                            "score": 78.73,
                             "level": "Good"
                         }
                     },
@@ -159,7 +159,7 @@
                             1.0,
                             0.0,
                             0.5,
-                            0.2225,
+                            0.251,
                             0.0,
                             0.0,
                             0.0,
@@ -199,17 +199,17 @@
                                 "python": 1
                             },
                             "tfidf": {
-                                "key": 0.0724,
-                                "strength": 0.0724,
-                                "analytical": 0.1271,
-                                "problem": 0.0563,
-                                "solve": 0.0563,
-                                "deep": 0.0997,
-                                "curiosity": 0.1271,
-                                "strong": 0.1271,
-                                "technical": 0.0724,
-                                "foundation": 0.1271,
-                                "python": 0.1271
+                                "key": 0.0867,
+                                "strength": 0.0867,
+                                "analytical": 0.0867,
+                                "problem": 0.0867,
+                                "solve": 0.0867,
+                                "deep": 0.0867,
+                                "curiosity": 0.0867,
+                                "strong": 0.0867,
+                                "technical": 0.0867,
+                                "foundation": 0.0867,
+                                "python": 0.0867
                             }
                         },
                         "features": {
@@ -268,8 +268,8 @@
                     "evaluation": {
                         "semantic": {
                             "similarity_score": {
-                                "score": 0.3049,
-                                "level": "Low"
+                                "score": 0.4264,
+                                "level": "Moderate"
                             }
                         },
                         "lexical": {
@@ -284,13 +284,13 @@
                         },
                         "rule_based": {
                             "combined_score": {
-                                "score": 0.5829,
+                                "score": 0.6558,
                                 "level": "Moderate"
                             }
                         },
                         "neural_network": {
-                            "score": 85.49,
-                            "level": "Excellent"
+                            "score": 68.77,
+                            "level": "Good"
                         }
                     },
                     "fusion": {
@@ -326,7 +326,7 @@
                             0.498,
                             0.6908,
                             1.0,
-                            0.3049,
+                            0.4264,
                             0.0,
                             0.0,
                             0.0,
@@ -366,17 +366,17 @@
                                 "operation": 1
                             },
                             "tfidf": {
-                                "resolve": 0.1271,
-                                "data": 0.0837,
-                                "pipeline": 0.0997,
-                                "bottleneck": 0.1271,
-                                "optimize": 0.1271,
-                                "feature": 0.0997,
-                                "preprocessing": 0.1271,
-                                "implement": 0.1271,
-                                "vectorized": 0.1271,
-                                "numerical": 0.1271,
-                                "operation": 0.1271
+                                "resolve": 0.0867,
+                                "data": 0.0867,
+                                "pipeline": 0.0867,
+                                "bottleneck": 0.0867,
+                                "optimize": 0.0867,
+                                "feature": 0.0867,
+                                "preprocessing": 0.0867,
+                                "implement": 0.0867,
+                                "vectorized": 0.0867,
+                                "numerical": 0.0867,
+                                "operation": 0.0867
                             }
                         },
                         "features": {
@@ -458,8 +458,8 @@
                             }
                         },
                         "neural_network": {
-                            "score": 55.77,
-                            "level": "Average"
+                            "score": 78.73,
+                            "level": "Good"
                         }
                     },
                     "fusion": {
@@ -531,15 +531,15 @@
                                 "system": 1
                             },
                             "tfidf": {
-                                "interested": 0.1023,
-                                "role": 0.0884,
-                                "opportunity": 0.1553,
-                                "build": 0.1553,
-                                "impactful": 0.1553,
-                                "multimodal": 0.1219,
-                                "artificial": 0.1219,
-                                "intelligence": 0.1219,
-                                "system": 0.1023
+                                "interested": 0.106,
+                                "role": 0.106,
+                                "opportunity": 0.106,
+                                "build": 0.106,
+                                "impactful": 0.106,
+                                "multimodal": 0.106,
+                                "artificial": 0.106,
+                                "intelligence": 0.106,
+                                "system": 0.106
                             }
                         },
                         "features": {
@@ -600,8 +600,8 @@
                     "evaluation": {
                         "semantic": {
                             "similarity_score": {
-                                "score": 0.3533,
-                                "level": "Low"
+                                "score": 0.4714,
+                                "level": "Moderate"
                             }
                         },
                         "lexical": {
@@ -616,12 +616,12 @@
                         },
                         "rule_based": {
                             "combined_score": {
-                                "score": 0.612,
+                                "score": 0.6828,
                                 "level": "Moderate"
                             }
                         },
                         "neural_network": {
-                            "score": 78.97,
+                            "score": 78.73,
                             "level": "Good"
                         }
                     },
@@ -658,7 +658,7 @@
                             0.602,
                             0.8225,
                             1.0,
-                            0.3533,
+                            0.4714,
                             0.0,
                             0.0,
                             0.0,
@@ -698,17 +698,17 @@
                                 "systematically": 1
                             },
                             "tfidf": {
-                                "handle": 0.0837,
-                                "tight": 0.0837,
-                                "deadline": 0.0635,
-                                "prioritize": 0.1271,
-                                "high-impact": 0.1271,
-                                "task": 0.1271,
-                                "maintain": 0.1271,
-                                "clear": 0.1271,
-                                "communication": 0.1271,
-                                "work": 0.0563,
-                                "systematically": 0.1271
+                                "handle": 0.0867,
+                                "tight": 0.0867,
+                                "deadline": 0.0867,
+                                "prioritize": 0.0867,
+                                "high-impact": 0.0867,
+                                "task": 0.0867,
+                                "maintain": 0.0867,
+                                "clear": 0.0867,
+                                "communication": 0.0867,
+                                "work": 0.0867,
+                                "systematically": 0.0867
                             }
                         },
                         "features": {
@@ -766,8 +766,8 @@
                     "evaluation": {
                         "semantic": {
                             "similarity_score": {
-                                "score": 0.315,
-                                "level": "Low"
+                                "score": 0.4523,
+                                "level": "Moderate"
                             }
                         },
                         "lexical": {
@@ -785,12 +785,12 @@
                         },
                         "rule_based": {
                             "combined_score": {
-                                "score": 0.489,
+                                "score": 0.5714,
                                 "level": "Moderate"
                             }
                         },
                         "neural_network": {
-                            "score": 66.26,
+                            "score": 78.73,
                             "level": "Good"
                         }
                     },
@@ -827,7 +827,7 @@
                             0.822,
                             0.3818,
                             0.75,
-                            0.315,
+                            0.4523,
                             0.0,
                             0.0,
                             0.0,
@@ -951,7 +951,7 @@
                 "evaluation": {
                     "semantic": {
                         "similarity_score": {
-                            "score": 0.2391,
+                            "score": 0.3202,
                             "level": "Low"
                         }
                     },
@@ -963,12 +963,12 @@
                     },
                     "rule_based": {
                         "combined_score": {
-                            "score": 0.4035,
+                            "score": 0.4521,
                             "level": "Moderate"
                         }
                     },
                     "neural_network": {
-                        "score": 70.84,
+                        "score": 76.74,
                         "level": "Good"
                     }
                 },
@@ -1005,7 +1005,7 @@
                         0.822,
                         0.3818,
                         0.75,
-                        0.315,
+                        0.4523,
                         0.0,
                         0.0,
                         0.0,
@@ -1047,15 +1047,15 @@
                                 "modeling": 1
                             },
                             "tfidf": {
-                                "background": 0.1219,
-                                "machine": 0.1023,
-                                "learning": 0.1219,
-                                "data": 0.1023,
-                                "science": 0.1219,
-                                "practical": 0.1553,
-                                "experience": 0.1023,
-                                "statistical": 0.1553,
-                                "modeling": 0.1553
+                                "background": 0.0972,
+                                "machine": 0.0777,
+                                "learning": 0.0972,
+                                "data": 0.0777,
+                                "science": 0.0972,
+                                "practical": 0.1307,
+                                "experience": 0.1307,
+                                "statistical": 0.1307,
+                                "modeling": 0.1307
                             }
                         },
                         "features": {
@@ -1114,7 +1114,7 @@
                     "evaluation": {
                         "semantic": {
                             "similarity_score": {
-                                "score": 0.2238,
+                                "score": 0.2084,
                                 "level": "Low"
                             }
                         },
@@ -1131,12 +1131,12 @@
                         },
                         "rule_based": {
                             "combined_score": {
-                                "score": 0.3343,
+                                "score": 0.325,
                                 "level": "Low"
                             }
                         },
                         "neural_network": {
-                            "score": 68.99,
+                            "score": 78.73,
                             "level": "Good"
                         }
                     },
@@ -1173,7 +1173,7 @@
                             1.0,
                             0.0,
                             0.5,
-                            0.2238,
+                            0.2084,
                             0.0,
                             0.0,
                             0.0,
@@ -1209,15 +1209,15 @@
                                 "solve": 1
                             },
                             "tfidf": {
-                                "strength": 0.0884,
-                                "include": 0.1553,
-                                "quantitative": 0.1553,
-                                "analysis": 0.1553,
-                                "attention": 0.1553,
-                                "detail": 0.1553,
-                                "discipline": 0.1553,
-                                "problem": 0.0689,
-                                "solve": 0.0689
+                                "strength": 0.0972,
+                                "include": 0.1307,
+                                "quantitative": 0.1307,
+                                "analysis": 0.1307,
+                                "attention": 0.1307,
+                                "detail": 0.1307,
+                                "discipline": 0.1307,
+                                "problem": 0.0972,
+                                "solve": 0.0777
                             }
                         },
                         "features": {
@@ -1273,7 +1273,7 @@
                     "evaluation": {
                         "semantic": {
                             "similarity_score": {
-                                "score": 0.1553,
+                                "score": 0.1925,
                                 "level": "Low"
                             }
                         },
@@ -1290,13 +1290,13 @@
                         },
                         "rule_based": {
                             "combined_score": {
-                                "score": 0.2932,
+                                "score": 0.3155,
                                 "level": "Low"
                             }
                         },
                         "neural_network": {
-                            "score": 83.4,
-                            "level": "Excellent"
+                            "score": 78.73,
+                            "level": "Good"
                         }
                     },
                     "fusion": {
@@ -1332,7 +1332,7 @@
                             0.536,
                             0.34,
                             0.5,
-                            0.1553,
+                            0.1925,
                             0.0,
                             0.0,
                             0.0,
@@ -1372,17 +1372,17 @@
                                 "connection": 1
                             },
                             "tfidf": {
-                                "diagnose": 0.1271,
-                                "gradient": 0.1271,
-                                "vanish": 0.1271,
-                                "issue": 0.1271,
-                                "deep": 0.0997,
-                                "model": 0.1271,
-                                "introduce": 0.1271,
-                                "batch": 0.1271,
-                                "normalization": 0.1271,
-                                "residual": 0.1271,
-                                "connection": 0.1271
+                                "diagnose": 0.1069,
+                                "gradient": 0.1069,
+                                "vanish": 0.1069,
+                                "issue": 0.1069,
+                                "deep": 0.0796,
+                                "model": 0.1069,
+                                "introduce": 0.1069,
+                                "batch": 0.1069,
+                                "normalization": 0.1069,
+                                "residual": 0.1069,
+                                "connection": 0.1069
                             }
                         },
                         "features": {
@@ -1466,7 +1466,7 @@
                             }
                         },
                         "neural_network": {
-                            "score": 71.95,
+                            "score": 78.73,
                             "level": "Good"
                         }
                     },
@@ -1541,16 +1541,16 @@
                                 "research": 1
                             },
                             "tfidf": {
-                                "role": 0.0796,
-                                "offer": 0.1398,
-                                "ideal": 0.1398,
-                                "blend": 0.1398,
-                                "engineering": 0.1398,
-                                "rigor": 0.1398,
-                                "cutting-edge": 0.1398,
-                                "machine": 0.0921,
-                                "learn": 0.0796,
-                                "research": 0.1398
+                                "role": 0.0875,
+                                "offer": 0.1176,
+                                "ideal": 0.1176,
+                                "blend": 0.1176,
+                                "engineering": 0.1176,
+                                "rigor": 0.1176,
+                                "cutting-edge": 0.1176,
+                                "machine": 0.0699,
+                                "learn": 0.0875,
+                                "research": 0.1176
                             }
                         },
                         "features": {
@@ -1608,7 +1608,7 @@
                     "evaluation": {
                         "semantic": {
                             "similarity_score": {
-                                "score": 0.1416,
+                                "score": 0.1809,
                                 "level": "Low"
                             }
                         },
@@ -1625,13 +1625,13 @@
                         },
                         "rule_based": {
                             "combined_score": {
-                                "score": 0.285,
+                                "score": 0.3085,
                                 "level": "Low"
                             }
                         },
                         "neural_network": {
-                            "score": 59.83,
-                            "level": "Average"
+                            "score": 78.73,
+                            "level": "Good"
                         }
                     },
                     "fusion": {
@@ -1667,7 +1667,7 @@
                             0.793,
                             0.5267,
                             0.5,
-                            0.1416,
+                            0.1809,
                             0.0,
                             0.0,
                             0.0,
@@ -1705,16 +1705,16 @@
                                 "transparently": 1
                             },
                             "tfidf": {
-                                "manage": 0.1398,
-                                "tight": 0.0921,
+                                "manage": 0.1176,
+                                "tight": 0.0875,
                                 "deadline": 0.0699,
-                                "eliminate": 0.1398,
-                                "distraction": 0.1398,
-                                "set": 0.1398,
-                                "micro-goals": 0.1398,
-                                "communicate": 0.1398,
-                                "status": 0.1398,
-                                "transparently": 0.1398
+                                "eliminate": 0.1176,
+                                "distraction": 0.1176,
+                                "set": 0.1176,
+                                "micro-goals": 0.1176,
+                                "communicate": 0.1176,
+                                "status": 0.1176,
+                                "transparently": 0.1176
                             }
                         },
                         "features": {
@@ -1771,7 +1771,7 @@
                     "evaluation": {
                         "semantic": {
                             "similarity_score": {
-                                "score": 0.1966,
+                                "score": 0.2242,
                                 "level": "Low"
                             }
                         },
@@ -1790,13 +1790,13 @@
                         },
                         "rule_based": {
                             "combined_score": {
-                                "score": 0.318,
+                                "score": 0.3345,
                                 "level": "Low"
                             }
                         },
                         "neural_network": {
-                            "score": 100.0,
-                            "level": "Excellent"
+                            "score": 78.73,
+                            "level": "Good"
                         }
                     },
                     "fusion": {
@@ -1832,7 +1832,7 @@
                             0.846,
                             -0.25,
                             0.5,
-                            0.1966,
+                            0.2242,
                             0.0,
                             0.0,
                             0.0,
@@ -1949,7 +1949,7 @@
                 "evaluation": {
                     "semantic": {
                         "similarity_score": {
-                            "score": 0.1435,
+                            "score": 0.1612,
                             "level": "Low"
                         }
                     },
@@ -1961,12 +1961,12 @@
                     },
                     "rule_based": {
                         "combined_score": {
-                            "score": 0.2461,
+                            "score": 0.2567,
                             "level": "Low"
                         }
                     },
                     "neural_network": {
-                        "score": 76.83,
+                        "score": 78.73,
                         "level": "Good"
                     }
                 },
@@ -2003,7 +2003,7 @@
                         0.846,
                         -0.25,
                         0.5,
-                        0.1966,
+                        0.2242,
                         0.0,
                         0.0,
                         0.0,
@@ -2047,16 +2047,16 @@
                                 "processing": 1
                             },
                             "tfidf": {
-                                "recently": 0.1398,
-                                "complete": 0.0796,
-                                "study": 0.1398,
-                                "information": 0.1398,
-                                "technology": 0.0921,
-                                "work": 0.062,
-                                "web": 0.1097,
-                                "application": 0.0796,
-                                "data": 0.0921,
-                                "processing": 0.1398
+                                "recently": 0.1146,
+                                "complete": 0.1146,
+                                "study": 0.0845,
+                                "information": 0.1146,
+                                "technology": 0.0845,
+                                "work": 0.0845,
+                                "web": 0.1146,
+                                "application": 0.0845,
+                                "data": 0.0845,
+                                "processing": 0.1146
                             }
                         },
                         "features": {
@@ -2137,7 +2137,7 @@
                             }
                         },
                         "neural_network": {
-                            "score": 73.07,
+                            "score": 78.73,
                             "level": "Good"
                         }
                     },
@@ -2214,17 +2214,17 @@
                                 "project": 1
                             },
                             "tfidf": {
-                                "learn": 0.0724,
-                                "new": 0.0837,
-                                "technology": 0.0837,
-                                "quickly": 0.1271,
-                                "enjoy": 0.1271,
-                                "collaborate": 0.1271,
-                                "diverse": 0.1271,
-                                "team": 0.1271,
-                                "member": 0.1271,
-                                "challenging": 0.1271,
-                                "project": 0.0837
+                                "learn": 0.0768,
+                                "new": 0.1042,
+                                "technology": 0.0768,
+                                "quickly": 0.1042,
+                                "enjoy": 0.1042,
+                                "collaborate": 0.1042,
+                                "diverse": 0.1042,
+                                "team": 0.1042,
+                                "member": 0.1042,
+                                "challenging": 0.1042,
+                                "project": 0.1042
                             }
                         },
                         "features": {
@@ -2304,8 +2304,8 @@
                             }
                         },
                         "neural_network": {
-                            "score": 55.98,
-                            "level": "Average"
+                            "score": 78.73,
+                            "level": "Good"
                         }
                     },
                     "fusion": {
@@ -2383,18 +2383,18 @@
                                 "buffer": 1
                             },
                             "tfidf": {
-                                "fix": 0.0767,
-                                "unexpected": 0.1165,
-                                "memory": 0.1165,
-                                "leak": 0.1165,
-                                "server": 0.1165,
-                                "application": 0.0663,
-                                "profile": 0.1165,
-                                "garbage": 0.1165,
-                                "collection": 0.1165,
-                                "release": 0.1165,
-                                "unused": 0.1165,
-                                "buffer": 0.1165
+                                "fix": 0.0955,
+                                "unexpected": 0.0955,
+                                "memory": 0.0955,
+                                "leak": 0.0955,
+                                "server": 0.0955,
+                                "application": 0.0704,
+                                "profile": 0.0955,
+                                "garbage": 0.0955,
+                                "collection": 0.0955,
+                                "release": 0.0955,
+                                "unused": 0.0955,
+                                "buffer": 0.0955
                             }
                         },
                         "features": {
@@ -2479,8 +2479,8 @@
                             }
                         },
                         "neural_network": {
-                            "score": 100.0,
-                            "level": "Excellent"
+                            "score": 78.73,
+                            "level": "Good"
                         }
                     },
                     "fusion": {
@@ -2554,16 +2554,16 @@
                                 "professionally": 1
                             },
                             "tfidf": {
-                                "want": 0.1398,
-                                "apply": 0.1398,
-                                "program": 0.1398,
-                                "skill": 0.1398,
-                                "solve": 0.062,
-                                "real-world": 0.1398,
-                                "industry": 0.1398,
-                                "challenge": 0.1398,
-                                "grow": 0.1398,
-                                "professionally": 0.1398
+                                "want": 0.1146,
+                                "apply": 0.1146,
+                                "program": 0.1146,
+                                "skill": 0.1146,
+                                "solve": 0.0845,
+                                "real-world": 0.1146,
+                                "industry": 0.1146,
+                                "challenge": 0.1146,
+                                "grow": 0.1146,
+                                "professionally": 0.1146
                             }
                         },
                         "features": {
@@ -2643,8 +2643,8 @@
                             }
                         },
                         "neural_network": {
-                            "score": 59.07,
-                            "level": "Average"
+                            "score": 78.73,
+                            "level": "Good"
                         }
                     },
                     "fusion": {
@@ -2720,17 +2720,17 @@
                                 "result": 1
                             },
                             "tfidf": {
-                                "pressure": 0.0837,
-                                "stay": 0.0997,
-                                "calm": 0.1271,
-                                "break": 0.1271,
-                                "deadline": 0.0635,
-                                "manageable": 0.1271,
-                                "milestone": 0.1271,
-                                "focus": 0.0997,
-                                "deliver": 0.1271,
-                                "quality": 0.1271,
-                                "result": 0.1271
+                                "pressure": 0.1042,
+                                "stay": 0.1042,
+                                "calm": 0.1042,
+                                "break": 0.1042,
+                                "deadline": 0.0768,
+                                "manageable": 0.1042,
+                                "milestone": 0.1042,
+                                "focus": 0.0768,
+                                "deliver": 0.1042,
+                                "quality": 0.1042,
+                                "result": 0.1042
                             }
                         },
                         "features": {
@@ -2791,7 +2791,7 @@
                     "evaluation": {
                         "semantic": {
                             "similarity_score": {
-                                "score": 0.194,
+                                "score": 0.2735,
                                 "level": "Low"
                             }
                         },
@@ -2810,13 +2810,13 @@
                         },
                         "rule_based": {
                             "combined_score": {
-                                "score": 0.3164,
+                                "score": 0.3641,
                                 "level": "Low"
                             }
                         },
                         "neural_network": {
-                            "score": 81.62,
-                            "level": "Excellent"
+                            "score": 78.73,
+                            "level": "Good"
                         }
                     },
                     "fusion": {
@@ -2852,7 +2852,7 @@
                             0.757,
                             0.0258,
                             0.5,
-                            0.194,
+                            0.2735,
                             0.0,
                             0.0,
                             0.0,
@@ -2979,7 +2979,7 @@
                 "evaluation": {
                     "semantic": {
                         "similarity_score": {
-                            "score": 0.0388,
+                            "score": 0.0547,
                             "level": "Low"
                         }
                     },
@@ -2991,12 +2991,12 @@
                     },
                     "rule_based": {
                         "combined_score": {
-                            "score": 0.0633,
+                            "score": 0.0728,
                             "level": "Low"
                         }
                     },
                     "neural_network": {
-                        "score": 73.95,
+                        "score": 78.73,
                         "level": "Good"
                     }
                 },
@@ -3033,7 +3033,7 @@
                         0.757,
                         0.0258,
                         0.5,
-                        0.194,
+                        0.2735,
                         0.0,
                         0.0,
                         0.0,
@@ -3125,36 +3125,36 @@
                                 "system": 1
                             },
                             "tfidf": {
-                                "hello": 0.0368,
-                                "name": 0.0289,
-                                "vicky": 0.0289,
-                                "parathan": 0.0368,
-                                "belong": 0.0368,
-                                "viral": 0.0368,
-                                "west": 0.0368,
-                                "'m": 0.0727,
-                                "posiving": 0.0368,
-                                "bachelor": 0.0289,
-                                "'s": 0.0577,
-                                "degree": 0.0289,
-                                "computer": 0.0209,
-                                "application": 0.0209,
-                                "work": 0.0489,
-                                "multiple": 0.0485,
-                                "project": 0.0485,
-                                "niche": 0.0368,
-                                "interest": 0.0368,
-                                "learn": 0.0419,
-                                "curious": 0.0289,
-                                "artificial": 0.0289,
-                                "intelligence": 0.0289,
-                                "neural": 0.0368,
-                                "network": 0.0368,
-                                "also": 0.0289,
-                                "multimodal": 0.0289,
-                                "interview": 0.0368,
-                                "assessment": 0.0368,
-                                "system": 0.0242
+                                "hello": 0.0342,
+                                "name": 0.0342,
+                                "vicky": 0.0342,
+                                "parathan": 0.0342,
+                                "belong": 0.0342,
+                                "viral": 0.0342,
+                                "west": 0.0342,
+                                "'m": 0.1027,
+                                "posiving": 0.0342,
+                                "bachelor": 0.0342,
+                                "'s": 0.0685,
+                                "degree": 0.0342,
+                                "computer": 0.0217,
+                                "application": 0.0217,
+                                "work": 0.0475,
+                                "multiple": 0.0526,
+                                "project": 0.0526,
+                                "niche": 0.0342,
+                                "interest": 0.0342,
+                                "learn": 0.0368,
+                                "curious": 0.0263,
+                                "artificial": 0.0263,
+                                "intelligence": 0.0263,
+                                "neural": 0.0342,
+                                "network": 0.0342,
+                                "also": 0.0263,
+                                "multimodal": 0.0263,
+                                "interview": 0.0342,
+                                "assessment": 0.0342,
+                                "system": 0.0217
                             }
                         },
                         "features": {
@@ -3398,27 +3398,27 @@
                                 "know": 1
                             },
                             "tfidf": {
-                                "honest": 0.0392,
-                                "strength": 0.0568,
-                                "computer": 0.0568,
-                                "sit": 0.0499,
-                                "multiple": 0.0329,
-                                "hour": 0.0999,
-                                "long": 0.0499,
-                                "explore": 0.0392,
-                                "thing": 0.0284,
-                                "expose": 0.0392,
-                                "yet": 0.0392,
-                                "always": 0.0784,
-                                "learn": 0.0284,
-                                "something": 0.0999,
-                                "new": 0.0987,
-                                "good": 0.0499,
-                                "adaptable": 0.0499,
-                                "change": 0.0392,
-                                "environment": 0.0499,
-                                "key": 0.0284,
-                                "know": 0.0499
+                                "honest": 0.0465,
+                                "strength": 0.0589,
+                                "computer": 0.0589,
+                                "sit": 0.0465,
+                                "multiple": 0.0357,
+                                "hour": 0.0929,
+                                "long": 0.0465,
+                                "explore": 0.0465,
+                                "thing": 0.0294,
+                                "expose": 0.0357,
+                                "yet": 0.0465,
+                                "always": 0.0714,
+                                "learn": 0.025,
+                                "something": 0.0929,
+                                "new": 0.0883,
+                                "good": 0.0465,
+                                "adaptable": 0.0465,
+                                "change": 0.0357,
+                                "environment": 0.0465,
+                                "key": 0.0294,
+                                "know": 0.0465
                             }
                         },
                         "features": {
@@ -3526,7 +3526,7 @@
                     "evaluation": {
                         "semantic": {
                             "similarity_score": {
-                                "score": 0.2303,
+                                "score": 0.2493,
                                 "level": "Low"
                             }
                         },
@@ -3542,7 +3542,7 @@
                         },
                         "rule_based": {
                             "combined_score": {
-                                "score": 0.5382,
+                                "score": 0.5496,
                                 "level": "Moderate"
                             }
                         },
@@ -3584,7 +3584,7 @@
                             0.738,
                             0.9503,
                             1.0,
-                            0.2303,
+                            0.2493,
                             35.178,
                             109.16,
                             0.0158,
@@ -3776,80 +3776,80 @@
                                 "thank": 2
                             },
                             "tfidf": {
-                                "allow": 0.014,
-                                "solve": 0.0124,
-                                "technology": 0.0092,
-                                "difficulty": 0.014,
-                                "problem": 0.0186,
-                                "come": 0.014,
-                                "say": 0.014,
-                                "technical": 0.0159,
-                                "regard": 0.014,
-                                "blasebot": 0.028,
-                                "personal": 0.014,
-                                "business": 0.011,
-                                "give": 0.0219,
-                                "automation": 0.014,
-                                "tool": 0.014,
-                                "user": 0.0559,
-                                "play": 0.014,
-                                "odds": 0.014,
-                                "mobile": 0.014,
-                                "automate": 0.014,
-                                "farm": 0.014,
-                                "account": 0.014,
-                                "complete": 0.008,
-                                "certain": 0.014,
-                                "daily": 0.014,
-                                "activity": 0.014,
-                                "feature": 0.0219,
-                                "case": 0.014,
-                                "create": 0.014,
-                                "web": 0.0219,
-                                "portal": 0.028,
-                                "change": 0.0439,
-                                "configuration": 0.028,
-                                "side": 0.011,
-                                "whenever": 0.0219,
-                                "need": 0.011,
-                                "without": 0.014,
-                                "message": 0.028,
-                                "personally": 0.014,
-                                "thing": 0.008,
-                                "happen": 0.014,
-                                "due": 0.014,
-                                "mean": 0.0419,
-                                "new": 0.0092,
-                                "update": 0.0419,
-                                "lot": 0.014,
-                                "buy": 0.0419,
-                                "remove": 0.014,
-                                "json": 0.014,
-                                "expose": 0.011,
-                                "key": 0.008,
-                                "value": 0.014,
-                                "pair": 0.014,
-                                "encrypt": 0.014,
-                                "file": 0.014,
-                                "encryption": 0.014,
-                                "pipeline": 0.011,
-                                "normal": 0.014,
-                                "dealer": 0.028,
-                                "direct": 0.014,
-                                "interaction": 0.014,
-                                "approach": 0.014,
-                                "keep": 0.014,
-                                "cap": 0.014,
-                                "setting": 0.014,
-                                "make": 0.014,
-                                "alert": 0.011,
-                                "pending": 0.014,
-                                "manually": 0.014,
-                                "behind": 0.014,
-                                "scene": 0.014,
-                                "manual": 0.014,
-                                "work": 0.0062,
-                                "thank": 0.028
+                                "allow": 0.013,
+                                "solve": 0.012,
+                                "technology": 0.0082,
+                                "difficulty": 0.013,
+                                "problem": 0.021,
+                                "come": 0.013,
+                                "say": 0.013,
+                                "technical": 0.0165,
+                                "regard": 0.013,
+                                "blasebot": 0.026,
+                                "personal": 0.013,
+                                "business": 0.01,
+                                "give": 0.02,
+                                "automation": 0.013,
+                                "tool": 0.013,
+                                "user": 0.052,
+                                "play": 0.013,
+                                "odds": 0.013,
+                                "mobile": 0.013,
+                                "automate": 0.013,
+                                "farm": 0.013,
+                                "account": 0.013,
+                                "complete": 0.0082,
+                                "certain": 0.013,
+                                "daily": 0.013,
+                                "activity": 0.013,
+                                "feature": 0.02,
+                                "case": 0.013,
+                                "create": 0.013,
+                                "web": 0.02,
+                                "portal": 0.026,
+                                "change": 0.04,
+                                "configuration": 0.026,
+                                "side": 0.013,
+                                "whenever": 0.02,
+                                "need": 0.013,
+                                "without": 0.013,
+                                "message": 0.026,
+                                "personally": 0.013,
+                                "thing": 0.0082,
+                                "happen": 0.013,
+                                "due": 0.013,
+                                "mean": 0.039,
+                                "new": 0.0082,
+                                "update": 0.039,
+                                "lot": 0.013,
+                                "buy": 0.039,
+                                "remove": 0.013,
+                                "json": 0.013,
+                                "expose": 0.01,
+                                "key": 0.0082,
+                                "value": 0.013,
+                                "pair": 0.013,
+                                "encrypt": 0.013,
+                                "file": 0.013,
+                                "encryption": 0.013,
+                                "pipeline": 0.01,
+                                "normal": 0.013,
+                                "dealer": 0.026,
+                                "direct": 0.013,
+                                "interaction": 0.013,
+                                "approach": 0.013,
+                                "keep": 0.013,
+                                "cap": 0.013,
+                                "setting": 0.013,
+                                "make": 0.013,
+                                "alert": 0.01,
+                                "pending": 0.013,
+                                "manually": 0.013,
+                                "behind": 0.013,
+                                "scene": 0.013,
+                                "manual": 0.013,
+                                "work": 0.006,
+                                "thank": 0.026
                             }
                         },
                         "features": {
@@ -4121,7 +4121,7 @@
                     "evaluation": {
                         "semantic": {
                             "similarity_score": {
-                                "score": 0.1353,
+                                "score": 0.1503,
                                 "level": "Low"
                             }
                         },
@@ -4140,12 +4140,12 @@
                         },
                         "rule_based": {
                             "combined_score": {
-                                "score": 0.3812,
+                                "score": 0.3902,
                                 "level": "Low"
                             }
                         },
                         "neural_network": {
-                            "score": 99.85,
+                            "score": 100.0,
                             "level": "Excellent"
                         }
                     },
@@ -4182,7 +4182,7 @@
                             0.859,
                             0.8765,
                             0.75,
-                            0.1353,
+                            0.1503,
                             129.558,
                             105.59,
                             0.0168,
@@ -4265,29 +4265,29 @@
                                 "love": 1
                             },
                             "tfidf": {
-                                "since": 0.0261,
-                                "always": 0.0261,
-                                "curious": 0.0261,
-                                "technical": 0.0568,
-                                "role": 0.0379,
-                                "position": 0.0333,
-                                "think": 0.0666,
-                                "solve": 0.0443,
-                                "problem": 0.0738,
-                                "different": 0.0999,
-                                "way": 0.0333,
-                                "look": 0.0333,
-                                "perspective": 0.0333,
-                                "angle": 0.0333,
-                                "reason": 0.0261,
-                                "interested": 0.0438,
-                                "product": 0.0666,
-                                "even": 0.0999,
-                                "best": 0.0666,
-                                "business": 0.0522,
-                                "specialist": 0.0666,
-                                "also": 0.0261,
-                                "love": 0.0333
+                                "since": 0.031,
+                                "always": 0.0238,
+                                "curious": 0.0238,
+                                "technical": 0.0589,
+                                "role": 0.0392,
+                                "position": 0.031,
+                                "think": 0.062,
+                                "solve": 0.043,
+                                "problem": 0.0832,
+                                "different": 0.0929,
+                                "way": 0.031,
+                                "look": 0.031,
+                                "perspective": 0.031,
+                                "angle": 0.031,
+                                "reason": 0.031,
+                                "interested": 0.0476,
+                                "product": 0.062,
+                                "even": 0.0929,
+                                "best": 0.062,
+                                "business": 0.0476,
+                                "specialist": 0.062,
+                                "also": 0.0238,
+                                "love": 0.031
                             }
                         },
                         "features": {
@@ -4443,7 +4443,7 @@
                     "evaluation": {
                         "semantic": {
                             "similarity_score": {
-                                "score": 0.2275,
+                                "score": 0.2499,
                                 "level": "Low"
                             }
                         },
@@ -4459,7 +4459,7 @@
                         },
                         "rule_based": {
                             "combined_score": {
-                                "score": 0.5365,
+                                "score": 0.5499,
                                 "level": "Moderate"
                             }
                         },
@@ -4501,7 +4501,7 @@
                             0.659,
                             0.9146,
                             1.0,
-                            0.2275,
+                            0.2499,
                             61.048,
                             108.11,
                             0.0218,
@@ -4586,36 +4586,36 @@
                                 "tight": 1
                             },
                             "tfidf": {
-                                "handle": 0.0498,
-                                "pressure": 0.0747,
-                                "first": 0.0378,
-                                "n't": 0.0378,
-                                "feel": 0.0378,
-                                "far": 0.0378,
-                                "experience": 0.0249,
-                                "till": 0.0296,
-                                "whenever": 0.0296,
+                                "handle": 0.0541,
+                                "pressure": 0.0811,
+                                "first": 0.0352,
+                                "n't": 0.0352,
+                                "feel": 0.0352,
+                                "far": 0.0352,
+                                "experience": 0.027,
+                                "till": 0.0352,
+                                "whenever": 0.027,
                                 "deadline": 0.0567,
-                                "near": 0.0378,
-                                "give": 0.0296,
-                                "move": 0.0756,
-                                "two": 0.0378,
-                                "three": 0.0378,
-                                "specialised": 0.0378,
-                                "stuff": 0.0378,
-                                "complete": 0.0215,
-                                "everything": 0.0378,
-                                "system": 0.0249,
-                                "work": 0.0335,
-                                "inner": 0.0378,
-                                "body": 0.0378,
-                                "get": 0.0296,
-                                "alert": 0.0296,
-                                "mind": 0.0378,
-                                "sophisticated": 0.0378,
-                                "fact": 0.0378,
-                                "thing": 0.0215,
-                                "tight": 0.0249
+                                "near": 0.0352,
+                                "give": 0.027,
+                                "move": 0.0703,
+                                "two": 0.0352,
+                                "three": 0.0352,
+                                "specialised": 0.0352,
+                                "stuff": 0.0352,
+                                "complete": 0.0223,
+                                "everything": 0.0352,
+                                "system": 0.0223,
+                                "work": 0.0325,
+                                "inner": 0.0352,
+                                "body": 0.0352,
+                                "get": 0.0352,
+                                "alert": 0.027,
+                                "mind": 0.0352,
+                                "sophisticated": 0.0352,
+                                "fact": 0.0352,
+                                "thing": 0.0223,
+                                "tight": 0.0223
                             }
                         },
                         "features": {
@@ -4756,7 +4756,7 @@
                     "evaluation": {
                         "semantic": {
                             "similarity_score": {
-                                "score": 0.4768,
+                                "score": 0.5066,
                                 "level": "Moderate"
                             }
                         },
@@ -4774,12 +4774,12 @@
                         },
                         "rule_based": {
                             "combined_score": {
-                                "score": 0.6861,
-                                "level": "Moderate"
+                                "score": 0.704,
+                                "level": "High"
                             }
                         },
                         "neural_network": {
-                            "score": 97.47,
+                            "score": 100.0,
                             "level": "Excellent"
                         }
                     },
@@ -4816,7 +4816,7 @@
                             0.859,
                             0.2006,
                             1.0,
-                            0.4768,
+                            0.5066,
                             55.432,
                             103.91,
                             0.0168,
@@ -4832,8 +4832,8 @@
                     "features": {
                         "statistics": {
                             "word_count": 576,
-                            "sentence_count": 28,
-                            "average_sentence_length": 20.5714,
+                            "sentence_count": 30,
+                            "average_sentence_length": 19.2,
                             "stop_words_count": 321,
                             "filler_words_count": 13,
                             "stopword_ratio": 0.5573,
@@ -5444,7 +5444,7 @@
                 "evaluation": {
                     "semantic": {
                         "similarity_score": {
-                            "score": 0.214,
+                            "score": 0.2312,
                             "level": "Low"
                         }
                     },
@@ -5456,57 +5456,16 @@
                     },
                     "rule_based": {
                         "combined_score": {
-                            "score": 0.4284,
+                            "score": 0.4387,
                             "level": "Moderate"
                         }
                     },
                     "neural_network": {
-                        "score": 99.46,
+                        "score": 100.0,
                         "level": "Excellent"
                     }
                 },
-                "fusion": {
-                    "feature_names": [
-                        "word_count",
-                        "sentence_count",
-                        "average_sentence_length",
-                        "vocabulary_ratio",
-                        "filler_ratio",
-                        "stopword_ratio",
-                        "sentiment_pos",
-                        "sentiment_neg",
-                        "sentiment_neu",
-                        "sentiment_compound",
-                        "keyword_coverage",
-                        "tfidf_cosine_similarity",
-                        "duration_seconds",
-                        "speech_rate_wpm",
-                        "rms_energy",
-                        "zero_crossing_rate",
-                        "silence_ratio",
-                        "speech_available"
-                    ],
-                    "feature_vector": [
-                        97.0,
-                        5.0,
-                        19.4,
-                        0.6186,
-                        0.0206,
-                        0.6082,
-                        0.069,
-                        0.072,
-                        0.859,
-                        0.2006,
-                        1.0,
-                        0.4768,
-                        55.432,
-                        103.91,
-                        0.0168,
-                        0.1854,
-                        0.7017,
-                        1.0
-                    ]
-                }
+                "fusion": {}
             }
         },
         "1022": {
@@ -6491,8 +6450,8 @@
                     "features": {
                         "statistics": {
                             "word_count": 171,
-                            "sentence_count": 5,
-                            "average_sentence_length": 34.2,
+                            "sentence_count": 6,
+                            "average_sentence_length": 28.5,
                             "stop_words_count": 102,
                             "filler_words_count": 2,
                             "stopword_ratio": 0.5965,
@@ -6719,48 +6678,7 @@
                         "level": "Excellent"
                     }
                 },
-                "fusion": {
-                    "feature_names": [
-                        "word_count",
-                        "sentence_count",
-                        "average_sentence_length",
-                        "vocabulary_ratio",
-                        "filler_ratio",
-                        "stopword_ratio",
-                        "sentiment_pos",
-                        "sentiment_neg",
-                        "sentiment_neu",
-                        "sentiment_compound",
-                        "keyword_coverage",
-                        "tfidf_cosine_similarity",
-                        "duration_seconds",
-                        "speech_rate_wpm",
-                        "rms_energy",
-                        "zero_crossing_rate",
-                        "silence_ratio",
-                        "speech_available"
-                    ],
-                    "feature_vector": [
-                        31.0,
-                        1.0,
-                        31.0,
-                        0.8065,
-                        0.0,
-                        0.5806,
-                        0.0,
-                        0.075,
-                        0.925,
-                        -0.296,
-                        0.75,
-                        0.3267,
-                        20.046,
-                        92.79,
-                        0.0172,
-                        0.162,
-                        0.7223,
-                        1.0
-                    ]
-                }
+                "fusion": {}
             }
         }
     }
