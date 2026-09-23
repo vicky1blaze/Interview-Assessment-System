@@ -6762,6 +6762,1967 @@
                     ]
                 }
             }
+        },
+        "1023": {
+            "metadata": {
+                "candidate_id": "1023"
+            },
+            "responses": {
+                "qid_1": {
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "name",
+                                "vikiparat",
+                                "viral",
+                                "east",
+                                "basically",
+                                "curious",
+                                "come",
+                                "technology",
+                                "debug",
+                                "thing",
+                                "way",
+                                "curious",
+                                "come",
+                                "learn",
+                                "artificial",
+                                "intelligence"
+                            ],
+                            "bow": {
+                                "name": 1,
+                                "vikiparat": 1,
+                                "viral": 1,
+                                "east": 1,
+                                "basically": 1,
+                                "curious": 2,
+                                "come": 2,
+                                "technology": 1,
+                                "debug": 1,
+                                "thing": 1,
+                                "way": 1,
+                                "learn": 1,
+                                "artificial": 1,
+                                "intelligence": 1
+                            },
+                            "tfidf": {
+                                "name": 0.0667,
+                                "vikiparat": 0.0965,
+                                "viral": 0.0777,
+                                "east": 0.0965,
+                                "basically": 0.0667,
+                                "curious": 0.1334,
+                                "come": 0.1334,
+                                "technology": 0.0528,
+                                "debug": 0.0965,
+                                "thing": 0.0437,
+                                "way": 0.0667,
+                                "learn": 0.0528,
+                                "artificial": 0.0667,
+                                "intelligence": 0.0667
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 39,
+                                "sentence_count": 2,
+                                "average_sentence_length": 19.5,
+                                "stop_words_count": 23,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.5897,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 26,
+                                "vocabulary_ratio": 0.6667,
+                                "vocabulary_score": 0.6667,
+                                "no_punctuation_tokens": [
+                                    "my",
+                                    "name",
+                                    "is",
+                                    "vikiparat",
+                                    "and",
+                                    "i",
+                                    "am",
+                                    "from",
+                                    "viral",
+                                    "east",
+                                    "and",
+                                    "basically",
+                                    "i",
+                                    "am",
+                                    "very",
+                                    "curious",
+                                    "when",
+                                    "it",
+                                    "comes",
+                                    "to",
+                                    "technology",
+                                    "and",
+                                    "debugging",
+                                    "things",
+                                    "in",
+                                    "my",
+                                    "own",
+                                    "way",
+                                    "i",
+                                    "am",
+                                    "very",
+                                    "curious",
+                                    "when",
+                                    "it",
+                                    "comes",
+                                    "to",
+                                    "learning",
+                                    "artificial",
+                                    "intelligence"
+                                ],
+                                "no_punctuation_tokens_count": 39
+                            },
+                            "sentiment": {
+                                "neg": 0.0,
+                                "neu": 0.799,
+                                "pos": 0.201,
+                                "compound": 0.8067
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "My name is Vikiparat and I am from Viral East and basically I am very curious when it comes to technology and debugging things in my own way. I am very curious when it comes to learning artificial intelligence.",
+                        "features": {
+                            "duration_seconds": 22.282,
+                            "speech_rate_wpm": 105.02,
+                            "rms_energy": 0.0123,
+                            "zero_crossing_rate": 0.1799,
+                            "silence_ratio": 0.768,
+                            "speech_available": 1.0
+                        }
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 0.0,
+                                "matched": [],
+                                "missing": [
+                                    "background",
+                                    "tell"
+                                ]
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "neural_network": {
+                            "score": 55.76,
+                            "level": "Average"
+                        }
+                    },
+                    "fusion": {
+                        "feature_names": [
+                            "word_count",
+                            "sentence_count",
+                            "average_sentence_length",
+                            "vocabulary_ratio",
+                            "filler_ratio",
+                            "stopword_ratio",
+                            "sentiment_pos",
+                            "sentiment_neg",
+                            "sentiment_neu",
+                            "sentiment_compound",
+                            "keyword_coverage",
+                            "tfidf_cosine_similarity",
+                            "duration_seconds",
+                            "speech_rate_wpm",
+                            "rms_energy",
+                            "zero_crossing_rate",
+                            "silence_ratio",
+                            "speech_available"
+                        ],
+                        "feature_vector": [
+                            39.0,
+                            2.0,
+                            19.5,
+                            0.6667,
+                            0.0,
+                            0.5897,
+                            0.201,
+                            0.0,
+                            0.799,
+                            0.8067,
+                            0.0,
+                            0.0,
+                            22.282,
+                            105.02,
+                            0.0123,
+                            0.1799,
+                            0.768,
+                            1.0
+                        ]
+                    }
+                },
+                "qid_2": {
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "key",
+                                "strength",
+                                "adapt",
+                                "new",
+                                "thing",
+                                "quickly",
+                                "'m",
+                                "basically",
+                                "adaptive",
+                                "'m",
+                                "also",
+                                "guy",
+                                "complete",
+                                "project",
+                                "within",
+                                "red",
+                                "line"
+                            ],
+                            "bow": {
+                                "key": 1,
+                                "strength": 1,
+                                "adapt": 1,
+                                "new": 1,
+                                "thing": 1,
+                                "quickly": 1,
+                                "'m": 2,
+                                "basically": 1,
+                                "adaptive": 1,
+                                "also": 1,
+                                "guy": 1,
+                                "complete": 1,
+                                "project": 1,
+                                "within": 1,
+                                "red": 1,
+                                "line": 1
+                            },
+                            "tfidf": {
+                                "key": 0.0451,
+                                "strength": 0.0451,
+                                "adapt": 0.0908,
+                                "new": 0.0554,
+                                "thing": 0.0411,
+                                "quickly": 0.0731,
+                                "'m": 0.0994,
+                                "basically": 0.0628,
+                                "adaptive": 0.0908,
+                                "also": 0.0628,
+                                "guy": 0.0908,
+                                "complete": 0.0451,
+                                "project": 0.0554,
+                                "within": 0.0628,
+                                "red": 0.0908,
+                                "line": 0.0908
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 31,
+                                "sentence_count": 1,
+                                "average_sentence_length": 31.0,
+                                "stop_words_count": 14,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.4516,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 27,
+                                "vocabulary_ratio": 0.871,
+                                "vocabulary_score": 0.871,
+                                "no_punctuation_tokens": [
+                                    "my",
+                                    "key",
+                                    "strength",
+                                    "is",
+                                    "to",
+                                    "adapt",
+                                    "new",
+                                    "things",
+                                    "very",
+                                    "quickly",
+                                    "so",
+                                    "i",
+                                    "'m",
+                                    "basically",
+                                    "adaptive",
+                                    "and",
+                                    "i",
+                                    "'m",
+                                    "also",
+                                    "the",
+                                    "guy",
+                                    "who",
+                                    "complete",
+                                    "all",
+                                    "the",
+                                    "projects",
+                                    "in",
+                                    "within",
+                                    "the",
+                                    "red",
+                                    "line"
+                                ],
+                                "no_punctuation_tokens_count": 31
+                            },
+                            "sentiment": {
+                                "neg": 0.0,
+                                "neu": 0.897,
+                                "pos": 0.103,
+                                "compound": 0.4939
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "My key strength is to adapt new things very quickly, so I'm basically adaptive and I'm also the guy who complete all the projects in within the red line.",
+                        "features": {
+                            "duration_seconds": 16.354,
+                            "speech_rate_wpm": 106.4,
+                            "rms_energy": 0.0142,
+                            "zero_crossing_rate": 0.1903,
+                            "silence_ratio": 0.7127,
+                            "speech_available": 1.0
+                        }
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.2225,
+                                "level": "Low"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 1.0,
+                                "matched": [
+                                    "key",
+                                    "strength"
+                                ],
+                                "missing": []
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.5335,
+                                "level": "Moderate"
+                            }
+                        },
+                        "neural_network": {
+                            "score": 60.85,
+                            "level": "Average"
+                        }
+                    },
+                    "fusion": {
+                        "feature_names": [
+                            "word_count",
+                            "sentence_count",
+                            "average_sentence_length",
+                            "vocabulary_ratio",
+                            "filler_ratio",
+                            "stopword_ratio",
+                            "sentiment_pos",
+                            "sentiment_neg",
+                            "sentiment_neu",
+                            "sentiment_compound",
+                            "keyword_coverage",
+                            "tfidf_cosine_similarity",
+                            "duration_seconds",
+                            "speech_rate_wpm",
+                            "rms_energy",
+                            "zero_crossing_rate",
+                            "silence_ratio",
+                            "speech_available"
+                        ],
+                        "feature_vector": [
+                            31.0,
+                            1.0,
+                            31.0,
+                            0.871,
+                            0.0,
+                            0.4516,
+                            0.103,
+                            0.0,
+                            0.897,
+                            0.4939,
+                            1.0,
+                            0.2225,
+                            16.354,
+                            106.4,
+                            0.0142,
+                            0.1903,
+                            0.7127,
+                            1.0
+                        ]
+                    }
+                },
+                "qid_3": {
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "problem",
+                                "place",
+                                "board",
+                                "website",
+                                "back-and-logic",
+                                "break",
+                                "due",
+                                "change",
+                                "main",
+                                "software",
+                                "thing",
+                                "change",
+                                "whole",
+                                "back-and-and-and",
+                                "make",
+                                "easy",
+                                "manual",
+                                "work",
+                                "thing",
+                                "saw",
+                                "technical",
+                                "problem"
+                            ],
+                            "bow": {
+                                "problem": 2,
+                                "place": 1,
+                                "board": 1,
+                                "website": 1,
+                                "back-and-logic": 1,
+                                "break": 1,
+                                "due": 1,
+                                "change": 2,
+                                "main": 1,
+                                "software": 1,
+                                "thing": 2,
+                                "whole": 1,
+                                "back-and-and-and": 1,
+                                "make": 1,
+                                "easy": 1,
+                                "manual": 1,
+                                "work": 1,
+                                "saw": 1,
+                                "technical": 1
+                            },
+                            "tfidf": {
+                                "problem": 0.0583,
+                                "place": 0.0702,
+                                "board": 0.0702,
+                                "website": 0.0702,
+                                "back-and-logic": 0.0702,
+                                "break": 0.0565,
+                                "due": 0.0565,
+                                "change": 0.097,
+                                "main": 0.0702,
+                                "software": 0.0565,
+                                "thing": 0.0635,
+                                "whole": 0.0702,
+                                "back-and-and-and": 0.0702,
+                                "make": 0.0565,
+                                "easy": 0.0702,
+                                "manual": 0.0565,
+                                "work": 0.0291,
+                                "saw": 0.0702,
+                                "technical": 0.0348
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 54,
+                                "sentence_count": 1,
+                                "average_sentence_length": 54.0,
+                                "stop_words_count": 32,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.5926,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 40,
+                                "vocabulary_ratio": 0.7407,
+                                "vocabulary_score": 0.7407,
+                                "no_punctuation_tokens": [
+                                    "there",
+                                    "was",
+                                    "a",
+                                    "problem",
+                                    "with",
+                                    "my",
+                                    "place",
+                                    "board",
+                                    "website",
+                                    "where",
+                                    "the",
+                                    "back-and-logic",
+                                    "was",
+                                    "broken",
+                                    "due",
+                                    "to",
+                                    "the",
+                                    "changes",
+                                    "in",
+                                    "the",
+                                    "main",
+                                    "software",
+                                    "so",
+                                    "the",
+                                    "thing",
+                                    "what",
+                                    "i",
+                                    "did",
+                                    "is",
+                                    "i",
+                                    "just",
+                                    "changed",
+                                    "a",
+                                    "whole",
+                                    "back-and-and-and",
+                                    "made",
+                                    "it",
+                                    "very",
+                                    "easy",
+                                    "and",
+                                    "manual",
+                                    "work",
+                                    "so",
+                                    "that",
+                                    "was",
+                                    "the",
+                                    "thing",
+                                    "where",
+                                    "how",
+                                    "i",
+                                    "saw",
+                                    "the",
+                                    "technical",
+                                    "problem"
+                                ],
+                                "no_punctuation_tokens_count": 54
+                            },
+                            "sentiment": {
+                                "neg": 0.15,
+                                "neu": 0.794,
+                                "pos": 0.056,
+                                "compound": -0.6494
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "There was a problem with my place board website where the Back-and-logic was broken due to the changes in the main software So the thing what I did is I just changed a whole back-and-and-and Made it very easy and manual work So that was the thing where how I saw the technical problem",
+                        "features": {
+                            "duration_seconds": 24.518,
+                            "speech_rate_wpm": 132.15,
+                            "rms_energy": 0.0187,
+                            "zero_crossing_rate": 0.1599,
+                            "silence_ratio": 0.6582,
+                            "speech_available": 1.0
+                        }
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.0985,
+                                "level": "Low"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 0.5,
+                                "matched": [
+                                    "problem",
+                                    "technical"
+                                ],
+                                "missing": [
+                                    "describe",
+                                    "solve"
+                                ]
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.2591,
+                                "level": "Low"
+                            }
+                        },
+                        "neural_network": {
+                            "score": 46.14,
+                            "level": "Needs Improvement"
+                        }
+                    },
+                    "fusion": {
+                        "feature_names": [
+                            "word_count",
+                            "sentence_count",
+                            "average_sentence_length",
+                            "vocabulary_ratio",
+                            "filler_ratio",
+                            "stopword_ratio",
+                            "sentiment_pos",
+                            "sentiment_neg",
+                            "sentiment_neu",
+                            "sentiment_compound",
+                            "keyword_coverage",
+                            "tfidf_cosine_similarity",
+                            "duration_seconds",
+                            "speech_rate_wpm",
+                            "rms_energy",
+                            "zero_crossing_rate",
+                            "silence_ratio",
+                            "speech_available"
+                        ],
+                        "feature_vector": [
+                            54.0,
+                            1.0,
+                            54.0,
+                            0.7407,
+                            0.0,
+                            0.5926,
+                            0.056,
+                            0.15,
+                            0.794,
+                            -0.6494,
+                            0.5,
+                            0.0985,
+                            24.518,
+                            132.15,
+                            0.0187,
+                            0.1599,
+                            0.6582,
+                            1.0
+                        ]
+                    }
+                },
+                "qid_4": {
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "'m",
+                                "interested",
+                                "role",
+                                "since",
+                                "technology"
+                            ],
+                            "bow": {
+                                "'m": 1,
+                                "interested": 1,
+                                "role": 1,
+                                "since": 1,
+                                "technology": 1
+                            },
+                            "tfidf": {
+                                "'m": 0.169,
+                                "interested": 0.169,
+                                "role": 0.1532,
+                                "since": 0.2134,
+                                "technology": 0.169
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 10,
+                                "sentence_count": 1,
+                                "average_sentence_length": 10.0,
+                                "stop_words_count": 4,
+                                "filler_words_count": 1,
+                                "stopword_ratio": 0.4,
+                                "filler_ratio": 0.1,
+                                "vocabulary_count": 9,
+                                "vocabulary_ratio": 0.9,
+                                "vocabulary_score": 0.9,
+                                "no_punctuation_tokens": [
+                                    "i",
+                                    "'m",
+                                    "interested",
+                                    "in",
+                                    "this",
+                                    "role",
+                                    "since",
+                                    "i",
+                                    "like",
+                                    "technology"
+                                ],
+                                "no_punctuation_tokens_count": 10
+                            },
+                            "sentiment": {
+                                "neg": 0.0,
+                                "neu": 0.536,
+                                "pos": 0.464,
+                                "compound": 0.6369
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "I'm interested in this role since I like technology.",
+                        "features": {
+                            "duration_seconds": 16.328,
+                            "speech_rate_wpm": 33.07,
+                            "rms_energy": 0.0131,
+                            "zero_crossing_rate": 0.2266,
+                            "silence_ratio": 0.8497,
+                            "speech_available": 1.0
+                        }
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.58,
+                                "level": "Moderate"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 1.0,
+                                "matched": [
+                                    "interested",
+                                    "role"
+                                ],
+                                "missing": []
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.748,
+                                "level": "High"
+                            }
+                        },
+                        "neural_network": {
+                            "score": 59.71,
+                            "level": "Average"
+                        }
+                    },
+                    "fusion": {
+                        "feature_names": [
+                            "word_count",
+                            "sentence_count",
+                            "average_sentence_length",
+                            "vocabulary_ratio",
+                            "filler_ratio",
+                            "stopword_ratio",
+                            "sentiment_pos",
+                            "sentiment_neg",
+                            "sentiment_neu",
+                            "sentiment_compound",
+                            "keyword_coverage",
+                            "tfidf_cosine_similarity",
+                            "duration_seconds",
+                            "speech_rate_wpm",
+                            "rms_energy",
+                            "zero_crossing_rate",
+                            "silence_ratio",
+                            "speech_available"
+                        ],
+                        "feature_vector": [
+                            10.0,
+                            1.0,
+                            10.0,
+                            0.9,
+                            0.1,
+                            0.4,
+                            0.464,
+                            0.0,
+                            0.536,
+                            0.6369,
+                            1.0,
+                            0.58,
+                            16.328,
+                            33.07,
+                            0.0131,
+                            0.2266,
+                            0.8497,
+                            1.0
+                        ]
+                    }
+                },
+                "qid_5": {
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "basically",
+                                "natural",
+                                "tendency",
+                                "handle",
+                                "pressure",
+                                "way",
+                                "come",
+                                "deadline",
+                                "naturally",
+                                "complete",
+                                "work",
+                                "within",
+                                "deadline"
+                            ],
+                            "bow": {
+                                "basically": 1,
+                                "natural": 1,
+                                "tendency": 1,
+                                "handle": 1,
+                                "pressure": 1,
+                                "way": 1,
+                                "come": 1,
+                                "deadline": 2,
+                                "naturally": 1,
+                                "complete": 1,
+                                "work": 1,
+                                "within": 1
+                            },
+                            "tfidf": {
+                                "basically": 0.0821,
+                                "natural": 0.1188,
+                                "tendency": 0.1188,
+                                "handle": 0.065,
+                                "pressure": 0.065,
+                                "way": 0.0821,
+                                "come": 0.0821,
+                                "deadline": 0.1075,
+                                "naturally": 0.1188,
+                                "complete": 0.0589,
+                                "work": 0.0493,
+                                "within": 0.0821
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 29,
+                                "sentence_count": 1,
+                                "average_sentence_length": 29.0,
+                                "stop_words_count": 16,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.5517,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 24,
+                                "vocabulary_ratio": 0.8276,
+                                "vocabulary_score": 0.8276,
+                                "no_punctuation_tokens": [
+                                    "basically",
+                                    "i",
+                                    "have",
+                                    "this",
+                                    "natural",
+                                    "tendency",
+                                    "to",
+                                    "handle",
+                                    "the",
+                                    "pressure",
+                                    "on",
+                                    "my",
+                                    "own",
+                                    "way",
+                                    "and",
+                                    "when",
+                                    "it",
+                                    "comes",
+                                    "to",
+                                    "deadline",
+                                    "naturally",
+                                    "i",
+                                    "do",
+                                    "complete",
+                                    "the",
+                                    "work",
+                                    "within",
+                                    "the",
+                                    "deadline"
+                                ],
+                                "no_punctuation_tokens_count": 29
+                            },
+                            "sentiment": {
+                                "neg": 0.073,
+                                "neu": 0.831,
+                                "pos": 0.096,
+                                "compound": 0.1717
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "Basically I have this natural tendency to handle the pressure on my own way and when it comes to deadline, naturally I do complete the work within the deadline.",
+                        "features": {
+                            "duration_seconds": 14.768,
+                            "speech_rate_wpm": 117.82,
+                            "rms_energy": 0.0146,
+                            "zero_crossing_rate": 0.1701,
+                            "silence_ratio": 0.7498,
+                            "speech_available": 1.0
+                        }
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.358,
+                                "level": "Low"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 0.75,
+                                "matched": [
+                                    "deadline",
+                                    "handle",
+                                    "pressure"
+                                ],
+                                "missing": [
+                                    "tight"
+                                ]
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.5148,
+                                "level": "Moderate"
+                            }
+                        },
+                        "neural_network": {
+                            "score": 48.23,
+                            "level": "Needs Improvement"
+                        }
+                    },
+                    "fusion": {
+                        "feature_names": [
+                            "word_count",
+                            "sentence_count",
+                            "average_sentence_length",
+                            "vocabulary_ratio",
+                            "filler_ratio",
+                            "stopword_ratio",
+                            "sentiment_pos",
+                            "sentiment_neg",
+                            "sentiment_neu",
+                            "sentiment_compound",
+                            "keyword_coverage",
+                            "tfidf_cosine_similarity",
+                            "duration_seconds",
+                            "speech_rate_wpm",
+                            "rms_energy",
+                            "zero_crossing_rate",
+                            "silence_ratio",
+                            "speech_available"
+                        ],
+                        "feature_vector": [
+                            29.0,
+                            1.0,
+                            29.0,
+                            0.8276,
+                            0.0,
+                            0.5517,
+                            0.096,
+                            0.073,
+                            0.831,
+                            0.1717,
+                            0.75,
+                            0.358,
+                            14.768,
+                            117.82,
+                            0.0146,
+                            0.1701,
+                            0.7498,
+                            1.0
+                        ]
+                    }
+                }
+            },
+            "overall": {
+                "text": {
+                    "features": {
+                        "statistics": {
+                            "word_count": 163,
+                            "sentence_count": 7,
+                            "average_sentence_length": 23.2857,
+                            "stop_words_count": 89,
+                            "filler_words_count": 1,
+                            "stopword_ratio": 0.546,
+                            "filler_ratio": 0.0061,
+                            "vocabulary_count": 88,
+                            "vocabulary_ratio": 0.5399,
+                            "vocabulary_score": 0.5399,
+                            "no_punctuation_tokens": [
+                                "my",
+                                "name",
+                                "is",
+                                "vikiparat",
+                                "and",
+                                "i",
+                                "am",
+                                "from",
+                                "viral",
+                                "east",
+                                "and",
+                                "basically",
+                                "i",
+                                "am",
+                                "very",
+                                "curious",
+                                "when",
+                                "it",
+                                "comes",
+                                "to",
+                                "technology",
+                                "and",
+                                "debugging",
+                                "things",
+                                "in",
+                                "my",
+                                "own",
+                                "way",
+                                "i",
+                                "am",
+                                "very",
+                                "curious",
+                                "when",
+                                "it",
+                                "comes",
+                                "to",
+                                "learning",
+                                "artificial",
+                                "intelligence",
+                                "my",
+                                "key",
+                                "strength",
+                                "is",
+                                "to",
+                                "adapt",
+                                "new",
+                                "things",
+                                "very",
+                                "quickly",
+                                "so",
+                                "i",
+                                "'m",
+                                "basically",
+                                "adaptive",
+                                "and",
+                                "i",
+                                "'m",
+                                "also",
+                                "the",
+                                "guy",
+                                "who",
+                                "complete",
+                                "all",
+                                "the",
+                                "projects",
+                                "in",
+                                "within",
+                                "the",
+                                "red",
+                                "line",
+                                "there",
+                                "was",
+                                "a",
+                                "problem",
+                                "with",
+                                "my",
+                                "place",
+                                "board",
+                                "website",
+                                "where",
+                                "the",
+                                "back-and-logic",
+                                "was",
+                                "broken",
+                                "due",
+                                "to",
+                                "the",
+                                "changes",
+                                "in",
+                                "the",
+                                "main",
+                                "software",
+                                "so",
+                                "the",
+                                "thing",
+                                "what",
+                                "i",
+                                "did",
+                                "is",
+                                "i",
+                                "just",
+                                "changed",
+                                "a",
+                                "whole",
+                                "back-and-and-and",
+                                "made",
+                                "it",
+                                "very",
+                                "easy",
+                                "and",
+                                "manual",
+                                "work",
+                                "so",
+                                "that",
+                                "was",
+                                "the",
+                                "thing",
+                                "where",
+                                "how",
+                                "i",
+                                "saw",
+                                "the",
+                                "technical",
+                                "problem",
+                                "i",
+                                "'m",
+                                "interested",
+                                "in",
+                                "this",
+                                "role",
+                                "since",
+                                "i",
+                                "like",
+                                "technology",
+                                "basically",
+                                "i",
+                                "have",
+                                "this",
+                                "natural",
+                                "tendency",
+                                "to",
+                                "handle",
+                                "the",
+                                "pressure",
+                                "on",
+                                "my",
+                                "own",
+                                "way",
+                                "and",
+                                "when",
+                                "it",
+                                "comes",
+                                "to",
+                                "deadline",
+                                "naturally",
+                                "i",
+                                "do",
+                                "complete",
+                                "the",
+                                "work",
+                                "within",
+                                "the",
+                                "deadline"
+                            ],
+                            "no_punctuation_tokens_count": 163
+                        },
+                        "sentiment": {
+                            "neg": 0.063,
+                            "neu": 0.804,
+                            "pos": 0.133,
+                            "compound": 0.9012
+                        }
+                    }
+                },
+                "speech": {
+                    "features": {
+                        "duration_seconds": 94.25,
+                        "speech_rate_wpm": 98.89,
+                        "silence_ratio": 0.7477,
+                        "rms_energy": 0.0146,
+                        "speech_available": 1.0
+                    }
+                },
+                "video": {
+                    "features": {}
+                },
+                "evaluation": {
+                    "semantic": {
+                        "similarity_score": {
+                            "score": 0.2518,
+                            "level": "Low"
+                        }
+                    },
+                    "lexical": {
+                        "keyword_coverage": {
+                            "score": 0.65,
+                            "level": "Moderate"
+                        }
+                    },
+                    "rule_based": {
+                        "combined_score": {
+                            "score": 0.4111,
+                            "level": "Moderate"
+                        }
+                    },
+                    "neural_network": {
+                        "score": 54.14,
+                        "level": "Average"
+                    }
+                },
+                "fusion": {}
+            }
+        },
+        "1025": {
+            "metadata": {
+                "candidate_id": "1025"
+            },
+            "responses": {
+                "qid_1": {
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "name",
+                                "sujel",
+                                "singh"
+                            ],
+                            "bow": {
+                                "name": 1,
+                                "sujel": 1,
+                                "singh": 1
+                            },
+                            "tfidf": {
+                                "name": 0.3333,
+                                "sujel": 0.534,
+                                "singh": 0.534
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 5,
+                                "sentence_count": 1,
+                                "average_sentence_length": 5.0,
+                                "stop_words_count": 2,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.4,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 5,
+                                "vocabulary_ratio": 1.0,
+                                "vocabulary_score": 1.0,
+                                "no_punctuation_tokens": [
+                                    "my",
+                                    "name",
+                                    "is",
+                                    "sujel",
+                                    "singh"
+                                ],
+                                "no_punctuation_tokens_count": 5
+                            },
+                            "sentiment": {
+                                "neg": 0.0,
+                                "neu": 1.0,
+                                "pos": 0.0,
+                                "compound": 0.0
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "My name is Sujel Singh.",
+                        "features": {
+                            "duration_seconds": 8.736,
+                            "speech_rate_wpm": 34.34,
+                            "rms_energy": 0.0088,
+                            "zero_crossing_rate": 0.2178,
+                            "silence_ratio": 0.8999,
+                            "speech_available": 1.0
+                        }
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 0.0,
+                                "matched": [],
+                                "missing": [
+                                    "background",
+                                    "tell"
+                                ]
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "neural_network": {
+                            "score": 31.92,
+                            "level": "Needs Improvement"
+                        }
+                    },
+                    "fusion": {
+                        "feature_names": [
+                            "word_count",
+                            "sentence_count",
+                            "average_sentence_length",
+                            "vocabulary_ratio",
+                            "filler_ratio",
+                            "stopword_ratio",
+                            "sentiment_pos",
+                            "sentiment_neg",
+                            "sentiment_neu",
+                            "sentiment_compound",
+                            "keyword_coverage",
+                            "tfidf_cosine_similarity",
+                            "duration_seconds",
+                            "speech_rate_wpm",
+                            "rms_energy",
+                            "zero_crossing_rate",
+                            "silence_ratio",
+                            "speech_available"
+                        ],
+                        "feature_vector": [
+                            5.0,
+                            1.0,
+                            5.0,
+                            1.0,
+                            0.0,
+                            0.4,
+                            0.0,
+                            0.0,
+                            1.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            8.736,
+                            34.34,
+                            0.0088,
+                            0.2178,
+                            0.8999,
+                            1.0
+                        ]
+                    }
+                },
+                "qid_2": {
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "make",
+                                "fast"
+                            ],
+                            "bow": {
+                                "make": 1,
+                                "fast": 1
+                            },
+                            "tfidf": {
+                                "make": 0.5625,
+                                "fast": 0.801
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 5,
+                                "sentence_count": 1,
+                                "average_sentence_length": 5.0,
+                                "stop_words_count": 3,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.6,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 5,
+                                "vocabulary_ratio": 1.0,
+                                "vocabulary_score": 1.0,
+                                "no_punctuation_tokens": [
+                                    "this",
+                                    "i",
+                                    "made",
+                                    "it",
+                                    "fast"
+                                ],
+                                "no_punctuation_tokens_count": 5
+                            },
+                            "sentiment": {
+                                "neg": 0.0,
+                                "neu": 1.0,
+                                "pos": 0.0,
+                                "compound": 0.0
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "This, I made it fast.",
+                        "features": {
+                            "duration_seconds": 2.6,
+                            "speech_rate_wpm": 115.38,
+                            "rms_energy": 0.0182,
+                            "zero_crossing_rate": 0.1681,
+                            "silence_ratio": 0.7697,
+                            "speech_available": 1.0
+                        }
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 0.0,
+                                "matched": [],
+                                "missing": [
+                                    "key",
+                                    "strength"
+                                ]
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "neural_network": {
+                            "score": 27.26,
+                            "level": "Needs Improvement"
+                        }
+                    },
+                    "fusion": {
+                        "feature_names": [
+                            "word_count",
+                            "sentence_count",
+                            "average_sentence_length",
+                            "vocabulary_ratio",
+                            "filler_ratio",
+                            "stopword_ratio",
+                            "sentiment_pos",
+                            "sentiment_neg",
+                            "sentiment_neu",
+                            "sentiment_compound",
+                            "keyword_coverage",
+                            "tfidf_cosine_similarity",
+                            "duration_seconds",
+                            "speech_rate_wpm",
+                            "rms_energy",
+                            "zero_crossing_rate",
+                            "silence_ratio",
+                            "speech_available"
+                        ],
+                        "feature_vector": [
+                            5.0,
+                            1.0,
+                            5.0,
+                            1.0,
+                            0.0,
+                            0.6,
+                            0.0,
+                            0.0,
+                            1.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            2.6,
+                            115.38,
+                            0.0182,
+                            0.1681,
+                            0.7697,
+                            1.0
+                        ]
+                    }
+                },
+                "qid_3": {
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "use",
+                                "air"
+                            ],
+                            "bow": {
+                                "use": 1,
+                                "air": 1
+                            },
+                            "tfidf": {
+                                "use": 0.801,
+                                "air": 0.801
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 3,
+                                "sentence_count": 1,
+                                "average_sentence_length": 3.0,
+                                "stop_words_count": 1,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.3333,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 3,
+                                "vocabulary_ratio": 1.0,
+                                "vocabulary_score": 1.0,
+                                "no_punctuation_tokens": [
+                                    "by",
+                                    "using",
+                                    "air"
+                                ],
+                                "no_punctuation_tokens_count": 3
+                            },
+                            "sentiment": {
+                                "neg": 0.0,
+                                "neu": 1.0,
+                                "pos": 0.0,
+                                "compound": 0.0
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "by using air",
+                        "features": {
+                            "duration_seconds": 2.236,
+                            "speech_rate_wpm": 80.5,
+                            "rms_energy": 0.0496,
+                            "zero_crossing_rate": 0.1622,
+                            "silence_ratio": 0.6088,
+                            "speech_available": 1.0
+                        }
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 0.0,
+                                "matched": [],
+                                "missing": [
+                                    "describe",
+                                    "problem",
+                                    "solve",
+                                    "technical"
+                                ]
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "neural_network": {
+                            "score": 27.78,
+                            "level": "Needs Improvement"
+                        }
+                    },
+                    "fusion": {
+                        "feature_names": [
+                            "word_count",
+                            "sentence_count",
+                            "average_sentence_length",
+                            "vocabulary_ratio",
+                            "filler_ratio",
+                            "stopword_ratio",
+                            "sentiment_pos",
+                            "sentiment_neg",
+                            "sentiment_neu",
+                            "sentiment_compound",
+                            "keyword_coverage",
+                            "tfidf_cosine_similarity",
+                            "duration_seconds",
+                            "speech_rate_wpm",
+                            "rms_energy",
+                            "zero_crossing_rate",
+                            "silence_ratio",
+                            "speech_available"
+                        ],
+                        "feature_vector": [
+                            3.0,
+                            1.0,
+                            3.0,
+                            1.0,
+                            0.0,
+                            0.3333,
+                            0.0,
+                            0.0,
+                            1.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            2.236,
+                            80.5,
+                            0.0496,
+                            0.1622,
+                            0.6088,
+                            1.0
+                        ]
+                    }
+                },
+                "qid_4": {
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "body",
+                                "shimmy"
+                            ],
+                            "bow": {
+                                "body": 1,
+                                "shimmy": 1
+                            },
+                            "tfidf": {
+                                "body": 0.6505,
+                                "shimmy": 0.801
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 2,
+                                "sentence_count": 1,
+                                "average_sentence_length": 2.0,
+                                "stop_words_count": 0,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.0,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 2,
+                                "vocabulary_ratio": 1.0,
+                                "vocabulary_score": 1.0,
+                                "no_punctuation_tokens": [
+                                    "body",
+                                    "shimmy"
+                                ],
+                                "no_punctuation_tokens_count": 2
+                            },
+                            "sentiment": {
+                                "neg": 0.0,
+                                "neu": 1.0,
+                                "pos": 0.0,
+                                "compound": 0.0
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "body shimmy",
+                        "features": {
+                            "duration_seconds": 1.638,
+                            "speech_rate_wpm": 73.26,
+                            "rms_energy": 0.0058,
+                            "zero_crossing_rate": 0.2758,
+                            "silence_ratio": 0.9271,
+                            "speech_available": 1.0
+                        }
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 0.0,
+                                "matched": [],
+                                "missing": [
+                                    "interested",
+                                    "role"
+                                ]
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "neural_network": {
+                            "score": 52.01,
+                            "level": "Average"
+                        }
+                    },
+                    "fusion": {
+                        "feature_names": [
+                            "word_count",
+                            "sentence_count",
+                            "average_sentence_length",
+                            "vocabulary_ratio",
+                            "filler_ratio",
+                            "stopword_ratio",
+                            "sentiment_pos",
+                            "sentiment_neg",
+                            "sentiment_neu",
+                            "sentiment_compound",
+                            "keyword_coverage",
+                            "tfidf_cosine_similarity",
+                            "duration_seconds",
+                            "speech_rate_wpm",
+                            "rms_energy",
+                            "zero_crossing_rate",
+                            "silence_ratio",
+                            "speech_available"
+                        ],
+                        "feature_vector": [
+                            2.0,
+                            1.0,
+                            2.0,
+                            1.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            1.638,
+                            73.26,
+                            0.0058,
+                            0.2758,
+                            0.9271,
+                            1.0
+                        ]
+                    }
+                },
+                "qid_5": {
+                    "text": {
+                        "processed": {
+                            "lemmas": [
+                                "'m",
+                                "pass",
+                                "project",
+                                "someone",
+                                "else"
+                            ],
+                            "bow": {
+                                "'m": 1,
+                                "pass": 1,
+                                "project": 1,
+                                "someone": 1,
+                                "else": 1
+                            },
+                            "tfidf": {
+                                "'m": 0.1648,
+                                "pass": 0.3204,
+                                "project": 0.1806,
+                                "someone": 0.3204,
+                                "else": 0.3204
+                            }
+                        },
+                        "features": {
+                            "statistics": {
+                                "word_count": 8,
+                                "sentence_count": 1,
+                                "average_sentence_length": 8.0,
+                                "stop_words_count": 3,
+                                "filler_words_count": 0,
+                                "stopword_ratio": 0.375,
+                                "filler_ratio": 0.0,
+                                "vocabulary_count": 8,
+                                "vocabulary_ratio": 1.0,
+                                "vocabulary_score": 1.0,
+                                "no_punctuation_tokens": [
+                                    "i",
+                                    "'m",
+                                    "passing",
+                                    "the",
+                                    "project",
+                                    "to",
+                                    "someone",
+                                    "else"
+                                ],
+                                "no_punctuation_tokens_count": 8
+                            },
+                            "sentiment": {
+                                "neg": 0.0,
+                                "neu": 1.0,
+                                "pos": 0.0,
+                                "compound": 0.0
+                            }
+                        }
+                    },
+                    "speech": {
+                        "transcript": "I'm passing the project to someone else",
+                        "features": {
+                            "duration_seconds": 3.198,
+                            "speech_rate_wpm": 131.33,
+                            "rms_energy": 0.0339,
+                            "zero_crossing_rate": 0.2031,
+                            "silence_ratio": 0.672,
+                            "speech_available": 1.0
+                        }
+                    },
+                    "video": {
+                        "features": {}
+                    },
+                    "evaluation": {
+                        "semantic": {
+                            "similarity_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "lexical": {
+                            "keyword_coverage": {
+                                "score": 0.0,
+                                "matched": [],
+                                "missing": [
+                                    "deadline",
+                                    "handle",
+                                    "pressure",
+                                    "tight"
+                                ]
+                            }
+                        },
+                        "rule_based": {
+                            "combined_score": {
+                                "score": 0.0,
+                                "level": "Low"
+                            }
+                        },
+                        "neural_network": {
+                            "score": 31.88,
+                            "level": "Needs Improvement"
+                        }
+                    },
+                    "fusion": {
+                        "feature_names": [
+                            "word_count",
+                            "sentence_count",
+                            "average_sentence_length",
+                            "vocabulary_ratio",
+                            "filler_ratio",
+                            "stopword_ratio",
+                            "sentiment_pos",
+                            "sentiment_neg",
+                            "sentiment_neu",
+                            "sentiment_compound",
+                            "keyword_coverage",
+                            "tfidf_cosine_similarity",
+                            "duration_seconds",
+                            "speech_rate_wpm",
+                            "rms_energy",
+                            "zero_crossing_rate",
+                            "silence_ratio",
+                            "speech_available"
+                        ],
+                        "feature_vector": [
+                            8.0,
+                            1.0,
+                            8.0,
+                            1.0,
+                            0.0,
+                            0.375,
+                            0.0,
+                            0.0,
+                            1.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            3.198,
+                            131.33,
+                            0.0339,
+                            0.2031,
+                            0.672,
+                            1.0
+                        ]
+                    }
+                }
+            },
+            "overall": {
+                "text": {
+                    "features": {
+                        "statistics": {
+                            "word_count": 23,
+                            "sentence_count": 6,
+                            "average_sentence_length": 3.8333,
+                            "stop_words_count": 9,
+                            "filler_words_count": 0,
+                            "stopword_ratio": 0.3913,
+                            "filler_ratio": 0.0,
+                            "vocabulary_count": 22,
+                            "vocabulary_ratio": 0.9565,
+                            "vocabulary_score": 0.9565,
+                            "no_punctuation_tokens": [
+                                "my",
+                                "name",
+                                "is",
+                                "sujel",
+                                "singh",
+                                "this",
+                                "i",
+                                "made",
+                                "it",
+                                "fast",
+                                "by",
+                                "using",
+                                "air",
+                                "body",
+                                "shimmy",
+                                "i",
+                                "'m",
+                                "passing",
+                                "the",
+                                "project",
+                                "to",
+                                "someone",
+                                "else"
+                            ],
+                            "no_punctuation_tokens_count": 23
+                        },
+                        "sentiment": {
+                            "neg": 0.0,
+                            "neu": 1.0,
+                            "pos": 0.0,
+                            "compound": 0.0
+                        }
+                    }
+                },
+                "speech": {
+                    "features": {
+                        "duration_seconds": 18.41,
+                        "speech_rate_wpm": 86.96,
+                        "silence_ratio": 0.7755,
+                        "rms_energy": 0.0233,
+                        "speech_available": 1.0
+                    }
+                },
+                "video": {
+                    "features": {}
+                },
+                "evaluation": {
+                    "semantic": {
+                        "similarity_score": {
+                            "score": 0.0,
+                            "level": "Low"
+                        }
+                    },
+                    "lexical": {
+                        "keyword_coverage": {
+                            "score": 0.0,
+                            "level": "Low"
+                        }
+                    },
+                    "rule_based": {
+                        "combined_score": {
+                            "score": 0.0,
+                            "level": "Low"
+                        }
+                    },
+                    "neural_network": {
+                        "score": 34.17,
+                        "level": "Needs Improvement"
+                    }
+                },
+                "fusion": {}
+            }
         }
     }
 }
